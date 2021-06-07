@@ -1,8 +1,8 @@
 package main
 
 import (
+	"fashion/app/controllers"
 	"log"
-	"タイトル/app/controllers"
 )
 
 func main() {

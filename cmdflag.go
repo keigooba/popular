@@ -1,10 +1,10 @@
 package main
 
 import (
+	"fashion/config"
 	"flag"
 	"fmt"
 	"os"
-	"タイトル/config"
 )
 
 // Gitリポジトリのバージョン start.sh実行後バージョン自動更新

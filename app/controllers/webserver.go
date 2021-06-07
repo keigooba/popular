@@ -1,12 +1,12 @@
 package controllers
 
 import (
+	"fashion/config"
 	"fmt"
 	"log"
 	"net/http"
 	"os"
 	"text/template"
-	"タイトル/config"
 
 	"github.com/tcnksm/go-latest"
 )
