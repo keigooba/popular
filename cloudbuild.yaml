@@ -1,0 +1,32 @@
+steps:
+  # dockerビルド
+  # build -t ['イメージ名:タグ'] [DcokerFileパス]
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'build-docker-image'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/${_SERVICE_NAME}', '.']
+
+  # docker imageをpush
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'push-docker-image'
+    args: ['push', 'gcr.io/$PROJECT_ID/${_SERVICE_NAME}']
+
+  # Cloud Runへデプロイ
+  # --platformはmanaged,gke,kubernetesのいずれかを指定 see https://cloud.google.com/sdk/gcloud/reference/beta/run/deploy
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'deploy-cloud-run'
+    args: ['run', 'deploy', '${_SERVICE_NAME}', '--image', 'gcr.io/$PROJECT_ID/${_SERVICE_NAME}', '--region', '${_REGION}', '--platform', 'managed']
+
+  # Cloud Run閲覧権限付与
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'apply-member-role-cloud-run'
+    args: ['run', 'services', 'add-iam-policy-binding', '${_SERVICE_NAME}', '--region', '${_REGION}', '--member', 'allUsers', '--role', 'roles/run.invoker', '--platform', 'managed']
+
+# 変数定義
+# see https://cloud.google.com/cloud-build/docs/configuring-builds/substitute-variable-values?hl=ja
+substitutions:
+  _REGION: asia-northeast1
+  _SERVICE_NAME: fashion
+
+# imagesフィールドにはCloudBuildがContainerRegistry にpushする1つ以上の Dockerイメージを指定
+images:
+  - gcr.io/$PROJECT_ID/${_SERVICE_NAME}
