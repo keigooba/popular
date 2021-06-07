@@ -1,0 +1,9 @@
+{
+  "port": "8080",
+  "log_file":"タイトル.log",
+  "view":"app/views",
+  "url":"http://localhost:",
+  "version":"0.1.0",
+  "message":"バージョンアップグレードが必要",
+  "info_url":"https://localhost/info"
+}

@@ -1,0 +1,25 @@
+issues:
+  exclude-use-default: false
+linters-settings:
+  errcheck:
+    check-type-assertions: false
+    check-blank: false
+  #   ignore: fmt:.*,io/ioutil:^Read.*
+  #   # exclude: /path/to/file.txt
+  # govet:
+  #   check-shadowing: true
+  #   settings:
+  #     printf:
+  #       funcs:
+  #         - (github.com/golangci/golangci-lint/pkg/logutils.Log).Infof
+  #         - (github.com/golangci/golangci-lint/pkg/logutils.Log).Warnf
+  #         - (github.com/golangci/golangci-lint/pkg/logutils.Log).Errorf
+  #         - (github.com/golangci/golangci-lint/pkg/logutils.Log).Fatalf
+  #   enable:
+  #     - atomicalign
+  #   enable-all: false
+  #   disable:
+  #     - shadow
+  #   disable-all: false
+  golint:
+    min-confidence: 0.8
