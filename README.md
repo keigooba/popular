@@ -11,10 +11,10 @@
 <p>Go ModuleやMakefileなど、詳細はSETTING.mdに記載</p>
 
 ## 開発環境
-docker version 20.10.6が必要。なければ下記URLからダウンロード
+docker version 20.10.6が必要。なければ下記URLからダウンロード。  
 https://hub.docker.com/
 
-1. git clone
+1. gitリポジトリをクローンする
 ```
 git clone https://github.com/keigooba/popular.git
 ```
