@@ -1,4 +1,4 @@
-module fashion
+module popular
 
 go 1.16
 

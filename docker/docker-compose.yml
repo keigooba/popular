@@ -1,12 +1,12 @@
 version: "3.7"
 services:
-  fashion:
+  popular:
     build:
       context: ./golang/
       dockerfile: Dockerfile.dev
-    container_name: "fashion"
+    container_name: "popular"
     volumes:
-      - ../:/fashion
+      - ../:/popular
     ports:
       - "8080:8080"
     tty: true

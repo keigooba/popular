@@ -5,11 +5,11 @@ package config
 
 import (
 	"encoding/json"
-	"fashion/utils"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
+	"popular/utils"
 
 	"github.com/jinzhu/gorm"
 )

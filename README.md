@@ -1,6 +1,6 @@
-# fashion
+# popular
 
-サイトURL:https://fashion-32pe64nwja-an.a.run.app
+サイト URL:https://popular-32pe64nwja-an.a.run.app
 
 ## 概要
 

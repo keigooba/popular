@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fashion/app/controllers"
 	"log"
+	"popular/app/controllers"
 )
 
 func main() {
