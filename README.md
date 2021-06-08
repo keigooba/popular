@@ -1,8 +1,10 @@
 # fashion
 
-サイトURL:
+サイトURL:https://fashion-32pe64nwja-an.a.run.app
 
 ## 概要
+
+ツイートができて、そこにフリー画像の写真を検索して投稿できるアプリ
 
 ## 初期設定
 
