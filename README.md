@@ -10,13 +10,32 @@
 
 <p>Go ModuleやMakefileなど、詳細はSETTING.mdに記載</p>
 
+## 開発環境
+docker version 20.10.6が必要。なければ下記URLからダウンロード
+https://hub.docker.com/
+
+1. git clone
+```
+git clone https://github.com/keigooba/popular.git
+```
+2. リポジトリのルートディレクトリからdocker起動(port:8080が必要)
+```
+cd docker && docker-compose up -d
+```
+3. dockerコンテナに入る
+```
+docker-compose exec popular bash
+```
+
 ## 機能
 
 ## 技術
 
+フロントエンド・バックエンド
 1. Go1.16.2
 2. Bootstrap4.5.0
 3. jQuery3.5.1
-4. MySQL8.0.23
 
-## 学習記録・作成物
+インフラ
+1. cloud Build + cloud Run
+2. Datastore(NoSQL)予定
