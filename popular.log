@@ -2,3 +2,2633 @@
 2021/06/08 07:43:09 webserver.go:27: リッスンしているポート 8080
 2021/06/08 07:43:59 webserver.go:25: デフォルトのポート 8080
 2021/06/08 07:43:59 webserver.go:27: リッスンしているポート 8080
+2021/06/10 05:32:22 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:22 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:32:27 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:27 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:32:29 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:29 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:32:32 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:32 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:32:37 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:37 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:32:38 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:38 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:32:41 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:41 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:32:45 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:45 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:32:54 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:54 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:32:59 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:32:59 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:33:22 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:33:22 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:37:02 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:37:02 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:37:11 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:37:11 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:37:40 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:37:40 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:38:13 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:38:13 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:38:14 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:38:14 webserver.go:28: リッスンしているポート 8080
+2021/06/10 05:38:19 webserver.go:26: デフォルトのポート 8080
+2021/06/10 05:38:19 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:04:31 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:04:31 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:04:32 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:04:32 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:04:36 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:04:36 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:04:37 server.go:3139: http: panic serving 172.18.0.1:63996: open app/views/indexss.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc00021ed20)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81dcc0, 0xc0001a80f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x909b48, 0xc00026c2a0, 0x0, 0x0, 0xc0000cba88, 0x1, 0x1)
+	/popular/app/controllers/webserver.go:57 +0x505
+popular/app/controllers.index(0x909b48, 0xc00026c2a0, 0xc000268100)
+	/popular/app/controllers/webserver.go:42 +0x1d8
+net/http.HandlerFunc.ServeHTTP(0x8a10c8, 0x909b48, 0xc00026c2a0, 0xc000268100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb3bfe0, 0x909b48, 0xc00026c2a0, 0xc000268100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00026c0e0, 0x909b48, 0xc00026c2a0, 0xc000268100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00021ed20, 0x90a600, 0xc00022c500)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/10 06:04:42 server.go:3139: http: panic serving 172.18.0.1:64002: open app/views/indexss.html: no such file or directory
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc00007a0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81dcc0, 0xc0000785d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x909b48, 0xc0001bc0e0, 0x0, 0x0, 0xc0000cba88, 0x1, 0x1)
+	/popular/app/controllers/webserver.go:57 +0x505
+popular/app/controllers.index(0x909b48, 0xc0001bc0e0, 0xc00007e100)
+	/popular/app/controllers/webserver.go:42 +0x1d8
+net/http.HandlerFunc.ServeHTTP(0x8a10c8, 0x909b48, 0xc0001bc0e0, 0xc00007e100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb3bfe0, 0x909b48, 0xc0001bc0e0, 0xc00007e100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00026c0e0, 0x909b48, 0xc0001bc0e0, 0xc00007e100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00007a0a0, 0x90a600, 0xc000064100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/10 06:04:43 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:04:43 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:06:54 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:06:54 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:07:26 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:07:26 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:09 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:09 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:10 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:10 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:16 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:16 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:26 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:26 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:28 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:28 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:35 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:35 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:38 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:38 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:46 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:46 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:48 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:48 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:54 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:54 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:09:56 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:09:56 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:10:06 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:10:06 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:10:09 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:10:09 webserver.go:28: リッスンしているポート 8080
+2021/06/10 06:10:18 webserver.go:26: デフォルトのポート 8080
+2021/06/10 06:10:18 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:21:49 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:21:49 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:30:36 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:30:36 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:37:33 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:37:33 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:37:38 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:37:38 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:41:03 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:41:03 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:41:05 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:41:05 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:41:15 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:41:15 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:41:20 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:41:20 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:41:25 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:41:25 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:41:41 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:41:41 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:43:08 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:43:08 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:43:10 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:43:10 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:43:21 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:43:21 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:43:25 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:43:25 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:43:31 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:43:31 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:43:58 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:43:58 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:44:21 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:44:21 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:46:05 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:46:05 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:46:14 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:46:14 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:46:24 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:46:24 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:47:11 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:47:11 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:48:51 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:48:51 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:49:34 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:49:34 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:49:43 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:49:43 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:49:47 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:49:47 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:49:54 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:49:54 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:50:05 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:50:05 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:50:12 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:50:12 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:52:09 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:52:09 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:52:23 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:52:23 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:52:25 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:52:25 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:52:39 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:52:39 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:52:39 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:52:40 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:52:40 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:52:40 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:52:48 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:52:48 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:53:02 webserver.go:58: template: no template "layout" associated with template "home.html"
+2021/06/13 01:53:02 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:53:38 webserver.go:58: template: no template "layout" associated with template "home.html"
+2021/06/13 01:53:38 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:55:19 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:55:19 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:55:20 webserver.go:58: template: no template "layout" associated with template "home.html"
+2021/06/13 01:55:20 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:56:29 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:56:29 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:57:08 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:57:08 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:57:48 webserver.go:26: デフォルトのポート 8080
+2021/06/13 01:57:48 webserver.go:28: リッスンしているポート 8080
+2021/06/13 01:57:49 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:57:49 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:57:50 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 01:57:50 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 02:03:00 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:03:00 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:03:12 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:03:12 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:03:20 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:03:20 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:03:21 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:03:21 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:03:22 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:03:22 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:03:26 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:03:26 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:04:00 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:04:00 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:04:39 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:04:39 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:04:43 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:04:43 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:04:47 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:04:47 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:04:49 webserver.go:56: &{index.html 0xc0002067e0 0xc000064640  }
+2021/06/13 02:04:49 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:04:49 webserver.go:56: &{index.html 0xc0000e1560 0xc000192e40  }
+2021/06/13 02:04:49 webserver.go:59: template: no template "layout" associated with template "index.html"
+2021/06/13 02:05:27 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:05:27 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:05:40 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:05:40 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:05:43 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:05:43 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:05:45 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:05:45 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:05:52 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:05:52 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:05:57 webserver.go:54: [app/views/index.html]
+2021/06/13 02:05:57 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 02:05:57 webserver.go:54: [app/views/index.html]
+2021/06/13 02:05:57 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 02:07:18 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:07:18 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:07:19 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:07:19 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:07:22 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:07:22 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:07:24 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:07:24 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:07:25 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:07:25 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:08:01 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:08:01 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:08:02 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:08:02 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:08:04 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:08:04 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:08:08 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:08:08 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:08:17 webserver.go:54: [app/views/templates/index.html]
+2021/06/13 02:08:17 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 02:08:17 webserver.go:54: [app/views/templates/index.html]
+2021/06/13 02:08:17 webserver.go:58: template: no template "layout" associated with template "index.html"
+2021/06/13 02:10:52 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:10:52 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:10:58 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:10:58 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:11:01 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:11:01 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:11:10 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:11:10 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:11:12 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:11:12 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:12:28 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:12:28 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:12:49 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:12:49 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:12:55 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:12:55 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:13:00 webserver.go:54: [app/views/templates/layout.html app/views/templates/index.html]
+2021/06/13 02:13:00 webserver.go:58: template: layout.html:20:13: executing "layout" at <{{template "navbar" .}}>: template "navbar" not defined
+2021/06/13 02:13:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/index.html]
+2021/06/13 02:13:01 webserver.go:58: template: layout.html:20:13: executing "layout" at <{{template "navbar" .}}>: template "navbar" not defined
+2021/06/13 02:13:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/index.html]
+2021/06/13 02:13:01 webserver.go:58: template: layout.html:20:13: executing "layout" at <{{template "navbar" .}}>: template "navbar" not defined
+2021/06/13 02:15:02 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:15:02 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:15:07 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:15:07 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:15:11 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:15:11 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:15:20 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:15:20 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:15:26 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:15:26 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:15:34 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:15:34 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:15:42 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:15:42 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:15:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navber.html app/views/templates/index.html]
+2021/06/13 02:15:44 server.go:3139: http: panic serving 172.18.0.1:62248: open app/views/templates/public_navber.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0001e8e60)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81dcc0, 0xc00009c840)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x909bc8, 0xc00024a2a0, 0x0, 0x0, 0xc000143aa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:55 +0x3f7
+popular/app/controllers.index(0x909bc8, 0xc00024a2a0, 0xc000208b00)
+	/popular/app/controllers/webserver.go:42 +0x225
+net/http.HandlerFunc.ServeHTTP(0x8a1108, 0x909bc8, 0xc00024a2a0, 0xc000208b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb3bfe0, 0x909bc8, 0xc00024a2a0, 0xc000208b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00024a0e0, 0x909bc8, 0xc00024a2a0, 0xc000208b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001e8e60, 0x90a680, 0xc00020ac80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/13 02:15:45 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navber.html app/views/templates/index.html]
+2021/06/13 02:15:45 server.go:3139: http: panic serving 172.18.0.1:62254: open app/views/templates/public_navber.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0001e9180)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81dcc0, 0xc000074660)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x909bc8, 0xc00024a8c0, 0x0, 0x0, 0xc00013faa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:55 +0x3f7
+popular/app/controllers.index(0x909bc8, 0xc00024a8c0, 0xc000208f00)
+	/popular/app/controllers/webserver.go:42 +0x225
+net/http.HandlerFunc.ServeHTTP(0x8a1108, 0x909bc8, 0xc00024a8c0, 0xc000208f00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb3bfe0, 0x909bc8, 0xc00024a8c0, 0xc000208f00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00024a0e0, 0x909bc8, 0xc00024a8c0, 0xc000208f00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001e9180, 0x90a680, 0xc00020be40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/13 02:15:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navber.html app/views/templates/index.html]
+2021/06/13 02:15:50 server.go:3139: http: panic serving 172.18.0.1:62260: open app/views/templates/public_navber.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc0001e92c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81dcc0, 0xc0000751a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x909bc8, 0xc0003c20e0, 0x0, 0x0, 0xc00013faa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:55 +0x3f7
+popular/app/controllers.index(0x909bc8, 0xc0003c20e0, 0xc000209200)
+	/popular/app/controllers/webserver.go:42 +0x225
+net/http.HandlerFunc.ServeHTTP(0x8a1108, 0x909bc8, 0xc0003c20e0, 0xc000209200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb3bfe0, 0x909bc8, 0xc0003c20e0, 0xc000209200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00024a0e0, 0x909bc8, 0xc0003c20e0, 0xc000209200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001e92c0, 0x90a680, 0xc0003380c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/13 02:16:20 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navber.html app/views/templates/index.html]
+2021/06/13 02:16:20 server.go:3139: http: panic serving 172.18.0.1:62266: open app/views/templates/public_navber.html: no such file or directory
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc0001e9360)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81dcc0, 0xc000075890)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x909bc8, 0xc00024aa80, 0x0, 0x0, 0xc000141aa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:55 +0x3f7
+popular/app/controllers.index(0x909bc8, 0xc00024aa80, 0xc000209300)
+	/popular/app/controllers/webserver.go:42 +0x225
+net/http.HandlerFunc.ServeHTTP(0x8a1108, 0x909bc8, 0xc00024aa80, 0xc000209300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb3bfe0, 0x909bc8, 0xc00024aa80, 0xc000209300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00024a0e0, 0x909bc8, 0xc00024aa80, 0xc000209300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001e9360, 0x90a680, 0xc000338180)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/13 02:16:59 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:16:59 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:17:03 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:17:03 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:17:03 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/index.html]
+2021/06/13 02:17:04 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/index.html]
+2021/06/13 02:18:24 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:18:24 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:18:27 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/index.html]
+2021/06/13 02:18:27 server.go:3139: http: panic serving 172.18.0.1:62280: open app/views/templates/index.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001c0e60)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81dcc0, 0xc0001fde00)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x909bc8, 0xc0002202a0, 0x0, 0x0, 0xc00011baa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:55 +0x3f7
+popular/app/controllers.index(0x909bc8, 0xc0002202a0, 0xc0001deb00)
+	/popular/app/controllers/webserver.go:42 +0x225
+net/http.HandlerFunc.ServeHTTP(0x8a1110, 0x909bc8, 0xc0002202a0, 0xc0001deb00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb3bfe0, 0x909bc8, 0xc0002202a0, 0xc0001deb00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002200e0, 0x909bc8, 0xc0002202a0, 0xc0001deb00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c0e60, 0x90a680, 0xc0001e0cc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/13 02:18:28 webserver.go:26: デフォルトのポート 8080
+2021/06/13 02:18:28 webserver.go:28: リッスンしているポート 8080
+2021/06/13 02:18:29 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:20:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:21:21 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:21:21 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:21:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:21:37 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:21:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:26:55 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:27:09 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:27:18 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:28:15 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:28:17 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:28:17 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:28:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:28:27 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:28:45 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:29:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:30:12 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:34:45 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:35:05 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:36:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:36:23 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:36:54 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:37:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:37:03 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:37:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:37:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:37:37 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:37:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:46:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:46:23 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:46:24 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:46:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:46:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:46:38 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:47:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:47:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:47:03 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:48:17 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:48:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:48:42 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:49:20 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:49:23 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:49:55 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:50:33 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:51:33 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:51:36 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:52:39 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:52:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:53:16 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:53:42 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:53:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:54:09 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:54:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:56:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:59:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:59:08 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:59:09 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:59:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:59:27 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:59:27 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:59:29 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:59:34 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 02:59:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 03:01:13 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 03:02:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 03:03:16 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 03:04:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 03:05:15 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 03:05:18 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:29:04 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:31:55 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:32:11 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:35:00 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:38:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:38:27 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:44:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:44:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:44:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:45:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:46:25 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:49:18 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:49:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:49:57 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:50:27 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:50:40 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:51:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:53:00 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:54:41 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:54:55 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:56:35 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:56:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:56:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:56:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:57:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:57:06 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:58:06 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:58:07 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:59:16 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 06:59:53 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:00:05 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:00:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:01:45 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:02:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:04:28 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:06:23 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:07:52 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:08:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:08:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:08:32 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:08:57 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:09:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:09:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:09:58 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:10:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:18:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:19:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:19:11 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:19:17 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:20:40 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:21:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:22:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:22:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:23:03 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:23:16 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:27:33 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:28:40 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:29:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:29:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:30:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:30:42 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:32:32 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:32:54 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:33:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:33:06 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:33:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:33:29 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:33:35 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:34:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:34:46 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:36:00 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:36:15 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:36:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:36:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:37:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:38:18 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:38:53 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:39:18 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:41:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:41:15 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:42:25 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:43:03 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:43:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:43:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:44:05 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:44:46 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:45:07 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:45:32 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:46:34 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:46:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:46:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:46:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:46:59 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:47:45 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:48:15 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:48:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:48:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:48:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:48:57 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:49:06 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:50:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:50:48 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:51:55 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 07:57:00 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:02:12 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:02:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:02:37 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:03:28 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:03:29 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:03:32 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:04:21 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:04:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:04:25 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:05:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:05:34 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:05:42 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:05:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:08:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:09:08 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:09:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:09:55 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:12:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:12:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:13:18 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:19:13 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:20:48 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:21:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:22:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:23:17 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:23:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:23:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:23:52 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:23:59 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:25:04 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:25:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:25:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:25:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:25:52 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:26:08 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:26:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:26:38 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:26:39 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:26:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:33:24 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:33:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:33:38 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:33:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:33:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:34:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:34:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:34:19 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:34:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:36:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:36:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:36:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:37:18 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:37:59 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:38:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 08:38:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:26:00 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:27:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:27:52 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:27:53 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:27:53 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:28:12 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:28:13 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:28:13 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:29:24 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:29:28 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:30:25 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:30:38 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:30:41 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:30:41 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:30:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:30:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:31:54 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:32:15 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:33:21 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:36:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:36:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:41:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:42:24 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:42:41 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:42:41 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:43:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:44:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:44:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:45:29 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:47:41 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:49:20 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:52:32 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:52:57 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:53:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:53:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/13 23:53:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:22:23 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:28:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:28:33 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:28:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:29:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:32:25 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:32:34 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:32:35 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:32:35 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:35:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:35:34 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:35:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:35:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:37:16 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:39:19 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:39:19 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:39:24 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:40:08 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:42:28 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:42:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:43:09 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:43:37 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:43:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:43:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:43:57 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:44:07 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:45:35 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:46:21 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:46:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:46:38 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:46:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:46:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:46:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:46:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:47:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:47:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:47:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:47:58 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:48:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:49:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:50:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:51:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:55:42 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:55:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:55:43 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:55:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:56:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:58:25 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:59:17 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 04:59:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:00:11 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:00:21 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:00:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:00:48 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:00:48 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:00:48 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:00:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:01:57 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:02:05 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:04:04 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:05:58 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:06:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:07:18 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:07:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:07:53 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:07:53 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:09:29 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:09:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:09:34 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:10:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:11:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:11:59 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:12:07 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:12:09 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:12:13 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:12:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:12:42 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:12:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:12:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:13:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:13:55 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:14:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:14:15 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:14:24 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:23:12 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:23:40 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:23:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:24:30 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:24:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:25:54 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:26:03 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:26:33 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:26:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:26:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:26:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:26:51 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:27:23 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:27:23 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:27:23 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:27:24 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:27:35 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:27:36 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:27:36 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:27:44 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:28:00 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:28:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:28:31 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:30:29 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:30:55 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:31:15 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:31:16 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:31:21 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:31:37 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:31:46 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:31:56 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:32:03 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:32:37 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:32:40 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:32:59 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:33:07 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:33:24 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:33:29 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:34:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:34:09 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:34:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:34:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:34:48 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:34:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:34:57 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:35:41 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:36:53 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:37:03 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:37:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:39:07 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:39:54 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:42:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:42:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:43:12 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:43:12 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:43:13 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:43:18 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:44:37 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:45:27 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 05:49:34 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:02:34 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:02:34 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:02:49 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:02:50 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:03:14 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:03:20 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:03:35 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:03:52 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:03:59 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:04:10 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:08:17 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:08:29 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:10:33 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:10:45 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:10:46 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:11:25 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:11:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:11:35 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:11:42 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:11:47 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:12:01 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:12:02 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:12:12 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:16:21 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:16:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:16:22 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:16:36 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:16:37 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:16:38 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:16:39 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:24:26 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:24:27 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:34:04 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:34:05 webserver.go:54: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:43:43 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:43:43 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:44:00 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:44:00 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:44:01 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:44:01 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:44:09 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:44:09 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:47:40 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:47:40 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:47:43 webserver.go:59: [app/views/templates/layout.html app/views/templates/public_navbar.html app/views/templates/main/index.html]
+2021/06/14 06:48:07 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:48:07 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:48:18 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:48:18 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:48:37 webserver.go:50: /home
+2021/06/14 06:49:04 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:49:04 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:49:23 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:49:23 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:49:24 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:49:24 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:49:31 webserver.go:50: /home
+2021/06/14 06:49:33 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:49:33 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:50:22 webserver.go:28: デフォルトのポート 8080
+2021/06/14 06:50:22 webserver.go:30: リッスンしているポート 8080
+2021/06/14 06:54:42 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:54:42 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:58:42 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:58:42 webserver.go:31: リッスンしているポート 8080
+2021/06/14 06:59:53 webserver.go:29: デフォルトのポート 8080
+2021/06/14 06:59:53 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:00:01 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:00:01 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:00:07 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:00:07 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:01:12 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:01:12 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:01:18 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:01:18 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:01:18 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:01:18 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:01:29 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:01:29 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:01:41 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:01:41 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:09:55 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:09:55 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:10:15 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:10:15 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:10:28 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:10:28 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:10:31 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:10:31 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:10:31 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:10:31 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:10:38 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:10:38 webserver.go:31: リッスンしているポート 8080
+2021/06/14 07:10:47 webserver.go:29: デフォルトのポート 8080
+2021/06/14 07:10:47 webserver.go:31: リッスンしているポート 8080
+2021/06/15 02:49:48 webserver.go:29: デフォルトのポート 8080
+2021/06/15 02:49:48 webserver.go:31: リッスンしているポート 8080
+2021/06/15 02:50:08 webserver.go:29: デフォルトのポート 8080
+2021/06/15 02:50:08 webserver.go:31: リッスンしているポート 8080
+2021/06/15 02:50:09 webserver.go:29: デフォルトのポート 8080
+2021/06/15 02:50:09 webserver.go:31: リッスンしているポート 8080
+2021/06/15 02:50:12 webserver.go:29: デフォルトのポート 8080
+2021/06/15 02:50:12 webserver.go:31: リッスンしているポート 8080
+2021/06/15 02:50:14 webserver.go:29: デフォルトのポート 8080
+2021/06/15 02:50:14 webserver.go:31: リッスンしているポート 8080
+2021/06/15 02:50:24 webserver.go:29: デフォルトのポート 8080
+2021/06/15 02:50:24 webserver.go:31: リッスンしているポート 8080
+2021/06/15 02:50:25 webserver.go:29: デフォルトのポート 8080
+2021/06/15 02:50:25 webserver.go:31: リッスンしているポート 8080
+2021/06/15 02:50:28 webserver.go:55: Ko
+2021/06/15 02:50:32 webserver.go:55: Ko
+2021/06/15 02:50:46 webserver.go:55: Ko
+2021/06/15 02:51:07 webserver.go:29: デフォルトのポート 8080
+2021/06/15 02:51:07 webserver.go:31: リッスンしているポート 8080
+2021/06/15 02:51:10 webserver.go:29: デフォルトのポート 8080
+2021/06/15 02:51:10 webserver.go:31: リッスンしているポート 8080
+2021/06/16 05:00:06 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:00:06 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:01:49 server.go:3139: http: panic serving 172.18.0.1:64568: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0001712c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0001d8700, 0xc000191100)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0001d8700, 0xc000191100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0001d8700, 0xc000191100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc0001d8700, 0xc000191100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001712c0, 0x935d20, 0xc000192e40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:01:49 server.go:3139: http: panic serving 172.18.0.1:64582: runtime error: invalid memory address or nil pointer dereference
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc0003cc000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0003d02a0, 0xc0003ca300)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0003d02a0, 0xc0003ca300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0003d02a0, 0xc0003ca300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc0003d02a0, 0xc0003ca300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003cc000, 0x935d20, 0xc00038e380)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:01:49 server.go:3139: http: panic serving 172.18.0.1:64580: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00024c0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc00025a2a0, 0xc000256300)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc00025a2a0, 0xc000256300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc00025a2a0, 0xc000256300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc00025a2a0, 0xc000256300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00024c0a0, 0x935d20, 0xc000064080)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:01:49 server.go:3139: http: panic serving 172.18.0.1:64576: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc000288280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc00025a460, 0xc0002a6500)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc00025a460, 0xc0002a6500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc00025a460, 0xc0002a6500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc00025a460, 0xc0002a6500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000288280, 0x935d20, 0xc00029eec0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:01:49 server.go:3139: http: panic serving 172.18.0.1:64586: runtime error: invalid memory address or nil pointer dereference
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0001714a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0001d88c0, 0xc000191200)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0001d88c0, 0xc000191200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0001d88c0, 0xc000191200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc0001d88c0, 0xc000191200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001714a0, 0x935d20, 0xc000193380)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:01:50 server.go:3139: http: panic serving 172.18.0.1:64590: runtime error: invalid memory address or nil pointer dereference
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc0003cc140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0003d0460, 0xc0003ca400)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0003d0460, 0xc0003ca400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0003d0460, 0xc0003ca400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc0003d0460, 0xc0003ca400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003cc140, 0x935d20, 0xc00038e540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:01:55 server.go:3139: http: panic serving 172.18.0.1:64594: runtime error: invalid memory address or nil pointer dereference
+goroutine 58 [running]:
+net/http.(*conn).serve.func1(0xc0003cc1e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0003d0620, 0xc0003ca500)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0003d0620, 0xc0003ca500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0003d0620, 0xc0003ca500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc0003d0620, 0xc0003ca500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003cc1e0, 0x935d20, 0xc00038e680)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:02:51 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:02:51 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:02:57 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:02:57 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:03:01 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:03:01 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:03:02 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:03:02 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:03:06 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:03:06 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:03:21 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:03:21 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:03:28 auth.go:15: koo
+2021/06/16 05:03:28 server.go:3139: http: panic serving 172.18.0.1:64610: koo
+
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc0000af180)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x813700, 0xc0000990d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc000203a00, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers.auth(0x935268, 0xc0000fe540, 0xc00029c300)
+	/popular/app/controllers/auth.go:15 +0x7e
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000fe540, 0xc00029c300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000fe540, 0xc00029c300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x935268, 0xc0000fe540, 0xc00029c300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000af180, 0x935d60, 0xc0000bc6c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:03:28 auth.go:15: koo
+2021/06/16 05:03:28 server.go:3139: http: panic serving 172.18.0.1:64618: koo
+
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0000af400)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x813700, 0xc0001e4430)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00004ca00, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers.auth(0x935268, 0xc0001f82a0, 0xc0000fc500)
+	/popular/app/controllers/auth.go:15 +0x7e
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0001f82a0, 0xc0000fc500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0001f82a0, 0xc0000fc500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x935268, 0xc0001f82a0, 0xc0000fc500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000af400, 0x935d60, 0xc0000bcb40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:03:29 auth.go:15: koo
+2021/06/16 05:03:29 server.go:3139: http: panic serving 172.18.0.1:64622: koo
+
+goroutine 16 [running]:
+net/http.(*conn).serve.func1(0xc0001c0280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x813700, 0xc0002981e0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00004ca00, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers.auth(0x935268, 0xc0002a6380, 0xc0001ded00)
+	/popular/app/controllers/auth.go:15 +0x7e
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002a6380, 0xc0001ded00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002a6380, 0xc0001ded00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x935268, 0xc0002a6380, 0xc0001ded00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c0280, 0x935d60, 0xc0001e0e00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:03:34 auth.go:15: koo
+2021/06/16 05:03:34 server.go:3139: http: panic serving 172.18.0.1:64626: koo
+
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0xc0000af4a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x813700, 0xc000099120)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00004da00, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers.auth(0x935268, 0xc0000fe700, 0xc0000fc600)
+	/popular/app/controllers/auth.go:15 +0x7e
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000fe700, 0xc0000fc600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000fe700, 0xc0000fc600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x935268, 0xc0000fe700, 0xc0000fc600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000af4a0, 0x935d60, 0xc0000bcbc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:04:04 auth.go:15: koo
+2021/06/16 05:04:04 server.go:3139: http: panic serving 172.18.0.1:64630: koo
+
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc0001c0320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x813700, 0xc000099150)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc000050a00, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers.auth(0x935268, 0xc0000fe8c0, 0xc0001dee00)
+	/popular/app/controllers/auth.go:15 +0x7e
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000fe8c0, 0xc0001dee00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000fe8c0, 0xc0001dee00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x935268, 0xc0000fe8c0, 0xc0001dee00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c0320, 0x935d60, 0xc0001e0e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:04:12 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:04:12 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:11:50 server.go:3139: http: panic serving 172.18.0.1:64658: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc0000af040)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc00033e700, 0xc000332400)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc00033e700, 0xc000332400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc00033e700, 0xc000332400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x935228, 0xc00033e700, 0xc000332400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000af040, 0x935d20, 0xc0000bc6c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:11:50 server.go:3139: http: panic serving 172.18.0.1:64664: runtime error: invalid memory address or nil pointer dereference
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0000af180)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0000fe460, 0xc0000fc400)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0000fe460, 0xc0000fc400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0000fe460, 0xc0000fc400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x935228, 0xc0000fe460, 0xc0000fc400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000af180, 0x935d20, 0xc0000bce00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:11:51 server.go:3139: http: panic serving 172.18.0.1:64668: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001c01e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0000fe620, 0xc0001dea00)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0000fe620, 0xc0001dea00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0000fe620, 0xc0001dea00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x935228, 0xc0000fe620, 0xc0001dea00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c01e0, 0x935d20, 0xc0001e07c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:12:58 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:12:58 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:14:39 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:14:39 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:14:41 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:14:41 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:14:48 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:14:48 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:26:42 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:26:42 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:26:51 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:26:51 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:27:51 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:27:51 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:27:58 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:27:58 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:32:38 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:32:38 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:32:46 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:32:46 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:34:50 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:34:50 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:35:05 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:35:05 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:37:05 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:37:05 webserver.go:33: リッスンしているポート 8080
+2021/06/16 05:37:24 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:37:24 webserver.go:33: リッスンしているポート 8080
+2021/06/16 05:38:24 server.go:3139: http: panic serving 172.18.0.1:64742: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc000171360)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000404540, 0xc000438500)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000404540, 0xc000438500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000404540, 0xc000438500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc000404540, 0xc000438500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000171360, 0x935d20, 0xc000192e40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:38:24 server.go:3139: http: panic serving 172.18.0.1:64750: runtime error: invalid memory address or nil pointer dereference
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0xc000171540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0001d8380, 0xc000190f00)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0001d8380, 0xc000190f00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0001d8380, 0xc000190f00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc0001d8380, 0xc000190f00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000171540, 0x935d20, 0xc000193600)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:38:25 server.go:3139: http: panic serving 172.18.0.1:64754: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc000250280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000270540, 0xc000264300)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000270540, 0xc000264300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000270540, 0xc000264300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc000270540, 0xc000264300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000250280, 0x935d20, 0xc00025cec0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:38:30 server.go:3139: http: panic serving 172.18.0.1:64758: runtime error: invalid memory address or nil pointer dereference
+goroutine 63 [running]:
+net/http.(*conn).serve.func1(0xc000456140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000270700, 0xc000438600)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000270700, 0xc000438600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000270700, 0xc000438600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc000270700, 0xc000438600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000456140, 0x935d20, 0xc000416780)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:00 server.go:3139: http: panic serving 172.18.0.1:64762: runtime error: invalid memory address or nil pointer dereference
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0xc0001715e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0001d8540, 0xc000191000)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0001d8540, 0xc000191000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0001d8540, 0xc000191000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d80e0, 0x935228, 0xc0001d8540, 0xc000191000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001715e0, 0x935d20, 0xc000193740)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:10 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:39:10 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:39:34 server.go:3139: http: panic serving 172.18.0.1:64794: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0001f1220)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0002ac0e0, 0xc000210b00)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0002ac0e0, 0xc000210b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0002ac0e0, 0xc000210b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc0002ac0e0, 0xc000210b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001f1220, 0x935d20, 0xc000212e40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:38 server.go:3139: http: panic serving 172.18.0.1:64810: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc0000760a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000258c40, 0xc000211500)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000258c40, 0xc000211500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000258c40, 0xc000211500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc000258c40, 0xc000211500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000760a0, 0x935d20, 0xc000064100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:38 server.go:3139: http: panic serving 172.18.0.1:64812: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000076140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000258e00, 0xc000078400)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000258e00, 0xc000078400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000258e00, 0xc000078400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc000258e00, 0xc000078400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000076140, 0x935d20, 0xc000064040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:38 server.go:3139: http: panic serving 172.18.0.1:64808: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc000076000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000258fc0, 0xc00015e200)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000258fc0, 0xc00015e200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000258fc0, 0xc00015e200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc000258fc0, 0xc00015e200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000076000, 0x935d20, 0xc000213e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:38 server.go:3139: http: panic serving 172.18.0.1:64798: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0002f6000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000259180, 0xc000211000)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000259180, 0xc000211000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000259180, 0xc000211000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc000259180, 0xc000211000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002f6000, 0x935d20, 0xc0002be0c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:38 server.go:3139: http: panic serving 172.18.0.1:64816: runtime error: invalid memory address or nil pointer dereference
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0xc0002f61e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000259340, 0xc0002f8200)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000259340, 0xc0002f8200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000259340, 0xc0002f8200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc000259340, 0xc0002f8200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002f61e0, 0x935d20, 0xc0002be400)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:39 server.go:3139: http: panic serving 172.18.0.1:64820: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc000076280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0004002a0, 0xc000078500)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0004002a0, 0xc000078500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0004002a0, 0xc000078500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc0004002a0, 0xc000078500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000076280, 0x935d20, 0xc000064280)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:45 server.go:3139: http: panic serving 172.18.0.1:64824: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0xc000076320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000400460, 0xc000078600)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000400460, 0xc000078600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000400460, 0xc000078600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc000400460, 0xc000078600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000076320, 0x935d20, 0xc000064380)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:39:53 server.go:3139: http: panic serving 172.18.0.1:64828: runtime error: invalid memory address or nil pointer dereference
+goroutine 31 [running]:
+net/http.(*conn).serve.func1(0xc0001f1540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000400620, 0xc000211600)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000400620, 0xc000211600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000400620, 0xc000211600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc000400620, 0xc000211600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001f1540, 0x935d20, 0xc0003fe3c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:40:23 server.go:3139: http: panic serving 172.18.0.1:64832: runtime error: invalid memory address or nil pointer dereference
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc0002f6280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0004007e0, 0xc0002f8300)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0004007e0, 0xc0002f8300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0004007e0, 0xc0002f8300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc0004007e0, 0xc0002f8300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002f6280, 0x935d20, 0xc0002be480)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:41:02 server.go:3139: http: panic serving 172.18.0.1:64836: runtime error: invalid memory address or nil pointer dereference
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0xc0001f15e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc000259420, 0xc000211700)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc000259420, 0xc000211700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc000259420, 0xc000211700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc000259420, 0xc000211700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001f15e0, 0x935d20, 0xc0003fe440)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:41:05 server.go:3139: http: panic serving 172.18.0.1:64840: runtime error: invalid memory address or nil pointer dereference
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc0001700a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc00017c1c0, 0xc000078400)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc00017c1c0, 0xc000078400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc00017c1c0, 0xc000078400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc00017c1c0, 0xc000078400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001700a0, 0x935d20, 0xc000126000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:41:05 server.go:3139: http: panic serving 172.18.0.1:64846: runtime error: invalid memory address or nil pointer dereference
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc0001f0000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc00017c380, 0xc000206000)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc00017c380, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc00017c380, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc00017c380, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001f0000, 0x935d20, 0xc0003fe040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:41:06 server.go:3139: http: panic serving 172.18.0.1:64850: runtime error: invalid memory address or nil pointer dereference
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc0002f6000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc00017c540, 0xc0004ee000)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc00017c540, 0xc0004ee000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc00017c540, 0xc0004ee000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc00017c540, 0xc0004ee000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002f6000, 0x935d20, 0xc0002be000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:41:11 server.go:3139: http: panic serving 172.18.0.1:64854: runtime error: invalid memory address or nil pointer dereference
+goroutine 63 [running]:
+net/http.(*conn).serve.func1(0xc0001701e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935228, 0xc0004f00e0, 0xc000078500)
+	/popular/app/controllers/auth.go:19 +0x1d6
+net/http.HandlerFunc.ServeHTTP(0x8ca508, 0x935228, 0xc0004f00e0, 0xc000078500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935228, 0xc0004f00e0, 0xc000078500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002580e0, 0x935228, 0xc0004f00e0, 0xc000078500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001701e0, 0x935d20, 0xc000126780)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:41:59 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:41:59 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:42:06 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:42:06 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:42:21 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:42:21 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:42:27 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:42:27 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:42:28 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:42:28 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:42:37 auth.go:14: koko
+2021/06/16 05:42:40 auth.go:14: koko
+2021/06/16 05:43:49 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:43:49 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:44:19 auth.go:14: koko
+2021/06/16 05:44:19 server.go:3139: http: panic serving 172.18.0.1:64924: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc00023a0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc00041e2a0, 0xc00042c400)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc00041e2a0, 0xc00042c400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc00041e2a0, 0xc00042c400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc00041e2a0, 0xc00042c400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00023a0a0, 0x935d60, 0xc000218100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:19 auth.go:14: koko
+2021/06/16 05:44:19 server.go:3139: http: panic serving 172.18.0.1:64904: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001c92c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002ae380, 0xc0001e6f00)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002ae380, 0xc0001e6f00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002ae380, 0xc0001e6f00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc0002ae380, 0xc0001e6f00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c92c0, 0x935d60, 0xc0001e8e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:19 auth.go:14: koko
+2021/06/16 05:44:19 server.go:3139: http: panic serving 172.18.0.1:64916: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000c6320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002201c0, 0xc0001e7000)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002201c0, 0xc0001e7000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002201c0, 0xc0001e7000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc0002201c0, 0xc0001e7000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000c6320, 0x935d60, 0xc0000a4e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:19 auth.go:14: koko
+2021/06/16 05:44:19 server.go:3139: http: panic serving 172.18.0.1:64920: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc0000c63c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc00041e380, 0xc00042c200)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc00041e380, 0xc00042c200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc00041e380, 0xc00042c200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc00041e380, 0xc00042c200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000c63c0, 0x935d60, 0xc0000a5000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:19 auth.go:14: koko
+2021/06/16 05:44:19 server.go:3139: http: panic serving 172.18.0.1:64908: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc0000c61e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc00041e460, 0xc0001e7300)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc00041e460, 0xc0001e7300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc00041e460, 0xc0001e7300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc00041e460, 0xc0001e7300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000c61e0, 0x935d60, 0xc0000a4dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:19 auth.go:14: koko
+2021/06/16 05:44:19 server.go:3139: http: panic serving 172.18.0.1:64914: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000c6280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002202a0, 0xc0001e7100)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002202a0, 0xc0001e7100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002202a0, 0xc0001e7100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc0002202a0, 0xc0001e7100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000c6280, 0x935d60, 0xc0001e92c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:19 auth.go:14: koko
+2021/06/16 05:44:19 server.go:3139: http: panic serving 172.18.0.1:64928: runtime error: invalid memory address or nil pointer dereference
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc0004400a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc000220380, 0xc00042c500)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc000220380, 0xc00042c500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc000220380, 0xc00042c500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc000220380, 0xc00042c500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0004400a0, 0x935d60, 0xc000416340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:21 auth.go:14: koko
+2021/06/16 05:44:21 server.go:3139: http: panic serving 172.18.0.1:64932: runtime error: invalid memory address or nil pointer dereference
+goroutine 14 [running]:
+net/http.(*conn).serve.func1(0xc0001c9400)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc000220460, 0xc0001e7400)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc000220460, 0xc0001e7400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc000220460, 0xc0001e7400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc000220460, 0xc0001e7400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c9400, 0x935d60, 0xc0001e9480)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:28 auth.go:14: koko
+2021/06/16 05:44:28 server.go:3139: http: panic serving 172.18.0.1:64936: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+net/http.(*conn).serve.func1(0xc0001c94a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc000220700, 0xc0001e7700)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc000220700, 0xc0001e7700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc000220700, 0xc0001e7700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc000220700, 0xc0001e7700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c94a0, 0x935d60, 0xc0001e9500)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:28 auth.go:14: koko
+2021/06/16 05:44:28 server.go:3139: http: panic serving 172.18.0.1:64942: runtime error: invalid memory address or nil pointer dereference
+goroutine 57 [running]:
+net/http.(*conn).serve.func1(0xc000440140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc00041e540, 0xc00042c600)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc00041e540, 0xc00042c600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc00041e540, 0xc00042c600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc00041e540, 0xc00042c600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000440140, 0x935d60, 0xc0004163c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:29 auth.go:14: koko
+2021/06/16 05:44:29 server.go:3139: http: panic serving 172.18.0.1:64946: runtime error: invalid memory address or nil pointer dereference
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc0001c95e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002ae460, 0xc0001e7800)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002ae460, 0xc0001e7800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002ae460, 0xc0001e7800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae0e0, 0x935268, 0xc0002ae460, 0xc0001e7800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c95e0, 0x935d60, 0xc0001e9980)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:44:36 webserver.go:32: デフォルトのポート 8080
+2021/06/16 05:44:36 webserver.go:34: リッスンしているポート 8080
+2021/06/16 05:44:38 webserver.go:32: デフォルトのポート 8080
+2021/06/16 05:44:39 config.go:47: exit status 2
+2021/06/16 05:44:39 webserver.go:32: デフォルトのポート 8080
+2021/06/16 05:44:39 webserver.go:39: リッスンしているポート 8080
+2021/06/16 05:44:43 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:44:43 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:44:59 config.go:47: exit status 2
+2021/06/16 05:44:59 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:44:59 webserver.go:33: リッスンしているポート 8080
+2021/06/16 05:45:05 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:45:05 webserver.go:33: リッスンしているポート 8080
+2021/06/16 05:45:07 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:45:07 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:45:26 auth.go:14: koko
+2021/06/16 05:45:26 server.go:3139: http: panic serving 172.18.0.1:64968: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001c12c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002262a0, 0xc0001ded00)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002262a0, 0xc0001ded00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002262a0, 0xc0001ded00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0002262a0, 0xc0001ded00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c12c0, 0x935d60, 0xc0001e0e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:26 auth.go:14: koko
+2021/06/16 05:45:26 server.go:3139: http: panic serving 172.18.0.1:64974: runtime error: invalid memory address or nil pointer dereference
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc0001c1400)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc00031a460, 0xc0001dee00)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc00031a460, 0xc0001dee00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc00031a460, 0xc0001dee00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc00031a460, 0xc0001dee00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c1400, 0x935d60, 0xc0001e1600)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:33 auth.go:14: koko
+2021/06/16 05:45:33 server.go:3139: http: panic serving 172.18.0.1:64994: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0002b61e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc00031a700, 0xc0002c6600)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc00031a700, 0xc0002c6600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc00031a700, 0xc0002c6600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc00031a700, 0xc0002c6600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b61e0, 0x935d60, 0xc0002aa1c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:33 auth.go:14: koko
+2021/06/16 05:45:33 server.go:3139: http: panic serving 172.18.0.1:64990: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0002b6140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0000bc0e0, 0xc000348400)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000bc0e0, 0xc000348400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000bc0e0, 0xc000348400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0000bc0e0, 0xc000348400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b6140, 0x935d60, 0xc0002aa040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:33 auth.go:14: koko
+2021/06/16 05:45:33 server.go:3139: http: panic serving 172.18.0.1:64988: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0002b60a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc00031a7e0, 0xc0001df400)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc00031a7e0, 0xc0001df400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc00031a7e0, 0xc0001df400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc00031a7e0, 0xc0001df400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b60a0, 0x935d60, 0xc0002aa100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:33 auth.go:14: koko
+2021/06/16 05:45:33 server.go:3139: http: panic serving 172.18.0.1:64978: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0000980a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002dc1c0, 0xc0002c6400)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002dc1c0, 0xc0002c6400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002dc1c0, 0xc0002c6400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0002dc1c0, 0xc0002c6400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000980a0, 0x935d60, 0xc00009c0c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:33 auth.go:14: koko
+2021/06/16 05:45:33 server.go:3139: http: panic serving 172.18.0.1:64998: runtime error: invalid memory address or nil pointer dereference
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0000981e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0000bc1c0, 0xc0000a4400)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000bc1c0, 0xc0000a4400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000bc1c0, 0xc0000a4400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0000bc1c0, 0xc0000a4400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000981e0, 0x935d60, 0xc00009c2c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:34 auth.go:14: koko
+2021/06/16 05:45:34 server.go:3139: http: panic serving 172.18.0.1:65002: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc0002b6320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0000bc2a0, 0xc0002c6700)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000bc2a0, 0xc0002c6700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000bc2a0, 0xc0002c6700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0000bc2a0, 0xc0002c6700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b6320, 0x935d60, 0xc0002aa440)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:41 auth.go:14: koko
+2021/06/16 05:45:41 server.go:3139: http: panic serving 172.18.0.1:65006: runtime error: invalid memory address or nil pointer dereference
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc000098280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002dc380, 0xc0002c6900)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002dc380, 0xc0002c6900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002dc380, 0xc0002c6900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0002dc380, 0xc0002c6900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000098280, 0x935d60, 0xc00009c480)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:41 auth.go:14: koko
+2021/06/16 05:45:41 server.go:3139: http: panic serving 172.18.0.1:65012: runtime error: invalid memory address or nil pointer dereference
+goroutine 47 [running]:
+net/http.(*conn).serve.func1(0xc0002b6000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002dc000, 0xc0002c6000)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002dc000, 0xc0002c6000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002dc000, 0xc0002c6000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0002dc000, 0xc0002c6000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b6000, 0x935d60, 0xc0002aa040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:45:42 auth.go:14: koko
+2021/06/16 05:45:42 server.go:3139: http: panic serving 172.18.0.1:65016: runtime error: invalid memory address or nil pointer dereference
+goroutine 87 [running]:
+net/http.(*conn).serve.func1(0xc0000980a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002261c0, 0xc0000a4000)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002261c0, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002261c0, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0002261c0, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000980a0, 0x935d60, 0xc00030e000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:47 auth.go:14: koko
+2021/06/16 05:46:47 server.go:3139: http: panic serving 172.18.0.1:65034: runtime error: invalid memory address or nil pointer dereference
+goroutine 80 [running]:
+net/http.(*conn).serve.func1(0xc000340280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0000bc540, 0xc000348b00)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000bc540, 0xc000348b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000bc540, 0xc000348b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0000bc540, 0xc000348b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000340280, 0x935d60, 0xc00009c5c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:47 auth.go:14: koko
+2021/06/16 05:46:47 server.go:3139: http: panic serving 172.18.0.1:65032: runtime error: invalid memory address or nil pointer dereference
+goroutine 81 [running]:
+net/http.(*conn).serve.func1(0xc000340320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc000226a80, 0xc0000a4500)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc000226a80, 0xc0000a4500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc000226a80, 0xc0000a4500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc000226a80, 0xc0000a4500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000340320, 0x935d60, 0xc00009c400)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:47 auth.go:14: koko
+2021/06/16 05:46:47 server.go:3139: http: panic serving 172.18.0.1:65026: runtime error: invalid memory address or nil pointer dereference
+goroutine 79 [running]:
+net/http.(*conn).serve.func1(0xc0003401e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002dc7e0, 0xc0000a4300)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002dc7e0, 0xc0000a4300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002dc7e0, 0xc0000a4300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0002dc7e0, 0xc0000a4300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003401e0, 0x935d60, 0xc0001e0300)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:47 auth.go:14: koko
+2021/06/16 05:46:47 server.go:3139: http: panic serving 172.18.0.1:65020: runtime error: invalid memory address or nil pointer dereference
+goroutine 74 [running]:
+net/http.(*conn).serve.func1(0xc000340000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0000bc700, 0xc000348400)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000bc700, 0xc000348400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000bc700, 0xc000348400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0000bc700, 0xc000348400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000340000, 0x935d60, 0xc00009c1c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:47 auth.go:14: koko
+2021/06/16 05:46:47 server.go:3139: http: panic serving 172.18.0.1:65042: runtime error: invalid memory address or nil pointer dereference
+goroutine 97 [running]:
+net/http.(*conn).serve.func1(0xc000098460)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0000bc8c0, 0xc0000a4900)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000bc8c0, 0xc0000a4900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000bc8c0, 0xc0000a4900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0000bc8c0, 0xc0000a4900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000098460, 0x935d60, 0xc00030eec0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:48 auth.go:14: koko
+2021/06/16 05:46:48 server.go:3139: http: panic serving 172.18.0.1:65046: runtime error: invalid memory address or nil pointer dereference
+goroutine 147 [running]:
+net/http.(*conn).serve.func1(0xc000098500)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0000bca80, 0xc0000a4a00)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000bca80, 0xc0000a4a00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000bca80, 0xc0000a4a00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0000bca80, 0xc0000a4a00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000098500, 0x935d60, 0xc00030f000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:53 auth.go:14: koko
+2021/06/16 05:46:53 server.go:3139: http: panic serving 172.18.0.1:65062: runtime error: invalid memory address or nil pointer dereference
+goroutine 127 [running]:
+net/http.(*conn).serve.func1(0xc000340640)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002dcc40, 0xc0000a5100)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002dcc40, 0xc0000a5100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002dcc40, 0xc0000a5100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0002dcc40, 0xc0000a5100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000340640, 0x935d60, 0xc00009d140)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:53 auth.go:14: koko
+2021/06/16 05:46:53 server.go:3139: http: panic serving 172.18.0.1:65050: runtime error: invalid memory address or nil pointer dereference
+goroutine 134 [running]:
+net/http.(*conn).serve.func1(0xc0001c0b40)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0003182a0, 0xc0002c6300)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0003182a0, 0xc0002c6300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0003182a0, 0xc0002c6300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0003182a0, 0xc0002c6300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c0b40, 0x935d60, 0xc0001e0b40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:53 auth.go:14: koko
+2021/06/16 05:46:53 server.go:3139: http: panic serving 172.18.0.1:65064: runtime error: invalid memory address or nil pointer dereference
+goroutine 126 [running]:
+net/http.(*conn).serve.func1(0xc0003405a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0000bcfc0, 0xc0000a4e00)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000bcfc0, 0xc0000a4e00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000bcfc0, 0xc0000a4e00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0000bcfc0, 0xc0000a4e00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003405a0, 0x935d60, 0xc00030f240)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:53 auth.go:14: koko
+2021/06/16 05:46:53 server.go:3139: http: panic serving 172.18.0.1:65060: runtime error: invalid memory address or nil pointer dereference
+goroutine 125 [running]:
+net/http.(*conn).serve.func1(0xc000340500)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002dce00, 0xc0001def00)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002dce00, 0xc0001def00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002dce00, 0xc0001def00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0002dce00, 0xc0001def00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000340500, 0x935d60, 0xc0001e0f80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:53 auth.go:14: koko
+2021/06/16 05:46:53 server.go:3139: http: panic serving 172.18.0.1:65068: runtime error: invalid memory address or nil pointer dereference
+goroutine 165 [running]:
+net/http.(*conn).serve.func1(0xc0002b60a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0002dcfc0, 0xc0002c6400)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0002dcfc0, 0xc0002c6400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0002dcfc0, 0xc0002c6400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0002dcfc0, 0xc0002c6400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b60a0, 0x935d60, 0xc0002aa680)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:46:54 auth.go:14: koko
+2021/06/16 05:46:54 server.go:3139: http: panic serving 172.18.0.1:65072: runtime error: invalid memory address or nil pointer dereference
+goroutine 153 [running]:
+net/http.(*conn).serve.func1(0xc000098640)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8361c0, 0xb69540)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+github.com/stretchr/gomniauth.Provider(...)
+	/go/pkg/mod/github.com/stretchr/gomniauth@v0.0.0-20170717123514-4b6c822be2eb/shortcuts.go:12
+popular/app/controllers.auth(0x935268, 0xc0000bd180, 0xc0000a5200)
+	/popular/app/controllers/auth.go:21 +0x216
+net/http.HandlerFunc.ServeHTTP(0x8ca510, 0x935268, 0xc0000bd180, 0xc0000a5200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb78340, 0x935268, 0xc0000bd180, 0xc0000a5200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002260e0, 0x935268, 0xc0000bd180, 0xc0000a5200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000098640, 0x935d60, 0xc00030f4c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/16 05:47:00 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:47:00 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:47:02 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:47:02 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:47:02 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:47:02 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:47:06 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:47:06 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:47:20 webserver.go:29: デフォルトのポート 8080
+2021/06/16 05:47:20 webserver.go:31: リッスンしているポート 8080
+2021/06/16 05:47:22 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:47:22 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:47:28 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:47:28 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:47:38 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:47:38 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:47:43 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:47:43 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:48:05 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:48:05 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:48:58 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:48:58 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:49:12 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:49:12 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:49:15 webserver.go:30: デフォルトのポート 8080
+2021/06/16 05:49:15 webserver.go:32: リッスンしているポート 8080
+2021/06/16 05:50:52 webserver.go:31: デフォルトのポート 8080
+2021/06/16 05:50:52 webserver.go:33: リッスンしているポート 8080
+2021/06/16 05:50:55 webserver.go:31: デフォルトのポート 8080
+2021/06/16 05:50:55 webserver.go:33: リッスンしているポート 8080
+2021/06/16 05:50:56 webserver.go:32: デフォルトのポート 8080
+2021/06/16 05:50:56 webserver.go:34: リッスンしているポート 8080
+2021/06/16 05:51:08 webserver.go:32: デフォルトのポート 8080
+2021/06/16 05:51:08 webserver.go:34: リッスンしているポート 8080
+2021/06/16 05:51:53 webserver.go:32: デフォルトのポート 8080
+2021/06/16 05:51:53 webserver.go:34: リッスンしているポート 8080
+2021/06/16 05:52:11 webserver.go:32: デフォルトのポート 8080
+2021/06/16 05:52:11 webserver.go:34: リッスンしているポート 8080
+2021/06/16 05:52:46 webserver.go:32: デフォルトのポート 8080
+2021/06/16 05:52:46 webserver.go:34: リッスンしているポート 8080
+2021/06/16 05:53:15 webserver.go:32: デフォルトのポート 8080
+2021/06/16 05:53:15 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:08:14 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:08:14 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:08:41 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:08:41 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:10:09 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:10:09 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:20:28 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:20:28 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:25:10 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:25:10 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:26:39 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:26:39 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:26:42 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:26:42 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:27:30 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:27:30 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:27:34 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:27:34 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:27:44 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:27:44 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:27:50 webserver.go:32: デフォルトのポート 8080
+2021/06/16 06:27:50 webserver.go:34: リッスンしているポート 8080
+2021/06/16 06:29:47 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:29:47 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:31:14 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:31:14 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:32:31 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:32:31 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:32:33 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:32:33 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:32:53 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:32:53 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:32:57 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:32:57 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:33:04 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:33:04 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:36:28 config.go:47: exit status 2
+2021/06/16 06:36:28 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:36:28 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:37:01 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:37:01 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:37:32 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:37:32 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:37:37 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:37:37 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:38:12 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:38:12 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:38:13 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:38:13 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:39:08 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:39:08 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:39:10 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:39:10 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:39:19 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:39:19 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:39:23 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:39:23 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:41:17 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:41:17 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:42:40 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:42:40 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:42:55 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:42:55 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:43:02 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:43:02 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:43:04 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:43:04 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:43:20 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:43:20 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:43:26 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:43:26 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:43:28 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:43:28 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:43:30 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:43:30 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:43:32 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:43:32 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:58:10 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:58:10 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:58:30 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:58:30 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:58:38 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:58:38 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:58:51 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:58:51 webserver.go:35: リッスンしているポート 8080
+2021/06/16 06:59:42 webserver.go:33: デフォルトのポート 8080
+2021/06/16 06:59:42 webserver.go:35: リッスンしているポート 8080
+2021/06/16 07:00:50 webserver.go:33: デフォルトのポート 8080
+2021/06/16 07:00:50 webserver.go:35: リッスンしているポート 8080
+2021/06/16 07:03:13 webserver.go:34: デフォルトのポート 8080
+2021/06/16 07:03:13 webserver.go:36: リッスンしているポート 8080
+2021/06/16 07:04:13 webserver.go:34: デフォルトのポート 8080
+2021/06/16 07:04:13 webserver.go:36: リッスンしているポート 8080
+2021/06/16 07:04:19 webserver.go:34: デフォルトのポート 8080
+2021/06/16 07:04:19 webserver.go:36: リッスンしているポート 8080
+2021/06/16 07:04:31 webserver.go:34: デフォルトのポート 8080
+2021/06/16 07:04:31 webserver.go:36: リッスンしているポート 8080
+2021/06/16 07:05:54 webserver.go:34: デフォルトのポート 8080
+2021/06/16 07:05:54 webserver.go:36: リッスンしているポート 8080
+2021/06/16 07:36:32 webserver.go:34: デフォルトのポート 8080
+2021/06/16 07:36:32 webserver.go:36: リッスンしているポート 8080
+2021/06/16 08:15:08 webserver.go:35: デフォルトのポート 8080
+2021/06/16 08:15:08 webserver.go:37: リッスンしているポート 8080
+2021/06/16 08:15:29 webserver.go:35: デフォルトのポート 8080
+2021/06/16 08:15:29 webserver.go:37: リッスンしているポート 8080
+2021/06/17 00:44:19 webserver.go:35: デフォルトのポート 8080
+2021/06/17 00:44:19 webserver.go:37: リッスンしているポート 8080
+2021/06/17 00:44:29 webserver.go:35: デフォルトのポート 8080
+2021/06/17 00:44:29 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:09:40 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:09:40 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:12:18 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:12:18 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:12:45 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:12:45 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:12:49 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:12:49 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:13:02 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:13:02 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:13:05 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:13:05 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:13:22 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:13:22 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:13:27 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:13:27 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:13:34 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:13:34 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:13:46 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:13:46 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:16:27 webserver.go:35: デフォルトのポート 8080
+2021/06/17 01:16:27 webserver.go:37: リッスンしているポート 8080
+2021/06/17 01:17:09 webserver.go:34: デフォルトのポート 8080
+2021/06/17 01:17:09 webserver.go:36: リッスンしているポート 8080
+2021/06/17 01:22:17 webserver.go:34: デフォルトのポート 8080
+2021/06/17 01:22:17 webserver.go:36: リッスンしているポート 8080
+2021/06/17 01:36:32 webserver.go:34: デフォルトのポート 8080
+2021/06/17 01:36:32 webserver.go:36: リッスンしているポート 8080

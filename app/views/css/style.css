@@ -1,41 +1,243 @@
-body {
-  color: red !important;
+p {
+  font-size: 1.2rem;
 }
-/* a {
-  margin: .5rem !important;
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration:none;
+  color: #9D00FF;;
 }
-.form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
+button {
+  color: white !important;
 }
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
+.text-gray-500,.text-gray-500 a {
+  color: rgba(108,117,125,0.9);
+  font-size: .75rem;
 }
-.form-signin .checkbox {
-  font-weight: normal;
+.p-10 {
+  padding: 2.5rem;
 }
-.form-signin .form-control {
+.display {
+  display: none;
+}
+.underline {
+  text-decoration:underline !important;
+}
+.text-purple {
+  color: #9D00FF;
+}
+.navbar {
+  background-color: #9D00FF;
+  padding: 0 1rem;
+}
+.navbar-brand {
+  font-size: 1.75rem;
+}
+.title {
+  font-size: 4.6rem;
+  font-weight: bold;
+}
+.subtitle {
+  font-size: 2rem;
+}
+.happy-img {
+  margin-left: -45px;
+}
+.btn-lightblue {
+  background-color: rgb(63,172,238);
+}
+.btn-navyblue {
+  background-color: rgb(43,108,176);
+}
+.btn-purple {
+  background-color: rgba(157,0,255,0.6);
+}
+.btn-home {
+  background-color: rgba(108,117,125,0.9);
+  font-size: 1.8rem;
+  width: 150%;
   position: relative;
-  height: auto;
-  -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
+  right: 85px;
 }
-.form-signin .form-control:focus {
-  z-index: 2;
-  background-color:#ccffcc;
+.btn-login {
+  background-color: rgb(63,172,238);
+  font-size: 1.8rem;
+  width: 150%;
+  position: relative;
+  right: 85px;
 }
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.hukidashi-container {
+  position: relative;
 }
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-} */
+.hukidashi {
+  width: 130%;
+  position: absolute;
+  top: -60px;
+  right: -140px;
+  z-index: -999;
+}
+.hukidashi-text {
+  position: absolute;
+  top: 127px;
+  right: -85px;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+footer {
+  margin-top: 35px;
+  background-color:rgba(157,0,255,0.1);
+}
+.hx_kei_img {
+  width: 30px;
+  border-radius: 20px;
+}
+.share-text {
+  color: #9D00FF;
+}
+.lead {
+  font-size: 2rem;
+}
+.text-contact {
+  color: rgba(33,38,41,0.8);
+}
+.require {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 1px 5px;
+  margin-left: 5px;
+}
+.any {
+  background-color: #8d8d8d;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 1px 5px;
+  margin-left: 5px;
+}
+.other,.other2 {
+  margin: 5px 0;
+}
+.other-text {
+  padding: 0.3rem 0.3rem;
+}
+#os-select {
+  height: 110px;
+  padding: 3px 3px;
+}
+#browser-select {
+  height: 116px;
+  padding: 3px 3px;
+}
+.picture-img img{
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.search-img {
+  height: 3.5rem;
+  width: 150%;
+  position: relative;
+  right: 85px;
+  outline: 0;
+  padding: 0 50px;
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+.search-img:focus {
+  background-color: rgba(0,123,255,.1);
+  box-shadow: 0 0 0 0.1rem rgba(52,58,64);
+}
+.search-icon {
+  position: relative;
+  top: -41px;
+  right: 225px;
+  font-size: 1.5rem;
+  color: rgba(33,38,41,0.5);
+}
+#login {
+  margin-right: 0;
+}
+.dropdown {
+  padding: 20px 0;
+}
+.dropdown-item {
+  padding: 0.6rem 3.5rem 0.6rem 1.5rem;
+}
+.dropdown-item:hover {
+  background-color: rgba(138,141,145,0.2);
+}
+.dropdown-menu {
+  padding: 0;
+}
+.auth-img {
+  border-radius: 2rem;
+  width: 43%;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+}
+.dropdown:hover + .dropdown-menu{
+  display: block;
+}
+.dropdown-menu:hover{
+  display: block;
+}
+.dropdown-menu-right {
+  margin-right: 390px;
+}
+@media only screen and (max-width:640px) {
+.display {
+  display: block;
+}
+#login {
+  margin-right: 0;
+  font-size: 1.5rem;
+}
+.manual {
+  display: none;
+}
+.order-md-3 {
+  position: abslute;
+}
+.btn-home,.btn-login {
+  width: 100%;
+  position: initial;
+  padding: 0;
+  font-size: 1.125rem;
+}
+.happy-img {
+  margin: 50px auto 0;
+}
+.happy-img img {
+  width: 75%;
+  margin-top: 50px;
+}
+.hukidashi {
+  width: 40%;
+  top: -100px;
+}
+.hukidashi-container {
+  position: absolute;
+  top: 263px;
+  left: -135px;
+}
+.hukidashi-text {
+  top: -42px;
+  right: -131px;
+  font-size: 0.8rem;
+}
+.subtitle {
+  font-size: 1.8rem;
+}
+.title {
+  font-size: 3.2rem;
+  line-height: 0;
+}
+.order-md-1 {
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+.contact-form {
+  width: 100% !important;
+}
+.contact-subtitle {
+  font-size: 1rem;
+}
+}

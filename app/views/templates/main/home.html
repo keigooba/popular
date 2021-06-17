@@ -1,0 +1,50 @@
+{{define "content"}}
+<div class="container p-10 text-center text-purple" style="padding-bottom: 1rem;">
+  <div class="row">
+    <div class="col-md-4 picture-img order-md-3">
+      <h4 class="text-secondary">検索画像</h4>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/views/img/bidanshi.jpeg" alt="美男子">
+          美男子
+          <img src="/views/img/yuyake.jpeg" alt="夕焼け">
+          夕焼け
+          <img src="/views/img/cake.jpeg" alt="ケーキ">
+          ケーキ
+        </div>
+        <div class="col-md-6">
+          <img src="/views/img/bijin.jpeg" alt="美人">
+          美人
+          <img src="/views/img/doubutu.jpeg" alt="動物">
+          動物
+          <img src="/views/img/sport.jpeg" alt="スポーツ">
+          スポーツ
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 order-md-2">
+      <span class="subtitle">ようこそ！</span><br>
+      <img src="/views/img/@hx_kei.jpeg" alt="twitterの写真" class="w-50 rounded-circle my-4">
+      <div class="border border-dark my-4 py-4 font-weight-bold rounded">
+        <p>好みの画像を検索して、<br>
+          タップすると投稿できます</p>
+        <p class="pt-4">さっそく投稿してみましょう</p>
+      </div>
+      <form action="/home" method="post" class="d-inline">
+        <input type="text" class="rounded-pill search-img text-center" placeholder="画像を検索">
+        <i class="fas fa-search search-icon"></i>
+      </form>
+    </div>
+    <div class="col-md-4 order-md-1">
+      <h4 class="text-secondary">つかいかた</h4>
+      <p>①    好みの画像を検索しよう</p>
+      <img src="" alt="①好みの画像を検索しよう">
+      <p>②      画像を押して投稿</p>
+      <img src="" alt="②画像を押して投稿">
+      <p class="mt-4 font-weight-bold">いいねやフォロワーを増やして人気者を目指そう！！</p>
+      <button class="btn btn-lightblue"><i class="fab fa-twitter mr-1"></i>ツイート</button>
+      <button class="btn btn-navyblue"><i class="fab fa-facebook-f mr-1"></i>Facebook</button>
+    </div>
+  </div>
+</div>
+{{end}}

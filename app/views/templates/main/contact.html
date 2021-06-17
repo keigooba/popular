@@ -1,0 +1,45 @@
+{{define "content"}}
+<div class="container p-10 text-contact">
+  <div class="text-center">
+    <p class="lead">popularに関するお問い合わせ</p>
+    <p class="contact-subtitle">感想・不具合・改善点などお聞かせください<br>
+      popular<a href="https://popular-32pe64nwja-an.a.run.app">(https://popular-32pe64nwja-an.a.run.app)</a>
+    </p>
+  </div>
+  <form action="/contact" class="w-50 mx-auto contact-form" method="post">
+    <div class="form-group">
+      <label for="FormControlTextarea1" class="form-label">内容<span class="require">必須</span></label>
+      <textarea class="form-control" id="FormControlTextarea1" rows="4" name="content" required></textarea>
+    </div>
+    <div class="form-group">
+      <label>お使いのOS（不具合・改善点の場合）<span class="any">任意</span></label><br>
+      <select class="form-select w-100" multiple aria-label="multiple select" id="os-select" name="os_id">
+        <option value="0">iPhone</option>
+        <option value="1">Android</option>
+        <option value="2">Mac</option>
+        <option value="3">Windows</option>
+        <option value="4">その他</option>
+      </select>
+      <div class="other"></div>
+    </div>
+    <div class="form-group">
+      <label>お使いのブラウザ（不具合・改善点の場合）<span class="any">任意</span></label><br>
+      <select class="form-select w-100" multiple aria-label="multiple select" id="browser-select" name="browser_id">
+        <option value="0">Safari</option>
+        <option value="1">Chrome</option>
+        <option value="2">Twitterのブラウザ</option>
+        <option value="3">Firefox</option>
+        <option value="4">その他</option>
+      </select>
+      <div class="other2"></div>
+    </div>
+    <div class="form-group">
+      <label for="FormControlAccount" class="form-label">返信が必要な場合のツイッターアカウント名<span class="any">任意</span></label>
+      <input type="text" name="other" placeholder="@hx_kei" class="other-text w-100" id="FormControlAccount">
+    </div>
+    <div class="form-group mt-4">
+      <button type="submit" class="btn btn-purple btn-lg w-100">送信</button>
+    </div>
+  </form>
+</div>
+{{end}}

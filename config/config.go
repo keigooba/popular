@@ -15,11 +15,13 @@ import (
 )
 
 type ConfigList struct {
-	Port    string `json:"port"`
-	LogFile string `json:"log_file"`
-	View    string `json:"view"`
-	URL     string `json:"url"`
-	Version string `json:"version"`
+	Port          string `json:"port"`
+	LogFile       string `json:"log_file"`
+	View          string `json:"view"`
+	URL           string `json:"url"`
+	Version       string `json:"version"`
+	TwitterKey    string `json:"twitterConsumerKey"`
+	TwitterSecret string `json:"twitterConsumerSecret"`
 }
 
 // Config Configの定義
