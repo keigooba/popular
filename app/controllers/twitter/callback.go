@@ -1,10 +1,10 @@
 package controllersTwitter
 
 import (
-	"popular/lib/twitter"
+	"log"
+	"net/http"
 
 	"github.com/astaxie/beego"
-	"github.com/garyburd/go-oauth/oauth"
 )
 
 // CallbackController コールバックコントローラ
@@ -19,36 +19,36 @@ type CallbackRequest struct {
 }
 
 // Get コールバックする
-func (c *CallbackController) Get() {
-	c.StartSession()
+func TwitterCallbackHandler(w http.ResponseWriter, r *http.Request) {
 
-	request := CallbackRequest{}
-	if err := c.ParseForm(&request); err != nil {
-		panic(err)
-	}
+	log.Panicln("koko")
+	// request := CallbackRequest{}
+	// if err := c.ParseForm(&request); err != nil {
+	// 	panic(err)
+	// }
 
-	at, err := twitter.GetAccessToken(
-		&oauth.Credentials{
-			Token:  c.CruSession.Get("request_token").(string),
-			Secret: c.CruSession.Get("request_token_secret").(string),
-		},
-		request.Verifier,
-	)
-	if err != nil {
-		panic(err)
-	}
+	// at, err := twitter.GetAccessToken(
+	// 	&oauth.Credentials{
+	// 		Token:  c.CruSession.Get("request_token").(string),
+	// 		Secret: c.CruSession.Get("request_token_secret").(string),
+	// 	},
+	// 	request.Verifier,
+	// )
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	c.CruSession.Set("oauth_secret", at.Secret)
-	c.CruSession.Set("oauth_token", at.Token)
+	// c.CruSession.Set("oauth_secret", at.Secret)
+	// c.CruSession.Set("oauth_token", at.Token)
 
-	account := twitter.Account{}
-	if err = twitter.GetMe(at, &account); err != nil {
-		panic(err)
-	}
+	// account := twitter.Account{}
+	// if err = twitter.GetMe(at, &account); err != nil {
+	// 	panic(err)
+	// }
 
-	c.Data["ID"] = account.ID
-	c.Data["ProfileImageURL"] = account.ProfileImageURL
-	c.Data["ScreenName"] = account.ScreenName
-	c.Data["Email"] = account.Email
-	c.TplName = "twitter/callback.tpl"
+	// c.Data["ID"] = account.ID
+	// c.Data["ProfileImageURL"] = account.ProfileImageURL
+	// c.Data["ScreenName"] = account.ScreenName
+	// c.Data["Email"] = account.Email
+	// c.TplName = "twitter/callback.tpl"
 }

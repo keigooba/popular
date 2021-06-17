@@ -2632,3 +2632,425 @@ created by net/http.(*Server).Serve
 2021/06/17 01:22:17 webserver.go:36: リッスンしているポート 8080
 2021/06/17 01:36:32 webserver.go:34: デフォルトのポート 8080
 2021/06/17 01:36:32 webserver.go:36: リッスンしているポート 8080
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      2021/06/17 02:58:55 webserver.go:34: デフォルトのポート 8080
+2021/06/17 02:58:55 webserver.go:36: リッスンしているポート 8080
+2021/06/17 03:00:51 webserver.go:34: デフォルトのポート 8080
+2021/06/17 03:00:51 webserver.go:36: リッスンしているポート 8080
+2021/06/17 03:01:22 webserver.go:34: デフォルトのポート 8080
+2021/06/17 03:01:22 webserver.go:36: リッスンしているポート 8080
+2021/06/17 03:01:28 webserver.go:34: デフォルトのポート 8080
+2021/06/17 03:01:28 webserver.go:36: リッスンしているポート 8080
+2021/06/17 04:04:24 webserver.go:34: デフォルトのポート 8080
+2021/06/17 04:04:24 webserver.go:36: リッスンしているポート 8080
+2021/06/17 04:05:55 webserver.go:35: デフォルトのポート 8080
+2021/06/17 04:05:55 webserver.go:37: リッスンしているポート 8080
+2021/06/17 04:06:16 webserver.go:35: デフォルトのポート 8080
+2021/06/17 04:06:16 webserver.go:37: リッスンしているポート 8080
+2021/06/17 04:46:06 webserver.go:36: デフォルトのポート 8080
+2021/06/17 04:46:06 webserver.go:38: リッスンしているポート 8080
+2021/06/17 04:53:03 webserver.go:36: デフォルトのポート 8080
+2021/06/17 04:53:03 webserver.go:38: リッスンしているポート 8080
+2021/06/17 04:55:31 webserver.go:36: デフォルトのポート 8080
+2021/06/17 04:55:31 webserver.go:38: リッスンしているポート 8080
+2021/06/17 04:55:50 webserver.go:36: デフォルトのポート 8080
+2021/06/17 04:55:50 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:08:24 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:08:24 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:08:30 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:08:30 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:11:24 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:11:24 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:11:39 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:11:39 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:11:49 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:11:49 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:11:59 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:11:59 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:14:06 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:14:06 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:20:30 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:20:30 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:23:07 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:23:07 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:26:29 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:26:29 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:26:47 webserver.go:36: デフォルトのポート 8080
+2021/06/17 05:26:47 webserver.go:38: リッスンしているポート 8080
+2021/06/17 05:32:00 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:32:00 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:32:10 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:32:10 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:32:25 server.go:3139: http: panic serving 172.21.0.1:62986: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc00032c780)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xa8bb20, 0xc00029a900)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0xba5ed8, 0xc00026e0e0, 0xc0000b0300)
+	/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0xb0e320, 0xba5ed8, 0xc00026e0e0, 0xc0000b0300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xf1bba0, 0xba5ed8, 0xc00026e0e0, 0xc0000b0300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0003201c0, 0xba5ed8, 0xc00026e0e0, 0xc0000b0300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00032c780, 0xba7458, 0xc0003064c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 05:32:25 server.go:3139: http: panic serving 172.21.0.1:62992: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc00017e000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xa8bb20, 0xc00029a9c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0xba5ed8, 0xc0003d80e0, 0xc0001de000)
+	/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0xb0e320, 0xba5ed8, 0xc0003d80e0, 0xc0001de000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xf1bba0, 0xba5ed8, 0xc0003d80e0, 0xc0001de000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0003201c0, 0xba5ed8, 0xc0003d80e0, 0xc0001de000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00017e000, 0xba7458, 0xc000306080)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 05:32:27 server.go:3139: http: panic serving 172.21.0.1:62996: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0xc000172960)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xa8bb20, 0xc000306a80)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0xba5ed8, 0xc0003d82a0, 0xc0000b0200)
+	/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0xb0e320, 0xba5ed8, 0xc0003d82a0, 0xc0000b0200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xf1bba0, 0xba5ed8, 0xc0003d82a0, 0xc0000b0200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0003201c0, 0xba5ed8, 0xc0003d82a0, 0xc0000b0200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000172960, 0xba7458, 0xc00029aa00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 05:32:47 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:32:47 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:33:06 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:33:06 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:33:21 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:33:21 webserver.go:39: リッスンしているポート 8080
+2021/06/17 14:35:13 webserver.go:37: デフォルトのポート 8080
+2021/06/17 14:35:13 webserver.go:39: リッスンしているポート 8080
+2021/06/17 14:35:13 main.go:10: listen tcp :8080: bind: address already in use
+2021/06/17 14:35:58 webserver.go:37: デフォルトのポート 8080
+2021/06/17 14:35:58 webserver.go:39: リッスンしているポート 8080
+2021/06/17 14:36:11 server.go:3139: http: panic serving [::1]:61551: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc00031c780)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x168bd80, 0xc000178000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a70b0, 0xc0002a20e0, 0xc000398300)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0x170e578, 0x17a70b0, 0xc0002a20e0, 0xc000398300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b23840, 0x17a70b0, 0xc0002a20e0, 0xc000398300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0003141c0, 0x17a70b0, 0xc0002a20e0, 0xc000398300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00031c780, 0x17a8638, 0xc000038500)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:36:11 server.go:3139: http: panic serving [::1]:61553: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc00071a1e0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x168bd80, 0xc0001780c0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a70b0, 0xc000718380, 0xc000210000)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0x170e578, 0x17a70b0, 0xc000718380, 0xc000210000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b23840, 0x17a70b0, 0xc000718380, 0xc000210000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0003141c0, 0x17a70b0, 0xc000718380, 0xc000210000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00071a1e0, 0x17a8638, 0xc000404040)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:36:12 server.go:3139: http: panic serving [::1]:61554: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 68 [running]:
+net/http.(*conn).serve.func1(0xc00071a280)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x168bd80, 0xc000404400)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a70b0, 0xc000718540, 0xc000210300)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0x170e578, 0x17a70b0, 0xc000718540, 0xc000210300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b23840, 0x17a70b0, 0xc000718540, 0xc000210300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0003141c0, 0x17a70b0, 0xc000718540, 0xc000210300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00071a280, 0x17a8638, 0xc000404200)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:36:41 webserver.go:37: デフォルトのポート 8080
+2021/06/17 14:36:41 webserver.go:39: リッスンしているポート 8080
+2021/06/17 14:36:45 server.go:3139: http: panic serving [::1]:61560: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0001cc780)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x168bd80, 0xc00025f7c0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a70b0, 0xc00039c620, 0xc00023e900)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0x170e578, 0x17a70b0, 0xc00039c620, 0xc00023e900)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b23840, 0x17a70b0, 0xc00039c620, 0xc00023e900)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00028e1c0, 0x17a70b0, 0xc00039c620, 0xc00023e900)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001cc780, 0x17a8638, 0xc0001ecc80)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:36:45 server.go:3139: http: panic serving [::1]:61562: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 58 [running]:
+net/http.(*conn).serve.func1(0xc0001b80a0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x168bd80, 0xc00025f9c0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a70b0, 0xc0007a21c0, 0xc000324300)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0x170e578, 0x17a70b0, 0xc0007a21c0, 0xc000324300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b23840, 0x17a70b0, 0xc0007a21c0, 0xc000324300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00028e1c0, 0x17a70b0, 0xc0007a21c0, 0xc000324300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001b80a0, 0x17a8638, 0xc00025f800)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:36:46 server.go:3139: http: panic serving [::1]:61563: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 33 [running]:
+net/http.(*conn).serve.func1(0xc0000ac1e0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x168bd80, 0xc00025e940)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a70b0, 0xc0003d80e0, 0xc00023e000)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0x170e578, 0x17a70b0, 0xc0003d80e0, 0xc00023e000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b23840, 0x17a70b0, 0xc0003d80e0, 0xc00023e000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00028e1c0, 0x17a70b0, 0xc0003d80e0, 0xc00023e000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000ac1e0, 0x17a8638, 0xc0004c6000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:36:51 server.go:3139: http: panic serving [::1]:61565: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 67 [running]:
+net/http.(*conn).serve.func1(0xc0001b80a0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x168bd80, 0xc00030c340)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a70b0, 0xc0003d82a0, 0xc00023e400)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0x170e578, 0x17a70b0, 0xc0003d82a0, 0xc00023e400)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b23840, 0x17a70b0, 0xc0003d82a0, 0xc00023e400)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00028e1c0, 0x17a70b0, 0xc0003d82a0, 0xc00023e400)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001b80a0, 0x17a8638, 0xc00030c040)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:37:22 server.go:3139: http: panic serving [::1]:61567: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 61 [running]:
+net/http.(*conn).serve.func1(0xc000244f00)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x168bd80, 0xc00025ec40)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a70b0, 0xc0007a21c0, 0xc000324000)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0x170e578, 0x17a70b0, 0xc0007a21c0, 0xc000324000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b23840, 0x17a70b0, 0xc0007a21c0, 0xc000324000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00028e1c0, 0x17a70b0, 0xc0007a21c0, 0xc000324000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000244f00, 0x17a8638, 0xc00025e980)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:38:22 server.go:3139: http: panic serving [::1]:61573: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+goroutine 64 [running]:
+net/http.(*conn).serve.func1(0xc0002450e0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x168bd80, 0xc00025ee40)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a70b0, 0xc0007a2380, 0xc000324400)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:16 +0x3a7
+net/http.HandlerFunc.ServeHTTP(0x170e578, 0x17a70b0, 0xc0007a2380, 0xc000324400)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b23840, 0x17a70b0, 0xc0007a2380, 0xc000324400)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00028e1c0, 0x17a70b0, 0xc0007a2380, 0xc000324400)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002450e0, 0x17a8638, 0xc00025ec80)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:38:58 webserver.go:37: デフォルトのポート 8080
+2021/06/17 14:38:58 webserver.go:39: リッスンしているポート 8080
+2021/06/17 14:39:50 webserver.go:37: デフォルトのポート 8080
+2021/06/17 14:39:50 webserver.go:39: リッスンしているポート 8080
+2021/06/17 14:41:44 config.go:49: exit status 2
+2021/06/17 14:41:44 webserver.go:37: デフォルトのポート 8080
+2021/06/17 14:41:44 webserver.go:39: リッスンしているポート 8080
+2021/06/17 14:41:50 oauth.go:17: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+2021/06/17 14:41:50 server.go:3139: http: panic serving [::1]:61595: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc0002a66e0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x162f220, 0x1b0da00)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a7150, 0xc00029e2a0, 0xc0002bc100)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x170e648, 0x17a7150, 0xc00029e2a0, 0xc0002bc100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b24840, 0x17a7150, 0xc00029e2a0, 0xc0002bc100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00029e1c0, 0x17a7150, 0xc00029e2a0, 0xc0002bc100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002a66e0, 0x17a86d8, 0xc000038500)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:42:18 config.go:49: exit status 2
+2021/06/17 14:42:18 webserver.go:37: デフォルトのポート 8080
+2021/06/17 14:42:18 webserver.go:39: リッスンしているポート 8080
+2021/06/17 14:42:42 webserver.go:37: デフォルトのポート 8080
+2021/06/17 14:42:42 webserver.go:39: リッスンしているポート 8080
+2021/06/17 14:42:51 oauth.go:17: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+2021/06/17 14:42:51 server.go:3139: http: panic serving [::1]:61607: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc0002c0640)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x162f220, 0x1b0da00)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a7150, 0xc0002ae2a0, 0xc0002dc100)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x170e648, 0x17a7150, 0xc0002ae2a0, 0xc0002dc100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b24840, 0x17a7150, 0xc0002ae2a0, 0xc0002dc100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae1c0, 0x17a7150, 0xc0002ae2a0, 0xc0002dc100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002c0640, 0x17a86d8, 0xc0002be480)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:42:56 oauth.go:17: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+2021/06/17 14:42:56 server.go:3139: http: panic serving [::1]:61609: runtime error: invalid memory address or nil pointer dereference
+goroutine 47 [running]:
+net/http.(*conn).serve.func1(0xc0005a8140)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x162f220, 0x1b0da00)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a7150, 0xc0005ae2a0, 0xc000242700)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x170e648, 0x17a7150, 0xc0005ae2a0, 0xc000242700)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b24840, 0x17a7150, 0xc0005ae2a0, 0xc000242700)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae1c0, 0x17a7150, 0xc0005ae2a0, 0xc000242700)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0005a8140, 0x17a86d8, 0xc0002be000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 14:42:56 oauth.go:17: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+2021/06/17 14:42:56 server.go:3139: http: panic serving [::1]:61612: runtime error: invalid memory address or nil pointer dereference
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc0005a81e0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x162f220, 0x1b0da00)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x17a7150, 0xc0002ae380, 0xc0002dc000)
+	/Users/keigo/Desktop/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x170e648, 0x17a7150, 0xc0002ae380, 0xc0002dc000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1b24840, 0x17a7150, 0xc0002ae380, 0xc0002dc000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ae1c0, 0x17a7150, 0xc0002ae380, 0xc0002dc000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0005a81e0, 0x17a86d8, 0xc0002be0c0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/17 05:44:23 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:44:23 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:44:35 oauth.go:15: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+2021/06/17 05:44:45 oauth.go:15: OAuth server status 401, <?xml version='1.0' encoding='UTF-8'?><errors><error code="417">Desktop applications only support the oauth_callback value 'oob'</error></errors>
+2021/06/17 05:47:16 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:47:16 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:47:25 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:47:25 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:47:38 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:47:38 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:53:43 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:53:43 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:53:47 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:53:47 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:53:49 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:53:49 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:54:10 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:54:10 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:54:15 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:54:15 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:54:27 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:54:27 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:54:30 oauth.go:13: &{{ryHyeEZb2nNJXakJ9wDMdrbbC 8TzaXHkaEQ02KwnfwxsXtHudizRuhV18sP8CkJJ8iqGKedFmw3} https://api.twitter.com/oauth/request_token https://api.twitter.com/oauth/authorize https://api.twitter.com/oauth/access_token    map[] HMAC-SHA1 <nil>}
+2021/06/17 05:57:19 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:57:19 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:57:21 oauth.go:13: {ryHyeEZb2nNJXakJ9wDMdrbbC 8TzaXHkaEQ02KwnfwxsXtHudizRuhV18sP8CkJJ8iqGKedFmw3}
+2021/06/17 05:58:48 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:58:48 webserver.go:39: リッスンしているポート 8080
+2021/06/17 05:58:49 webserver.go:37: デフォルトのポート 8080
+2021/06/17 05:58:49 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:28:18 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:28:18 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:36:18 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:36:18 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:43:14 oauth.go:13: {GPkT4M74F8WypWDYpVfACT3Za NZPCSF3Rd1TOqON8xU6fFnTv7cI9F5oA7eN6kqSYhV4CZ9KKHU}
+2021/06/17 06:43:43 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:43:43 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:43:44 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:43:44 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:43:52 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:43:52 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:43:53 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:43:53 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:44:32 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:44:32 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:46:14 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:46:14 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:46:36 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:46:36 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:57:53 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:57:53 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:58:07 webserver.go:37: デフォルトのポート 8080
+2021/06/17 06:58:07 webserver.go:39: リッスンしているポート 8080
+2021/06/17 06:58:09 oauth.go:33: https://api.twitter.com/oauth/authorize?oauth_token=5_5_EQAAAAABQwFxAAABehjDR9o
+2021/06/17 06:58:52 oauth.go:33: https://api.twitter.com/oauth/authorize?oauth_token=VreqMQAAAAABQwFxAAABehjD77c
+2021/06/17 07:03:17 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:03:17 webserver.go:39: リッスンしているポート 8080

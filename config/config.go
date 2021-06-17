@@ -15,13 +15,13 @@ import (
 )
 
 type ConfigList struct {
-	Port          string `json:"port"`
-	LogFile       string `json:"log_file"`
-	View          string `json:"view"`
-	URL           string `json:"url"`
-	Version       string `json:"version"`
-	TwitterKey    string `json:"twitterConsumerKey"`
-	TwitterSecret string `json:"twitterConsumerSecret"`
+	Port                  string `json:"port"`
+	LogFile               string `json:"log_file"`
+	View                  string `json:"view"`
+	URL                   string `json:"url"`
+	Version               string `json:"version"`
+	TwitterConsumerKey    string `json:"twitterConsumerKey"`
+	TwitterConsumerSecret string `json:"twitterConsumerSecret"`
 }
 
 // Config Configの定義
@@ -63,8 +63,8 @@ func LoadConfig() error {
 		return err
 	}
 
-	format := "Port: %s\nLogFile: %s\nView: %s\nURL: %s\nVersion: %s\n"
-	_, err = fmt.Printf(format, Config.Port, Config.LogFile, Config.View, Config.URL, Config.Version)
+	format := "Port: %s\nLogFile: %s\nView: %s\nURL: %s\nVersion: %s\n TwitterConsumerKey:%s\n TwitterConsumerSecret:%s\n"
+	_, err = fmt.Printf(format, Config.Port, Config.LogFile, Config.View, Config.URL, Config.Version, Config.TwitterConsumerKey, Config.TwitterConsumerSecret)
 	if err != nil {
 		return err
 	}

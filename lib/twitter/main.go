@@ -2,17 +2,11 @@ package twitter
 
 import (
 	"encoding/json"
-	"net/url"
-
 	"errors"
+	"net/url"
+	"popular/config"
 
-	"github.com/astaxie/beego"
 	"github.com/garyburd/go-oauth/oauth"
-)
-
-var (
-	tempCredKey  string
-	tokenCredKey string
 )
 
 // Account アカウント
@@ -23,11 +17,6 @@ type Account struct {
 	Email           string `json:"email"`
 }
 
-func init() {
-	tempCredKey = beego.AppConfig.String("twitterConsumerKey")
-	tokenCredKey = beego.AppConfig.String("twitterConsumerSecret")
-}
-
 // GetConnect 接続を取得する
 func GetConnect() *oauth.Client {
 	return &oauth.Client{
@@ -35,19 +24,19 @@ func GetConnect() *oauth.Client {
 		ResourceOwnerAuthorizationURI: "https://api.twitter.com/oauth/authorize",
 		TokenRequestURI:               "https://api.twitter.com/oauth/access_token",
 		Credentials: oauth.Credentials{
-			Token:  tempCredKey,
-			Secret: tokenCredKey,
+			Token:  config.Config.TwitterConsumerKey,
+			Secret: config.Config.TwitterConsumerSecret,
 		},
 	}
 }
 
 // GetAccessToken アクセストークンを取得する
-func GetAccessToken(rt *oauth.Credentials, oauthVerifier string) (*oauth.Credentials, error) {
-	oc := GetConnect()
-	at, _, err := oc.RequestToken(nil, rt, oauthVerifier)
+// func GetAccessToken(rt *oauth.Credentials, oauthVerifier string) (*oauth.Credentials, error) {
+// 	oc := GetConnect()
+// 	at, _, err := oc.RequestToken(nil, rt, oauthVerifier)
 
-	return at, err
-}
+// 	return at, err
+// }
 
 // GetMe 自身を取得する
 func GetMe(at *oauth.Credentials, user *Account) error {
@@ -79,19 +68,19 @@ func GetMe(at *oauth.Credentials, user *Account) error {
 
 }
 
-// PostTweet Tweetを投稿する
-func PostTweet(at *oauth.Credentials) error {
-	oc := GetConnect()
+// // PostTweet Tweetを投稿する
+// func PostTweet(at *oauth.Credentials) error {
+// 	oc := GetConnect()
 
-	v := url.Values{}
-	v.Set("status", "テスト投稿。APIから投稿しました。\n投稿元：https://github.com/wheatandcat/popular")
+// 	v := url.Values{}
+// 	v.Set("status", "テスト投稿。APIから投稿しました。\n投稿元：https://github.com/wheatandcat/popular")
 
-	resp, err := oc.Post(nil, at, "https://api.twitter.com/1.1/statuses/update.json", v)
-	if err != nil {
-		return err
-	}
-	defer resp.Body.Close()
+// 	resp, err := oc.Post(nil, at, "https://api.twitter.com/1.1/statuses/update.json", v)
+// 	if err != nil {
+// 		return err
+// 	}
+// 	defer resp.Body.Close()
 
-	return nil
+// 	return nil
 
-}
+// }
