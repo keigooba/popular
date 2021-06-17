@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	controllersTwitter "popular/app/controllers/twitter"
 	"popular/config"
 	"text/template"
 
@@ -21,6 +22,8 @@ func StartWebServer() error {
 		http.ServeFile(w, r, "config/config.json") //ファイルにアクセス
 	})
 	http.HandleFunc("/contact", contactHandler)
+	http.HandleFunc("/twitter/oauth", controllersTwitter.TwitterAuthHandler)
+	http.HandleFunc("/twitter/callback", controllersTwitter.TwitterAuthHandler)
 	http.HandleFunc("/agreement", homeHandler)
 	http.HandleFunc("/privacy_policy", homeHandler)
 	http.HandleFunc("/home", homeHandler)
@@ -37,7 +40,7 @@ func StartWebServer() error {
 	return http.ListenAndServe(fmt.Sprintf(":%s", Port), nil)
 }
 
-func versionHandler(w http.ResponseWriter, _ *http.Request) {
+func versionHandler(_ http.ResponseWriter, _ *http.Request) {
 	// 最新版バージョンチェック
 	json := &latest.JSON{
 		// JSONを返すURL
@@ -94,7 +97,7 @@ func generateHTML(w http.ResponseWriter, data interface{}, filenames ...string) 
 	}
 }
 
-func session(w http.ResponseWriter, r *http.Request) (data map[string]interface{}, err error) {
+func session(_ http.ResponseWriter, r *http.Request) (data map[string]interface{}, err error) {
 	data = map[string]interface{}{
 		"Host": r.Host,
 	}
