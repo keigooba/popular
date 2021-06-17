@@ -12,7 +12,7 @@ import (
 func TwitterAuthHandler(w http.ResponseWriter, r *http.Request) {
 
 	config := twitter.GetConnect()
-	rt, err := config.RequestTemporaryCredentials(nil, "http://localhost:8080/twitter/callback", nil)
+	rt, err := config.RequestTemporaryCredentials(nil, "https://popular-32pe64nwja-an.a.run.app/twitter/callback", nil)
 	if err != nil {
 		log.Println(err)
 	}
