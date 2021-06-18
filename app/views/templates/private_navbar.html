@@ -5,10 +5,12 @@
 		<ul class="navbar-nav w-100">
 			<li class="nav-item ml-auto text-right">
 				<div class="dropdown text-right d-inline">
-					<a href="#"><img src="{{.UserData.avatar_url}}" alt="登録された画像" class="auth-img"></a>
+					<a href="#"><img src="{{.UserData.avatar_url}}" alt="{{.UserData.name}}" class="auth-img"></a>
 				</div>
 				<div class="dropdown-menu dropdown-menu-right">
+					{{if not .HomeUser}}
 					<a class="dropdown-item text-dark" href="/home"><i class="fas fa-home mr-1"></i>ホームへ</a>
+					{{end}}
 					<a class="dropdown-item text-dark" href="/logout"><i class="fas fa-sign-out-alt mr-1"></i>ログアウト</a>
 				</div>
 			</li>

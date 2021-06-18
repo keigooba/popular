@@ -3056,3 +3056,2968 @@ created by net/http.(*Server).Serve
 2021/06/17 07:03:17 webserver.go:39: リッスンしているポート 8080
 2021/06/17 07:14:51 webserver.go:37: デフォルトのポート 8080
 2021/06/17 07:14:51 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:19:47 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:19:47 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:20:43 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:20:43 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:21:00 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:21:00 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:21:42 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:21:42 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:24:21 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:24:21 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:25:23 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:25:23 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:25:40 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:25:40 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:36:23 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:23 server.go:3139: http: panic serving 172.24.0.1:57448: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0001e9180)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0000740e0, 0xc000208f00)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0000740e0, 0xc000208f00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0000740e0, 0xc000208f00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00024e0e0, 0x940928, 0xc0000740e0, 0xc000208f00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001e9180, 0x941480, 0xc00020adc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:23 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:23 server.go:3139: http: panic serving 172.24.0.1:57454: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc000164280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0002900e0, 0xc0000ec100)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0002900e0, 0xc0000ec100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0002900e0, 0xc0000ec100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00024e0e0, 0x940928, 0xc0002900e0, 0xc0000ec100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000164280, 0x941480, 0xc0002fc3c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:24 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:24 server.go:3139: http: panic serving 172.24.0.1:57458: runtime error: invalid memory address or nil pointer dereference
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc000164500)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0002902a0, 0xc0000ec500)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0002902a0, 0xc0000ec500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0002902a0, 0xc0000ec500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00024e0e0, 0x940928, 0xc0002902a0, 0xc0000ec500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000164500, 0x941480, 0xc0002fca40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:30 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:30 server.go:3139: http: panic serving 172.24.0.1:57462: runtime error: invalid memory address or nil pointer dereference
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc000138320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc00024e380, 0xc000304000)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc00024e380, 0xc000304000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc00024e380, 0xc000304000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00024e0e0, 0x940928, 0xc00024e380, 0xc000304000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000138320, 0x941480, 0xc0002f0140)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:38 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:36:38 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:36:41 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:36:41 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:36:48 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:36:48 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:36:53 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:53 server.go:3139: http: panic serving 172.24.0.1:57474: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000308000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0000c0540, 0xc0000aa700)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0000c0540, 0xc0000aa700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0000c0540, 0xc0000aa700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc0000c0540, 0xc0000aa700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308000, 0x941480, 0xc00030e000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:53 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:53 server.go:3139: http: panic serving 172.24.0.1:57476: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0000e6000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0003761c0, 0xc000294200)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0003761c0, 0xc000294200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0003761c0, 0xc000294200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc0003761c0, 0xc000294200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e6000, 0x941480, 0xc00028c000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:53 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:53 server.go:3139: http: panic serving 172.24.0.1:57478: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc0000e60a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc000376380, 0xc0000aa500)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc000376380, 0xc0000aa500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc000376380, 0xc0000aa500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc000376380, 0xc0000aa500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e60a0, 0x941480, 0xc000094500)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:54 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:54 server.go:3139: http: panic serving 172.24.0.1:57466: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001c1180)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0003240e0, 0xc0001ded00)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0003240e0, 0xc0001ded00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0003240e0, 0xc0001ded00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc0003240e0, 0xc0001ded00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c1180, 0x941480, 0xc000094000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:54 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:54 server.go:3139: http: panic serving 172.24.0.1:57484: runtime error: invalid memory address or nil pointer dereference
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0xc0001961e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0003242a0, 0xc000294300)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0003242a0, 0xc000294300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0003242a0, 0xc000294300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc0003242a0, 0xc000294300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001961e0, 0x941480, 0xc00028c340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:55 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:55 server.go:3139: http: panic serving 172.24.0.1:57488: runtime error: invalid memory address or nil pointer dereference
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc000196320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc000324460, 0xc0000aa000)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc000324460, 0xc0000aa000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc000324460, 0xc0000aa000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc000324460, 0xc0000aa000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000196320, 0x941480, 0xc0001e0180)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:36:59 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:36:59 server.go:3139: http: panic serving 172.24.0.1:57492: runtime error: invalid memory address or nil pointer dereference
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc000172820)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc000324620, 0xc0000aa100)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc000324620, 0xc0000aa100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc000324620, 0xc0000aa100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc000324620, 0xc0000aa100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000172820, 0x941480, 0xc0001e02c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:37:00 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:37:00 server.go:3139: http: panic serving 172.24.0.1:57496: runtime error: invalid memory address or nil pointer dereference
+goroutine 67 [running]:
+net/http.(*conn).serve.func1(0xc000172960)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0002242a0, 0xc0000aa200)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0002242a0, 0xc0000aa200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0002242a0, 0xc0000aa200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc0002242a0, 0xc0000aa200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000172960, 0x941480, 0xc0001e0340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:37:07 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:37:07 server.go:3139: http: panic serving 172.24.0.1:57500: runtime error: invalid memory address or nil pointer dereference
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc000172e60)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0000c00e0, 0xc000294a00)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0000c00e0, 0xc000294a00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0000c00e0, 0xc000294a00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc0000c00e0, 0xc000294a00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000172e60, 0x941480, 0xc0001e0540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:37:07 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:37:07 server.go:3139: http: panic serving 172.24.0.1:57504: runtime error: invalid memory address or nil pointer dereference
+goroutine 82 [running]:
+net/http.(*conn).serve.func1(0xc0001965a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc0003249a0, 0xc000294b00)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc0003249a0, 0xc000294b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc0003249a0, 0xc000294b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc0003249a0, 0xc000294b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001965a0, 0x941480, 0xc00028cbc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:37:09 oauth.go:17: OAuth server status 403, <?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>
+2021/06/17 07:37:09 server.go:3139: http: panic serving 172.24.0.1:57508: runtime error: invalid memory address or nil pointer dereference
+goroutine 71 [running]:
+net/http.(*conn).serve.func1(0xc000172fa0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x840000, 0xb785b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterAuthHandler(0x940928, 0xc000324b60, 0xc0000aa800)
+	/popular/app/controllers/twitter/oauth.go:21 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x8d5088, 0x940928, 0xc000324b60, 0xc0000aa800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940928, 0xc000324b60, 0xc0000aa800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x940928, 0xc000324b60, 0xc0000aa800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000172fa0, 0x941480, 0xc0001e05c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:05 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:43:05 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:43:18 callback.go:22: koko
+2021/06/17 07:43:18 server.go:3139: http: panic serving 172.24.0.1:57530: koko
+
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc0001c0320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81cee0, 0xc00057bd60)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00026dac8, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers/twitter.TwitterCallbackHandler(0x940968, 0xc0005641c0, 0xc0002aa000)
+	/popular/app/controllers/twitter/callback.go:22 +0x5d
+net/http.HandlerFunc.ServeHTTP(0x8d5098, 0x940968, 0xc0005641c0, 0xc0002aa000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940968, 0xc0005641c0, 0xc0002aa000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x940968, 0xc0005641c0, 0xc0002aa000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c0320, 0x9414c0, 0xc0001e0940)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:18 callback.go:22: koko
+2021/06/17 07:43:18 server.go:3139: http: panic serving 172.24.0.1:57522: koko
+
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001c0140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81cee0, 0xc0002fe080)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc000547ac8, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers/twitter.TwitterCallbackHandler(0x940968, 0xc00033c0e0, 0xc0003a4200)
+	/popular/app/controllers/twitter/callback.go:22 +0x5d
+net/http.HandlerFunc.ServeHTTP(0x8d5098, 0x940968, 0xc00033c0e0, 0xc0003a4200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940968, 0xc00033c0e0, 0xc0003a4200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x940968, 0xc00033c0e0, 0xc0003a4200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c0140, 0x9414c0, 0xc0001e07c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:18 callback.go:22: koko
+2021/06/17 07:43:18 server.go:3139: http: panic serving 172.24.0.1:57534: koko
+
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc0001c0280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81cee0, 0xc00057bc00)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00011dac8, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers/twitter.TwitterCallbackHandler(0x940968, 0xc000564380, 0xc0001def00)
+	/popular/app/controllers/twitter/callback.go:22 +0x5d
+net/http.HandlerFunc.ServeHTTP(0x8d5098, 0x940968, 0xc000564380, 0xc0001def00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940968, 0xc000564380, 0xc0001def00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x940968, 0xc000564380, 0xc0001def00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c0280, 0x9414c0, 0xc0001e0a00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:18 callback.go:22: koko
+2021/06/17 07:43:18 server.go:3139: http: panic serving 172.24.0.1:57526: koko
+
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0001c01e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81cee0, 0xc00057bc30)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc000117ac8, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers/twitter.TwitterCallbackHandler(0x940968, 0xc000564540, 0xc0002aa400)
+	/popular/app/controllers/twitter/callback.go:22 +0x5d
+net/http.HandlerFunc.ServeHTTP(0x8d5098, 0x940968, 0xc000564540, 0xc0002aa400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940968, 0xc000564540, 0xc0002aa400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x940968, 0xc000564540, 0xc0002aa400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c01e0, 0x9414c0, 0xc0001e0880)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:18 callback.go:22: koko
+2021/06/17 07:43:18 server.go:3139: http: panic serving 172.24.0.1:57518: koko
+
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc0000aefa0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81cee0, 0xc00057bc70)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc000549ac8, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers/twitter.TwitterCallbackHandler(0x940968, 0xc000564700, 0xc0002aa200)
+	/popular/app/controllers/twitter/callback.go:22 +0x5d
+net/http.HandlerFunc.ServeHTTP(0x8d5098, 0x940968, 0xc000564700, 0xc0002aa200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940968, 0xc000564700, 0xc0002aa200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x940968, 0xc000564700, 0xc0002aa200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000aefa0, 0x9414c0, 0xc0000bc640)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:18 callback.go:22: koko
+2021/06/17 07:43:18 server.go:3139: http: panic serving 172.24.0.1:57540: koko
+
+goroutine 68 [running]:
+net/http.(*conn).serve.func1(0xc00017e140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81cee0, 0xc00057bcd0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00004bac8, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers/twitter.TwitterCallbackHandler(0x940968, 0xc0005648c0, 0xc0002aa100)
+	/popular/app/controllers/twitter/callback.go:22 +0x5d
+net/http.HandlerFunc.ServeHTTP(0x8d5098, 0x940968, 0xc0005648c0, 0xc0002aa100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940968, 0xc0005648c0, 0xc0002aa100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x940968, 0xc0005648c0, 0xc0002aa100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00017e140, 0x9414c0, 0xc000296280)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:20 callback.go:22: koko
+2021/06/17 07:43:20 server.go:3139: http: panic serving 172.24.0.1:57544: koko
+
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc0001961e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81cee0, 0xc0002e6060)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001cfac8, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers/twitter.TwitterCallbackHandler(0x940968, 0xc0000fe2a0, 0xc0001de000)
+	/popular/app/controllers/twitter/callback.go:22 +0x5d
+net/http.HandlerFunc.ServeHTTP(0x8d5098, 0x940968, 0xc0000fe2a0, 0xc0001de000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940968, 0xc0000fe2a0, 0xc0001de000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x940968, 0xc0000fe2a0, 0xc0001de000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001961e0, 0x9414c0, 0xc0001e0000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:25 callback.go:22: koko
+2021/06/17 07:43:25 server.go:3139: http: panic serving 172.24.0.1:57548: koko
+
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc00017e280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81cee0, 0xc0002fe1c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00004cac8, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers/twitter.TwitterCallbackHandler(0x940968, 0xc00033c2a0, 0xc0002aa300)
+	/popular/app/controllers/twitter/callback.go:22 +0x5d
+net/http.HandlerFunc.ServeHTTP(0x8d5098, 0x940968, 0xc00033c2a0, 0xc0002aa300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940968, 0xc00033c2a0, 0xc0002aa300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x940968, 0xc00033c2a0, 0xc0002aa300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00017e280, 0x9414c0, 0xc000296400)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:41 callback.go:22: koko
+2021/06/17 07:43:41 server.go:3139: http: panic serving 172.24.0.1:57552: koko
+
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc000196320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x81cee0, 0xc0002e60b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001cfac8, 0x1, 0x1)
+	/usr/local/go/src/log/log.go:368 +0xae
+popular/app/controllers/twitter.TwitterCallbackHandler(0x940968, 0xc0000fe380, 0xc0001de100)
+	/popular/app/controllers/twitter/callback.go:22 +0x5d
+net/http.HandlerFunc.ServeHTTP(0x8d5098, 0x940968, 0xc0000fe380, 0xc0001de100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb874c0, 0x940968, 0xc0000fe380, 0xc0001de100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fe0e0, 0x940968, 0xc0000fe380, 0xc0001de100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000196320, 0x9414c0, 0xc0001e0100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/17 07:43:43 webserver.go:37: デフォルトのポート 8080
+2021/06/17 07:43:43 webserver.go:39: リッスンしているポート 8080
+2021/06/17 07:43:50 callback.go:22: koko
+2021/06/18 00:05:48 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:05:48 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:06:25 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:06:25 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:15:00 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:15:00 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:15:21 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:15:21 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:15:25 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:15:25 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:15:58 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:15:58 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:16:02 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:16:02 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:16:15 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:16:15 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:16:21 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:16:21 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:16:26 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:16:26 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:16:27 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:16:27 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:16:34 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:16:34 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:17:59 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 00:17:59 callback.go:49: Twitter request is invalid
+2021/06/18 00:17:59 server.go:3139: http: panic serving 172.24.0.1:57612: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0001710e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f08, 0xc0001d62a0, 0xc00020e000)
+	/popular/app/controllers/twitter/callback.go:57 +0x313
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f08, 0xc0001d62a0, 0xc00020e000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f08, 0xc0001d62a0, 0xc00020e000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f08, 0xc0001d62a0, 0xc00020e000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001710e0, 0x942a60, 0xc000192dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:17:59 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 00:18:00 callback.go:49: Twitter request is invalid
+2021/06/18 00:18:00 server.go:3139: http: panic serving 172.24.0.1:57618: runtime error: invalid memory address or nil pointer dereference
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0xc0000c06e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f08, 0xc0001d6380, 0xc0002bc600)
+	/popular/app/controllers/twitter/callback.go:57 +0x313
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f08, 0xc0001d6380, 0xc0002bc600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f08, 0xc0001d6380, 0xc0002bc600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f08, 0xc0001d6380, 0xc0002bc600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000c06e0, 0x942a60, 0xc00045a340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:18:01 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 00:18:01 callback.go:49: Twitter request is invalid
+2021/06/18 00:18:01 server.go:3139: http: panic serving 172.24.0.1:57622: runtime error: invalid memory address or nil pointer dereference
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc0000ec280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f08, 0xc0005f6000, 0xc00020e300)
+	/popular/app/controllers/twitter/callback.go:57 +0x313
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f08, 0xc0005f6000, 0xc00020e300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f08, 0xc0005f6000, 0xc00020e300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f08, 0xc0005f6000, 0xc00020e300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000ec280, 0x942a60, 0xc000064180)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:18:06 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 00:18:06 callback.go:49: Twitter request is invalid
+2021/06/18 00:18:06 server.go:3139: http: panic serving 172.24.0.1:57626: runtime error: invalid memory address or nil pointer dereference
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc000171a40)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f08, 0xc0005f61c0, 0xc000186600)
+	/popular/app/controllers/twitter/callback.go:57 +0x313
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f08, 0xc0005f61c0, 0xc000186600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f08, 0xc0005f61c0, 0xc000186600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f08, 0xc0005f61c0, 0xc000186600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000171a40, 0x942a60, 0xc00061d680)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:18:36 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 00:18:36 callback.go:49: Twitter request is invalid
+2021/06/18 00:18:36 server.go:3139: http: panic serving 172.24.0.1:57630: runtime error: invalid memory address or nil pointer dereference
+goroutine 59 [running]:
+net/http.(*conn).serve.func1(0xc0000c0be0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f08, 0xc0005f6380, 0xc0002bcb00)
+	/popular/app/controllers/twitter/callback.go:57 +0x313
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f08, 0xc0005f6380, 0xc0002bcb00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f08, 0xc0005f6380, 0xc0002bcb00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f08, 0xc0005f6380, 0xc0002bcb00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000c0be0, 0x942a60, 0xc00045aa40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:18:46 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:18:46 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:18:48 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:18:48 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:19:10 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:19:10 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:19:19 callback.go:35: &{ZftOvQAAAAABQwFxAAABehx8ejU dNr4DDoHJO993zRKH1ly0BCT3YXJHUMT}
+2021/06/18 00:19:20 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:19:20 callback.go:50: Twitter request is invalid
+2021/06/18 00:19:20 server.go:3139: http: panic serving 172.24.0.1:57646: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0001710e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0003b0460, 0xc000190000)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0003b0460, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0003b0460, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f48, 0xc0003b0460, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001710e0, 0x942aa0, 0xc000404000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:19:20 callback.go:35: &{ZftOvQAAAAABQwFxAAABehx8ejU dNr4DDoHJO993zRKH1ly0BCT3YXJHUMT}
+2021/06/18 00:19:20 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:19:20 callback.go:50: Twitter request is invalid
+2021/06/18 00:19:20 server.go:3139: http: panic serving 172.24.0.1:57650: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc0002461e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0003b0620, 0xc00022c700)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0003b0620, 0xc00022c700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0003b0620, 0xc00022c700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f48, 0xc0003b0620, 0xc00022c700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002461e0, 0x942aa0, 0xc000220e40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:19:20 callback.go:35: &{ZftOvQAAAAABQwFxAAABehx8ejU dNr4DDoHJO993zRKH1ly0BCT3YXJHUMT}
+2021/06/18 00:19:20 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:19:20 callback.go:50: Twitter request is invalid
+2021/06/18 00:19:20 server.go:3139: http: panic serving 172.24.0.1:57638: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc000380000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0003b00e0, 0xc00022c400)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0003b00e0, 0xc00022c400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0003b00e0, 0xc00022c400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f48, 0xc0003b00e0, 0xc00022c400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000380000, 0x942aa0, 0xc000064040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:19:20 callback.go:35: &{ZftOvQAAAAABQwFxAAABehx8ejU dNr4DDoHJO993zRKH1ly0BCT3YXJHUMT}
+2021/06/18 00:19:20 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:19:21 callback.go:50: Twitter request is invalid
+2021/06/18 00:19:21 server.go:3139: http: panic serving 172.24.0.1:57648: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc000171180)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0001d62a0, 0xc000191000)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0001d62a0, 0xc000191000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0001d62a0, 0xc000191000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f48, 0xc0001d62a0, 0xc000191000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000171180, 0x942aa0, 0xc000193340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:19:21 callback.go:35: &{ZftOvQAAAAABQwFxAAABehx8ejU dNr4DDoHJO993zRKH1ly0BCT3YXJHUMT}
+2021/06/18 00:19:21 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:19:21 callback.go:50: Twitter request is invalid
+2021/06/18 00:19:21 server.go:3139: http: panic serving 172.24.0.1:57634: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc000171040)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0001d6460, 0xc00022c200)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0001d6460, 0xc00022c200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0001d6460, 0xc00022c200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f48, 0xc0001d6460, 0xc00022c200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000171040, 0x942aa0, 0xc000192dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:19:21 callback.go:35: &{ZftOvQAAAAABQwFxAAABehx8ejU dNr4DDoHJO993zRKH1ly0BCT3YXJHUMT}
+2021/06/18 00:19:21 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:19:21 callback.go:50: Twitter request is invalid
+2021/06/18 00:19:21 server.go:3139: http: panic serving 172.24.0.1:57656: runtime error: invalid memory address or nil pointer dereference
+goroutine 68 [running]:
+net/http.(*conn).serve.func1(0xc0001461e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0001d6620, 0xc000384300)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0001d6620, 0xc000384300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0001d6620, 0xc000384300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f48, 0xc0001d6620, 0xc000384300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001461e0, 0x942aa0, 0xc000220300)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:19:22 callback.go:35: &{ZftOvQAAAAABQwFxAAABehx8ejU dNr4DDoHJO993zRKH1ly0BCT3YXJHUMT}
+2021/06/18 00:19:22 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:19:22 callback.go:50: Twitter request is invalid
+2021/06/18 00:19:22 server.go:3139: http: panic serving 172.24.0.1:57660: runtime error: invalid memory address or nil pointer dereference
+goroutine 60 [running]:
+net/http.(*conn).serve.func1(0xc000170960)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0002040e0, 0xc000186000)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0002040e0, 0xc000186000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0002040e0, 0xc000186000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f48, 0xc0002040e0, 0xc000186000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000170960, 0x942aa0, 0xc000064140)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:19:27 callback.go:35: &{ZftOvQAAAAABQwFxAAABehx8ejU dNr4DDoHJO993zRKH1ly0BCT3YXJHUMT}
+2021/06/18 00:19:27 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:19:28 callback.go:50: Twitter request is invalid
+2021/06/18 00:19:28 server.go:3139: http: panic serving 172.24.0.1:57664: runtime error: invalid memory address or nil pointer dereference
+goroutine 63 [running]:
+net/http.(*conn).serve.func1(0xc000170b40)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0002042a0, 0xc000186300)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0002042a0, 0xc000186300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0002042a0, 0xc000186300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f48, 0xc0002042a0, 0xc000186300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000170b40, 0x942aa0, 0xc000064300)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:19:58 callback.go:35: &{ZftOvQAAAAABQwFxAAABehx8ejU dNr4DDoHJO993zRKH1ly0BCT3YXJHUMT}
+2021/06/18 00:19:58 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:19:58 callback.go:50: Twitter request is invalid
+2021/06/18 00:19:58 server.go:3139: http: panic serving 172.24.0.1:57668: runtime error: invalid memory address or nil pointer dereference
+goroutine 84 [running]:
+net/http.(*conn).serve.func1(0xc00015d5e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0001d67e0, 0xc000186800)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0001d67e0, 0xc000186800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0001d67e0, 0xc000186800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x941f48, 0xc0001d67e0, 0xc000186800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00015d5e0, 0x942aa0, 0xc000064600)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:20:26 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:20:26 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:20:31 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:20:31 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:20:40 callback.go:35: &{ }
+2021/06/18 00:20:40 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:20:40 callback.go:50: Twitter request is invalid
+2021/06/18 00:20:40 server.go:3139: http: panic serving 172.24.0.1:57682: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc0001c90e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0002aa0e0, 0xc0001e6000)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0002aa0e0, 0xc0001e6000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0002aa0e0, 0xc0001e6000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022c0e0, 0x941f48, 0xc0002aa0e0, 0xc0001e6000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c90e0, 0x942aa0, 0xc0001e9380)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:20:40 callback.go:35: &{ }
+2021/06/18 00:20:40 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:20:40 callback.go:50: Twitter request is invalid
+2021/06/18 00:20:40 server.go:3139: http: panic serving 172.24.0.1:57686: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000308000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0002aa2a0, 0xc0001e7000)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0002aa2a0, 0xc0001e7000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0002aa2a0, 0xc0001e7000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022c0e0, 0x941f48, 0xc0002aa2a0, 0xc0001e7000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308000, 0x942aa0, 0xc0001e9440)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:20:40 callback.go:35: &{ }
+2021/06/18 00:20:40 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:20:41 callback.go:50: Twitter request is invalid
+2021/06/18 00:20:41 server.go:3139: http: panic serving 172.24.0.1:57688: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0003080a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0003281c0, 0xc00038c100)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0003281c0, 0xc00038c100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0003281c0, 0xc00038c100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022c0e0, 0x941f48, 0xc0003281c0, 0xc00038c100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003080a0, 0x942aa0, 0xc000384000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:20:41 callback.go:35: &{ }
+2021/06/18 00:20:41 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:20:41 callback.go:50: Twitter request is invalid
+2021/06/18 00:20:41 server.go:3139: http: panic serving 172.24.0.1:57684: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc000308140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc00022c2a0, 0xc00031e400)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc00022c2a0, 0xc00031e400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc00022c2a0, 0xc00031e400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022c0e0, 0x941f48, 0xc00022c2a0, 0xc00031e400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308140, 0x942aa0, 0xc000316000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:20:41 callback.go:35: &{ }
+2021/06/18 00:20:41 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:20:41 callback.go:50: Twitter request is invalid
+2021/06/18 00:20:41 server.go:3139: http: panic serving 172.24.0.1:57672: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001c9040)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc00022c460, 0xc0000b0200)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc00022c460, 0xc0000b0200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc00022c460, 0xc0000b0200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022c0e0, 0x941f48, 0xc00022c460, 0xc0000b0200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c9040, 0x942aa0, 0xc0001e8e00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:20:41 callback.go:35: &{ }
+2021/06/18 00:20:41 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:20:41 callback.go:50: Twitter request is invalid
+2021/06/18 00:20:41 server.go:3139: http: panic serving 172.24.0.1:57694: runtime error: invalid memory address or nil pointer dereference
+goroutine 76 [running]:
+net/http.(*conn).serve.func1(0xc00019e460)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0002aa540, 0xc00031e900)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0002aa540, 0xc00031e900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0002aa540, 0xc00031e900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022c0e0, 0x941f48, 0xc0002aa540, 0xc00031e900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00019e460, 0x942aa0, 0xc0001e8480)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:20:42 callback.go:35: &{ }
+2021/06/18 00:20:42 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:20:43 callback.go:50: Twitter request is invalid
+2021/06/18 00:20:43 server.go:3139: http: panic serving 172.24.0.1:57698: runtime error: invalid memory address or nil pointer dereference
+goroutine 80 [running]:
+net/http.(*conn).serve.func1(0xc00019e820)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc0002aa700, 0xc00031ee00)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc0002aa700, 0xc00031ee00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc0002aa700, 0xc00031ee00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022c0e0, 0x941f48, 0xc0002aa700, 0xc00031ee00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00019e820, 0x942aa0, 0xc0001e8980)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:20:48 callback.go:35: &{ }
+2021/06/18 00:20:48 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:20:48 callback.go:50: Twitter request is invalid
+2021/06/18 00:20:48 server.go:3139: http: panic serving 172.24.0.1:57702: runtime error: invalid memory address or nil pointer dereference
+goroutine 49 [running]:
+net/http.(*conn).serve.func1(0xc0004843c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941f48, 0xc000328380, 0xc0001e6700)
+	/popular/app/controllers/twitter/callback.go:58 +0x378
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941f48, 0xc000328380, 0xc0001e6700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941f48, 0xc000328380, 0xc0001e6700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022c0e0, 0x941f48, 0xc000328380, 0xc0001e6700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0004843c0, 0x942aa0, 0xc0003164c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:21:00 config.go:49: exit status 2
+2021/06/18 00:21:00 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:21:00 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:21:04 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:21:04 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:21:08 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:21:08 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:21:08 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:21:08 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:21:20 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 00:21:20 callback.go:49: Twitter request is invalid
+2021/06/18 00:21:20 server.go:3139: http: panic serving 172.24.0.1:57706: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc00029cfa0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0002ee2a0, 0xc0002ec100)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc0002ee2a0, 0xc0002ec100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0002ee2a0, 0xc0002ec100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002ee0e0, 0x941ee8, 0xc0002ee2a0, 0xc0002ec100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00029cfa0, 0x942a40, 0xc0002aa640)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:22:20 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:22:20 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:22:21 callback.go:45: OAuth server status 401, Request token missing
+2021/06/18 00:22:21 callback.go:50: Twitter request is invalid
+2021/06/18 00:22:21 server.go:3139: http: panic serving 172.24.0.1:57712: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0001f10e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0002562a0, 0xc000210b00)
+	/popular/app/controllers/twitter/callback.go:58 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc0002562a0, 0xc000210b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0002562a0, 0xc000210b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x941ee8, 0xc0002562a0, 0xc000210b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001f10e0, 0x942a40, 0xc000212dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 00:22:38 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:22:38 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:22:45 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:22:45 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:23:25 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:23:25 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:23:50 config.go:49: exit status 2
+2021/06/18 00:23:50 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:23:50 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:23:53 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:23:53 webserver.go:39: リッスンしているポート 8080
+2021/06/18 00:23:58 webserver.go:37: デフォルトのポート 8080
+2021/06/18 00:23:58 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:20:57 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:20:57 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:21:05 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:05 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:05 server.go:3139: http: panic serving 172.24.0.1:57748: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc0003080a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ec8, 0xc0003e40e0, 0xc00031e000)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6428, 0x941ec8, 0xc0003e40e0, 0xc00031e000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ec8, 0xc0003e40e0, 0xc00031e000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x941ec8, 0xc0003e40e0, 0xc00031e000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003080a0, 0x942a20, 0xc000316000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:05 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:05 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:05 server.go:3139: http: panic serving 172.24.0.1:57752: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0003081e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ec8, 0xc0006201c0, 0xc0003ac400)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6428, 0x941ec8, 0xc0006201c0, 0xc0003ac400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ec8, 0xc0006201c0, 0xc0003ac400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x941ec8, 0xc0006201c0, 0xc0003ac400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003081e0, 0x942a20, 0xc000316240)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:06 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:06 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:06 server.go:3139: http: panic serving 172.24.0.1:57750: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc000308140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ec8, 0xc0003e42a0, 0xc0000b2100)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6428, 0x941ec8, 0xc0003e42a0, 0xc0000b2100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ec8, 0xc0003e42a0, 0xc0000b2100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x941ec8, 0xc0003e42a0, 0xc0000b2100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308140, 0x942a20, 0xc000316180)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:06 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:06 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:06 server.go:3139: http: panic serving 172.24.0.1:57746: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc000308000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ec8, 0xc0003e4460, 0xc0003ac300)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6428, 0x941ec8, 0xc0003e4460, 0xc0003ac300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ec8, 0xc0003e4460, 0xc0003ac300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x941ec8, 0xc0003e4460, 0xc0003ac300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308000, 0x942a20, 0xc0003160c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:06 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:06 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:06 server.go:3139: http: panic serving 172.24.0.1:57736: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001c10e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ec8, 0xc000620380, 0xc0001df000)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6428, 0x941ec8, 0xc000620380, 0xc0001df000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ec8, 0xc000620380, 0xc0001df000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x941ec8, 0xc000620380, 0xc0001df000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c10e0, 0x942a20, 0xc0001e0e00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:06 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:06 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:06 server.go:3139: http: panic serving 172.24.0.1:57758: runtime error: invalid memory address or nil pointer dereference
+goroutine 58 [running]:
+net/http.(*conn).serve.func1(0xc000308460)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ec8, 0xc0003a00e0, 0xc0001de600)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6428, 0x941ec8, 0xc0003a00e0, 0xc0001de600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ec8, 0xc0003a00e0, 0xc0001de600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x941ec8, 0xc0003a00e0, 0xc0001de600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308460, 0x942a20, 0xc000316640)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:08 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:08 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:08 server.go:3139: http: panic serving 172.24.0.1:57762: runtime error: invalid memory address or nil pointer dereference
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc0000d8640)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ec8, 0xc000620540, 0xc00031e900)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6428, 0x941ec8, 0xc000620540, 0xc00031e900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ec8, 0xc000620540, 0xc00031e900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x941ec8, 0xc000620540, 0xc00031e900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d8640, 0x942a20, 0xc0002e2640)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:13 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:13 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:13 server.go:3139: http: panic serving 172.24.0.1:57766: runtime error: invalid memory address or nil pointer dereference
+goroutine 74 [running]:
+net/http.(*conn).serve.func1(0xc0000d88c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ec8, 0xc000620700, 0xc00031ee00)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6428, 0x941ec8, 0xc000620700, 0xc00031ee00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ec8, 0xc000620700, 0xc00031ee00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x941ec8, 0xc000620700, 0xc00031ee00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d88c0, 0x942a20, 0xc0002e2940)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:16 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:21:16 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:21:27 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:27 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:27 server.go:3139: http: panic serving 172.24.0.1:57784: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0003080a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0005641c0, 0xc000246000)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc0005641c0, 0xc000246000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0005641c0, 0xc000246000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002480e0, 0x941ee8, 0xc0005641c0, 0xc000246000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003080a0, 0x942a40, 0xc0003140c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:27 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:27 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:27 server.go:3139: http: panic serving 172.24.0.1:57774: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000308000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc000564380, 0xc00031c300)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc000564380, 0xc00031c300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc000564380, 0xc00031c300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002480e0, 0x941ee8, 0xc000564380, 0xc00031c300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308000, 0x942a40, 0xc000314000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:27 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:27 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:27 server.go:3139: http: panic serving 172.24.0.1:57770: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc000203040)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0001a00e0, 0xc000246500)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc0001a00e0, 0xc000246500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0001a00e0, 0xc000246500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002480e0, 0x941ee8, 0xc0001a00e0, 0xc000246500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000203040, 0x942a40, 0xc000064680)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:28 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:28 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:28 server.go:3139: http: panic serving 172.24.0.1:57786: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0001701e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc000564540, 0xc000190e00)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc000564540, 0xc000190e00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc000564540, 0xc000190e00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002480e0, 0x941ee8, 0xc000564540, 0xc000190e00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001701e0, 0x942a40, 0xc000192900)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:28 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:28 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:28 server.go:3139: http: panic serving 172.24.0.1:57782: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc000170140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0002482a0, 0xc0003ac100)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc0002482a0, 0xc0003ac100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0002482a0, 0xc0003ac100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002480e0, 0x941ee8, 0xc0002482a0, 0xc0003ac100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000170140, 0x942a40, 0xc000192780)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:28 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:28 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:28 server.go:3139: http: panic serving 172.24.0.1:57792: runtime error: invalid memory address or nil pointer dereference
+goroutine 74 [running]:
+net/http.(*conn).serve.func1(0xc000308140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0001a02a0, 0xc0003ac000)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc0001a02a0, 0xc0003ac000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0001a02a0, 0xc0003ac000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002480e0, 0x941ee8, 0xc0001a02a0, 0xc0003ac000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308140, 0x942a40, 0xc000396000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:29 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:30 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:30 server.go:3139: http: panic serving 172.24.0.1:57796: runtime error: invalid memory address or nil pointer dereference
+goroutine 31 [running]:
+net/http.(*conn).serve.func1(0xc0000ec500)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0001a0460, 0xc000190800)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc0001a0460, 0xc000190800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0001a0460, 0xc000190800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002480e0, 0x941ee8, 0xc0001a0460, 0xc000190800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000ec500, 0x942a40, 0xc000192500)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:21:35 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:21:35 callback.go:49: Twitter request is invalid
+2021/06/18 04:21:35 server.go:3139: http: panic serving 172.24.0.1:57800: runtime error: invalid memory address or nil pointer dereference
+goroutine 76 [running]:
+net/http.(*conn).serve.func1(0xc000308280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0003360e0, 0xc0003ac400)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc0003360e0, 0xc0003ac400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0003360e0, 0xc0003ac400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002480e0, 0x941ee8, 0xc0003360e0, 0xc0003ac400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308280, 0x942a40, 0xc000396240)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:22:05 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:22:05 callback.go:49: Twitter request is invalid
+2021/06/18 04:22:05 server.go:3139: http: panic serving 172.24.0.1:57804: runtime error: invalid memory address or nil pointer dereference
+goroutine 80 [running]:
+net/http.(*conn).serve.func1(0xc000308460)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0003362a0, 0xc0003ac900)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6440, 0x941ee8, 0xc0003362a0, 0xc0003ac900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0003362a0, 0xc0003ac900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002480e0, 0x941ee8, 0xc0003362a0, 0xc0003ac900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000308460, 0x942a40, 0xc000396600)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:22:12 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:22:12 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:22:22 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:22:22 callback.go:49: Twitter request is invalid
+2021/06/18 04:22:22 server.go:3139: http: panic serving 172.24.0.1:57824: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0003880a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc00060e0e0, 0xc000190000)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6420, 0x941ee8, 0xc00060e0e0, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc00060e0e0, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d40e0, 0x941ee8, 0xc00060e0e0, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003880a0, 0x942a40, 0xc0003940c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:22:22 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:22:22 callback.go:49: Twitter request is invalid
+2021/06/18 04:22:22 server.go:3139: http: panic serving 172.24.0.1:57814: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc00029a1e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc00060e1c0, 0xc000438300)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6420, 0x941ee8, 0xc00060e1c0, 0xc000438300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc00060e1c0, 0xc000438300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d40e0, 0x941ee8, 0xc00060e1c0, 0xc000438300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00029a1e0, 0x942a40, 0xc000064ec0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:22:22 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:22:23 callback.go:49: Twitter request is invalid
+2021/06/18 04:22:23 server.go:3139: http: panic serving 172.24.0.1:57822: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000388000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc00060e2a0, 0xc000438100)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6420, 0x941ee8, 0xc00060e2a0, 0xc000438100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc00060e2a0, 0xc000438100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d40e0, 0x941ee8, 0xc00060e2a0, 0xc000438100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000388000, 0x942a40, 0xc000394000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:22:23 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:22:23 callback.go:49: Twitter request is invalid
+2021/06/18 04:22:23 server.go:3139: http: panic serving 172.24.0.1:57816: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00029a280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc000358000, 0xc00039c300)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6420, 0x941ee8, 0xc000358000, 0xc00039c300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc000358000, 0xc00039c300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d40e0, 0x941ee8, 0xc000358000, 0xc00039c300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00029a280, 0x942a40, 0xc000064e00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:22:23 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:22:23 callback.go:49: Twitter request is invalid
+2021/06/18 04:22:23 server.go:3139: http: panic serving 172.24.0.1:57808: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc000171180)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0001d41c0, 0xc00028a200)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6420, 0x941ee8, 0xc0001d41c0, 0xc00028a200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0001d41c0, 0xc00028a200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d40e0, 0x941ee8, 0xc0001d41c0, 0xc00028a200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000171180, 0x942a40, 0xc000192dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:22:23 callback.go:44: OAuth server status 401, Request token missing
+2021/06/18 04:22:23 callback.go:49: Twitter request is invalid
+2021/06/18 04:22:23 server.go:3139: http: panic serving 172.24.0.1:57830: runtime error: invalid memory address or nil pointer dereference
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc000388460)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x8411c0, 0xb7a5b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x941ee8, 0xc0001d42a0, 0xc00039c500)
+	/popular/app/controllers/twitter/callback.go:57 +0x258
+net/http.HandlerFunc.ServeHTTP(0x8d6420, 0x941ee8, 0xc0001d42a0, 0xc00039c500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb894c0, 0x941ee8, 0xc0001d42a0, 0xc00039c500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d40e0, 0x941ee8, 0xc0001d42a0, 0xc00039c500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000388460, 0x942a40, 0xc0000644c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 04:22:36 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:22:36 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:38:54 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:38:54 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:38:58 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:38:58 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:39:02 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:39:02 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:39:09 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:39:09 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:44:46 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:44:46 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:45:27 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:45:27 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:46:23 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:46:23 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:48:17 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:48:17 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:56:52 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:56:52 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:57:39 webserver.go:37: デフォルトのポート 8080
+2021/06/18 04:57:39 webserver.go:39: リッスンしているポート 8080
+2021/06/18 04:57:45 callback.go:32: &{0ZTu9gAAAAABQwFxAAABeh17X-Y pPpCDgepZZFhRyO1hJDI3nIbAOR8vbQ1}
+2021/06/18 05:01:30 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:01:30 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:02:04 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:02:04 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:02:14 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:02:14 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:02:22 callback.go:34: S49wRAAAAAABQwFxAAABeh1_mow
+2021/06/18 05:02:22 callback.go:35: Ztx34gOTZ65mEJRifNVAFlhDXH87sU5P
+2021/06/18 05:02:36 callback.go:34: sCjTBwAAAAABQwFxAAABeh1_1CU
+2021/06/18 05:02:36 callback.go:35: gcztnnQrFLQOBRvgTuXyHK83zRT0am5f
+2021/06/18 05:02:52 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:02:52 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:04:51 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:04:51 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:05:48 callback.go:36: prc2XQAAAAABQwFxAAABeh2Cv6A
+2021/06/18 05:05:48 callback.go:37: fIWyGhtebRlbo8Y6indUoRvFYgwSLYqr
+2021/06/18 05:05:49 callback.go:49: at &{1204610312348942336-ALcEcJdSqIuQ0EaG7YvzwuLY7xfHnI 7qRUuckD1XMfKKjxcgq10YyVh74CoPyIrGAfMpyJ7I8oS}
+2021/06/18 05:06:32 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:06:32 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:06:43 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:06:43 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:06:57 callback.go:37: F7FargAAAAABQwFxAAABeh2DzSE
+2021/06/18 05:06:57 callback.go:38: bpBxxQmWjc8zMsguCpLDkuN2IfioTlZU
+2021/06/18 05:13:47 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:13:47 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:14:06 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:14:06 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:15:28 callback.go:37: DeHC-gAAAAABQwFxAAABeh2Lidk
+2021/06/18 05:15:28 callback.go:38: 9DL6CeOSPVE0TKL9ubaTr74mftt6h5ya
+2021/06/18 05:15:28 callback.go:48: OAuth server status 401, Error processing your OAuth request: Invalid oauth_verifier parameter
+2021/06/18 05:15:28 callback.go:53: Twitter request is invalid
+2021/06/18 05:15:28 server.go:3139: http: panic serving 172.24.0.1:57958: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00022e0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x843720, 0xb7e680)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x945068, 0xc0002b21c0, 0xc000328000)
+	/popular/app/controllers/twitter/callback.go:61 +0x499
+net/http.HandlerFunc.ServeHTTP(0x8d91a8, 0x945068, 0xc0002b21c0, 0xc000328000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0002b21c0, 0xc000328000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00007e000, 0x945068, 0xc0002b21c0, 0xc000328000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00022e0a0, 0x945bc0, 0xc000064340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:15:28 callback.go:37: DeHC-gAAAAABQwFxAAABeh2Lidk
+2021/06/18 05:15:28 callback.go:38: 9DL6CeOSPVE0TKL9ubaTr74mftt6h5ya
+2021/06/18 05:15:29 callback.go:48: OAuth server status 401, Error processing your OAuth request: Invalid oauth_verifier parameter
+2021/06/18 05:15:29 callback.go:53: Twitter request is invalid
+2021/06/18 05:15:29 server.go:3139: http: panic serving 172.24.0.1:57962: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc0001710e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x843720, 0xb7e680)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x945068, 0xc0002b2380, 0xc000190e00)
+	/popular/app/controllers/twitter/callback.go:61 +0x499
+net/http.HandlerFunc.ServeHTTP(0x8d91a8, 0x945068, 0xc0002b2380, 0xc000190e00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0002b2380, 0xc000190e00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00007e000, 0x945068, 0xc0002b2380, 0xc000190e00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001710e0, 0x945bc0, 0xc000192fc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:15:29 callback.go:37: DeHC-gAAAAABQwFxAAABeh2Lidk
+2021/06/18 05:15:29 callback.go:38: 9DL6CeOSPVE0TKL9ubaTr74mftt6h5ya
+2021/06/18 05:15:29 callback.go:48: OAuth server status 401, Error processing your OAuth request: Invalid oauth_verifier parameter
+2021/06/18 05:15:29 callback.go:53: Twitter request is invalid
+2021/06/18 05:15:29 server.go:3139: http: panic serving 172.24.0.1:57960: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc00022e140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x843720, 0xb7e680)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x945068, 0xc0003dc1c0, 0xc000328300)
+	/popular/app/controllers/twitter/callback.go:61 +0x499
+net/http.HandlerFunc.ServeHTTP(0x8d91a8, 0x945068, 0xc0003dc1c0, 0xc000328300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0003dc1c0, 0xc000328300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00007e000, 0x945068, 0xc0003dc1c0, 0xc000328300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00022e140, 0x945bc0, 0xc000064400)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:15:29 callback.go:37: DeHC-gAAAAABQwFxAAABeh2Lidk
+2021/06/18 05:15:29 callback.go:38: 9DL6CeOSPVE0TKL9ubaTr74mftt6h5ya
+2021/06/18 05:15:30 callback.go:48: OAuth server status 401, Error processing your OAuth request: Invalid oauth_verifier parameter
+2021/06/18 05:15:30 callback.go:53: Twitter request is invalid
+2021/06/18 05:15:30 server.go:3139: http: panic serving 172.24.0.1:57950: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc00022e000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x843720, 0xb7e680)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x945068, 0xc0003dc380, 0xc000328200)
+	/popular/app/controllers/twitter/callback.go:61 +0x499
+net/http.HandlerFunc.ServeHTTP(0x8d91a8, 0x945068, 0xc0003dc380, 0xc000328200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0003dc380, 0xc000328200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00007e000, 0x945068, 0xc0003dc380, 0xc000328200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00022e000, 0x945bc0, 0xc000064080)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:15:30 callback.go:37: DeHC-gAAAAABQwFxAAABeh2Lidk
+2021/06/18 05:15:30 callback.go:38: 9DL6CeOSPVE0TKL9ubaTr74mftt6h5ya
+2021/06/18 05:15:30 callback.go:48: OAuth server status 401, Error processing your OAuth request: Invalid oauth_verifier parameter
+2021/06/18 05:15:30 callback.go:53: Twitter request is invalid
+2021/06/18 05:15:30 server.go:3139: http: panic serving 172.24.0.1:57968: runtime error: invalid memory address or nil pointer dereference
+goroutine 79 [running]:
+net/http.(*conn).serve.func1(0xc000170b40)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x843720, 0xb7e680)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x945068, 0xc0003dc540, 0xc000190a00)
+	/popular/app/controllers/twitter/callback.go:61 +0x499
+net/http.HandlerFunc.ServeHTTP(0x8d91a8, 0x945068, 0xc0003dc540, 0xc000190a00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0003dc540, 0xc000190a00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00007e000, 0x945068, 0xc0003dc540, 0xc000190a00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000170b40, 0x945bc0, 0xc000064840)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:15:31 callback.go:37: DeHC-gAAAAABQwFxAAABeh2Lidk
+2021/06/18 05:15:31 callback.go:38: 9DL6CeOSPVE0TKL9ubaTr74mftt6h5ya
+2021/06/18 05:15:32 callback.go:48: OAuth server status 401, Error processing your OAuth request: Invalid oauth_verifier parameter
+2021/06/18 05:15:32 callback.go:53: Twitter request is invalid
+2021/06/18 05:15:32 server.go:3139: http: panic serving 172.24.0.1:57972: runtime error: invalid memory address or nil pointer dereference
+goroutine 82 [running]:
+net/http.(*conn).serve.func1(0xc00028e0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x843720, 0xb7e680)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x945068, 0xc00007e1c0, 0xc000328100)
+	/popular/app/controllers/twitter/callback.go:61 +0x499
+net/http.HandlerFunc.ServeHTTP(0x8d91a8, 0x945068, 0xc00007e1c0, 0xc000328100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc00007e1c0, 0xc000328100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00007e000, 0x945068, 0xc00007e1c0, 0xc000328100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00028e0a0, 0x945bc0, 0xc000316100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:15:37 callback.go:37: DeHC-gAAAAABQwFxAAABeh2Lidk
+2021/06/18 05:15:37 callback.go:38: 9DL6CeOSPVE0TKL9ubaTr74mftt6h5ya
+2021/06/18 05:15:37 callback.go:48: OAuth server status 401, Error processing your OAuth request: Invalid oauth_verifier parameter
+2021/06/18 05:15:37 callback.go:53: Twitter request is invalid
+2021/06/18 05:15:37 server.go:3139: http: panic serving 172.24.0.1:57976: runtime error: invalid memory address or nil pointer dereference
+goroutine 61 [running]:
+net/http.(*conn).serve.func1(0xc00022e5a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x843720, 0xb7e680)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterCallbackHandler(0x945068, 0xc0003dc700, 0xc000186f00)
+	/popular/app/controllers/twitter/callback.go:61 +0x499
+net/http.HandlerFunc.ServeHTTP(0x8d91a8, 0x945068, 0xc0003dc700, 0xc000186f00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0003dc700, 0xc000186f00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00007e000, 0x945068, 0xc0003dc700, 0xc000186f00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00022e5a0, 0x945bc0, 0xc0004ec880)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:16:57 callback.go:37: Pe8U6AAAAAABQwFxAAABeh2M9jw
+2021/06/18 05:16:57 callback.go:38: 84AzJLeGmQt4u0EamFfHCrTgRVnZItLe
+2021/06/18 05:25:45 callback.go:37: QZoawwAAAAABQwFxAAABeh2U_mM
+2021/06/18 05:25:45 callback.go:38: hsQVEqr03aJCpUHZLa1DC2sjnL5SvXeB
+2021/06/18 05:27:20 callback.go:37: WIQ89gAAAAABQwFxAAABeh2WdZA
+2021/06/18 05:27:20 callback.go:38: iBkdRXmKkfI9tHXv1nhIhi6GAnrlCf01
+2021/06/18 05:28:48 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:28:48 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:28:52 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:28:52 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:28:53 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:28:53 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:29:08 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:29:08 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:29:15 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:29:15 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:29:20 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:29:20 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:32:03 callback.go:37: fov_WwAAAAABQwFxAAABeh2axko
+2021/06/18 05:32:03 callback.go:38: lg4mGzHLGm9Ar5WDTLim1vQIOlmOmPT4
+2021/06/18 05:33:26 callback.go:37: q0ZTTAAAAAABQwFxAAABeh2cDFQ
+2021/06/18 05:33:26 callback.go:38: zkdQMIkDKnOBMZ7INNuha54QTKZxXeW2
+2021/06/18 05:46:57 callback.go:37: w15bogAAAAABQwFxAAABeh2oahM
+2021/06/18 05:46:57 callback.go:38: RkZYgymwtEFXLDJPvUclFspRFlN46cqe
+2021/06/18 05:47:26 callback.go:37: BcedjwAAAAABQwFxAAABeh2o2N8
+2021/06/18 05:47:26 callback.go:38: o6r7GPX3NmNCPKPFn5SWZme3JwUa8DUW
+2021/06/18 05:47:55 callback.go:37: X1iU4AAAAAABQwFxAAABeh2pTcI
+2021/06/18 05:47:55 callback.go:38: UUdRtoWvz2p7fY2jx9KE8mFDvVIuzYom
+2021/06/18 05:50:13 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:50:13 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:50:26 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:50:26 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:50:27 server.go:3139: http: panic serving 172.24.0.1:58134: template: home.html:27: unexpected "}" in operand
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc00021cfa0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839300, 0xc000098140)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945068, 0xc00026e1c0, 0x840a80, 0xc0002014d0, 0xc00011baa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:93 +0x37c
+popular/app/controllers.homeHandler(0x945068, 0xc00026e1c0, 0xc00026c100)
+	/popular/app/controllers/webserver.go:84 +0x239
+net/http.HandlerFunc.ServeHTTP(0x8d9180, 0x945068, 0xc00026e1c0, 0xc00026c100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc00026e1c0, 0xc00026c100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00026e0e0, 0x945068, 0xc00026e1c0, 0xc00026c100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00021cfa0, 0x945bc0, 0xc00022a640)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:50:29 server.go:3139: http: panic serving 172.24.0.1:58138: template: home.html:27: unexpected "}" in operand
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc0000d6000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839300, 0xc0001e4410)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945068, 0xc0001fe000, 0x840a80, 0xc00018fc80, 0xc00011daa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:93 +0x37c
+popular/app/controllers.homeHandler(0x945068, 0xc0001fe000, 0xc0000d8000)
+	/popular/app/controllers/webserver.go:84 +0x239
+net/http.HandlerFunc.ServeHTTP(0x8d9180, 0x945068, 0xc0001fe000, 0xc0000d8000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0001fe000, 0xc0000d8000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00026e0e0, 0x945068, 0xc0001fe000, 0xc0000d8000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d6000, 0x945bc0, 0xc00009a1c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:50:34 server.go:3139: http: panic serving 172.24.0.1:58142: template: home.html:27: unexpected "}" in operand
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0000d60a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839300, 0xc000098410)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945068, 0xc0000e8000, 0x840a80, 0xc000096690, 0xc000117aa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:93 +0x37c
+popular/app/controllers.homeHandler(0x945068, 0xc0000e8000, 0xc0000d8100)
+	/popular/app/controllers/webserver.go:84 +0x239
+net/http.HandlerFunc.ServeHTTP(0x8d9180, 0x945068, 0xc0000e8000, 0xc0000d8100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0000e8000, 0xc0000d8100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00026e0e0, 0x945068, 0xc0000e8000, 0xc0000d8100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d60a0, 0x945bc0, 0xc00009a240)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:50:34 server.go:3139: http: panic serving 172.24.0.1:58146: template: home.html:27: unexpected "}" in operand
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0xc0001c0140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839300, 0xc0001e46d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945068, 0xc0001fe0e0, 0x840a80, 0xc0003124b0, 0xc00011daa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:93 +0x37c
+popular/app/controllers.homeHandler(0x945068, 0xc0001fe0e0, 0xc0001dea00)
+	/popular/app/controllers/webserver.go:84 +0x239
+net/http.HandlerFunc.ServeHTTP(0x8d9180, 0x945068, 0xc0001fe0e0, 0xc0001dea00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0001fe0e0, 0xc0001dea00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00026e0e0, 0x945068, 0xc0001fe0e0, 0xc0001dea00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c0140, 0x945bc0, 0xc0001e0b80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:50:44 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:50:44 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:50:58 callback.go:37: R3HZOQAAAAABQwFxAAABeh2sGjA
+2021/06/18 05:50:58 callback.go:38: COo1Q8N29RBhltRN7oKkN9xEjeJpfuf9
+2021/06/18 05:51:32 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:51:32 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:51:40 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:51:40 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:51:46 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:51:46 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:51:54 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:51:54 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:51:59 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:51:59 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:52:04 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:52:04 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:52:08 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:52:08 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:52:17 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:52:17 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:52:36 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:52:36 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:52:38 server.go:3139: http: panic serving 172.24.0.1:58276: template: home.html:28: unexpected "}" in operand
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc0000acf00)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839300, 0xc0002982c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945068, 0xc0002840e0, 0x840a80, 0xc000286090, 0xc000117aa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:93 +0x37c
+popular/app/controllers.homeHandler(0x945068, 0xc0002840e0, 0xc0000fa100)
+	/popular/app/controllers/webserver.go:84 +0x239
+net/http.HandlerFunc.ServeHTTP(0x8d9180, 0x945068, 0xc0002840e0, 0xc0000fa100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0002840e0, 0xc0000fa100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fc0e0, 0x945068, 0xc0002840e0, 0xc0000fa100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000acf00, 0x945bc0, 0xc0000ba640)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:52:39 server.go:3139: http: panic serving 172.24.0.1:58280: template: home.html:28: unexpected "}" in operand
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0002ec000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839300, 0xc000094ec0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945068, 0xc0001fa000, 0x840a80, 0xc00018fc80, 0xc00011daa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:93 +0x37c
+popular/app/controllers.homeHandler(0x945068, 0xc0001fa000, 0xc0002ee000)
+	/popular/app/controllers/webserver.go:84 +0x239
+net/http.HandlerFunc.ServeHTTP(0x8d9180, 0x945068, 0xc0001fa000, 0xc0002ee000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5c0, 0x945068, 0xc0001fa000, 0xc0002ee000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000fc0e0, 0x945068, 0xc0001fa000, 0xc0002ee000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002ec000, 0x945bc0, 0xc000294440)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 05:52:44 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:52:44 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:53:32 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:53:32 webserver.go:39: リッスンしているポート 8080
+2021/06/18 05:55:05 webserver.go:37: デフォルトのポート 8080
+2021/06/18 05:55:05 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:00:46 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:00:46 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:01:27 callback.go:38: JdzhCQAAAAABQwFxAAABeh21sl0
+2021/06/18 06:01:27 callback.go:39: gqO9NBBhgNY9oJ3ro1YUzNwaAcr4bHa1
+2021/06/18 06:01:48 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:01:48 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:02:01 callback.go:38: 7BN3FwAAAAABQwFxAAABeh22NoY
+2021/06/18 06:02:01 callback.go:39: SyPBxLZjNymyIaUwsKK54H5kmBU0gNi7
+2021/06/18 06:02:20 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:02:20 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:02:22 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:02:22 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:02:23 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:02:23 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:02:41 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:02:41 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:02:45 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:02:45 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:02:52 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:02:52 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:02:56 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:02:56 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:02:58 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:02:58 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:03:03 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:03:03 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:03:08 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:03:08 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:03:09 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:03:09 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:03:15 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:03:15 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:03:20 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:03:20 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:03:33 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:03:33 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:03:47 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:03:47 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:04:08 callback.go:38: TiHEjAAAAAABQwFxAAABeh24JrU
+2021/06/18 06:04:08 callback.go:39: 04dnnSxkvt0tvBkfekXri2GysRZ26wAK
+2021/06/18 06:04:24 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:04:24 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:04:28 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:04:28 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:06:17 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:06:17 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:46:54 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:46:54 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:47:35 webserver.go:37: デフォルトのポート 8080
+2021/06/18 06:47:35 webserver.go:39: リッスンしているポート 8080
+2021/06/18 06:47:50 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:47:50 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:48:54 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:48:54 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:49:43 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:49:43 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:49:57 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:49:57 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:50:00 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:50:00 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:50:07 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:50:07 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:50:19 server.go:3139: http: panic serving 172.24.0.1:58500: interface conversion: interface {} is nil, not string
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0001f10e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc00028a570)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc0002ba1c0, 0xc000211300)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc0002ba1c0, 0xc000211300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc0002ba1c0, 0xc000211300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x9450e8, 0xc0002ba1c0, 0xc000211300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001f10e0, 0x945c40, 0xc000212dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:50:19 server.go:3139: http: panic serving 172.24.0.1:58516: interface conversion: interface {} is nil, not string
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc00007a000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0000903c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc0000b42a0, 0xc00009a500)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc0000b42a0, 0xc00009a500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc0000b42a0, 0xc00009a500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x9450e8, 0xc0000b42a0, 0xc00009a500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00007a000, 0x945c40, 0xc000064100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:50:19 server.go:3139: http: panic serving 172.24.0.1:58514: interface conversion: interface {} is nil, not string
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc00028c0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0004052f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc0002569a0, 0xc00029e400)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc0002569a0, 0xc00029e400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc0002569a0, 0xc00029e400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x9450e8, 0xc0002569a0, 0xc00029e400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00028c0a0, 0x945c40, 0xc000298000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:50:19 server.go:3139: http: panic serving 172.24.0.1:58518: interface conversion: interface {} is nil, not string
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc00007a0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc000405380)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc000256a80, 0xc00029e300)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc000256a80, 0xc00029e300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc000256a80, 0xc00029e300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x9450e8, 0xc000256a80, 0xc00029e300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00007a0a0, 0x945c40, 0xc000064040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:50:19 server.go:3139: http: panic serving 172.24.0.1:58520: interface conversion: interface {} is nil, not string
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc00028c140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc00028a630)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc0002ba2a0, 0xc00009a400)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc0002ba2a0, 0xc00009a400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc0002ba2a0, 0xc00009a400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x9450e8, 0xc0002ba2a0, 0xc00009a400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00028c140, 0x945c40, 0xc000092000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:50:19 server.go:3139: http: panic serving 172.24.0.1:58512: interface conversion: interface {} is nil, not string
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc00028c000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc00028a720)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc0002ba380, 0xc000211100)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc0002ba380, 0xc000211100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc0002ba380, 0xc000211100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x9450e8, 0xc0002ba380, 0xc000211100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00028c000, 0x945c40, 0xc0002980c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:50:19 server.go:3139: http: panic serving 172.24.0.1:58524: interface conversion: interface {} is nil, not string
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0xc0001f1360)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc00028a7e0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc0002ba460, 0xc000211400)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc0002ba460, 0xc000211400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc0002ba460, 0xc000211400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x9450e8, 0xc0002ba460, 0xc000211400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001f1360, 0x945c40, 0xc000420240)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:50:20 server.go:3139: http: panic serving 172.24.0.1:58528: interface conversion: interface {} is nil, not string
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0xc00028c280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc00028a960)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc0002ba540, 0xc00029e700)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc0002ba540, 0xc00029e700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc0002ba540, 0xc00029e700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x9450e8, 0xc0002ba540, 0xc00029e700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00028c280, 0x945c40, 0xc000298480)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:50:25 server.go:3139: http: panic serving 172.24.0.1:58532: interface conversion: interface {} is nil, not string
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc00028c320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc00028aae0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc0002ba620, 0xc00029e800)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc0002ba620, 0xc00029e800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc0002ba620, 0xc00029e800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002560e0, 0x9450e8, 0xc0002ba620, 0xc00029e800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00028c320, 0x945c40, 0xc000298580)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:50:46 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:50:46 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:51:02 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:51:02 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:51:04 server.go:3139: http: panic serving 172.24.0.1:58544: interface conversion: interface {} is nil, not string
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc000171040)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0001b1170)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc0001d61c0, 0xc000190b00)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc0001d61c0, 0xc000190b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc0001d61c0, 0xc000190b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x9450e8, 0xc0001d61c0, 0xc000190b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000171040, 0x945c40, 0xc000192dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:05 server.go:3139: http: panic serving 172.24.0.1:58548: interface conversion: interface {} is nil, not string
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc00023a000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc000238180)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x9450e8, 0xc00024a000, 0xc00023e000)
+	/popular/app/controllers/twitter/tweet.go:15 +0x21f
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x9450e8, 0xc00024a000, 0xc00023e000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x9450e8, 0xc00024a000, 0xc00023e000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x9450e8, 0xc00024a000, 0xc00023e000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00023a000, 0x945c40, 0xc000064040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:38 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:51:38 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:51:42 server.go:3139: http: panic serving 172.24.0.1:58552: interface conversion: interface {} is nil, not string
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0001c10e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc00009a420)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fe8, 0xc0000bc1c0, 0xc0001df500)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fe8, 0xc0000bc1c0, 0xc0001df500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fe8, 0xc0000bc1c0, 0xc0001df500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x944fe8, 0xc0000bc1c0, 0xc0001df500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c10e0, 0x945b40, 0xc0001e0e00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:42 server.go:3139: http: panic serving 172.24.0.1:58564: interface conversion: interface {} is nil, not string
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc00009c000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc00009a4b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fe8, 0xc0000bc2a0, 0xc000328400)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fe8, 0xc0000bc2a0, 0xc000328400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fe8, 0xc0000bc2a0, 0xc000328400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x944fe8, 0xc0000bc2a0, 0xc000328400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00009c000, 0x945b40, 0xc0000a0000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:42 server.go:3139: http: panic serving 172.24.0.1:58570: interface conversion: interface {} is nil, not string
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc00030a140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0002d3500)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fe8, 0xc0002249a0, 0xc0001df300)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fe8, 0xc0002249a0, 0xc0001df300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fe8, 0xc0002249a0, 0xc0001df300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x944fe8, 0xc0002249a0, 0xc0001df300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00030a140, 0x945b40, 0xc000320000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:42 server.go:3139: http: panic serving 172.24.0.1:58568: interface conversion: interface {} is nil, not string
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc00030a0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc000384330)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fe8, 0xc0003ae1c0, 0xc0000a6300)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fe8, 0xc0003ae1c0, 0xc0000a6300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fe8, 0xc0003ae1c0, 0xc0000a6300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x944fe8, 0xc0003ae1c0, 0xc0000a6300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00030a0a0, 0x945b40, 0xc0002ee0c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:42 server.go:3139: http: panic serving 172.24.0.1:58572: interface conversion: interface {} is nil, not string
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc000388000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0003843c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fe8, 0xc0003ae2a0, 0xc000328300)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fe8, 0xc0003ae2a0, 0xc000328300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fe8, 0xc0003ae2a0, 0xc000328300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x944fe8, 0xc0003ae2a0, 0xc000328300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000388000, 0x945b40, 0xc00038e000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:42 server.go:3139: http: panic serving 172.24.0.1:58566: interface conversion: interface {} is nil, not string
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc00030a000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0002d3590)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fe8, 0xc000224a80, 0xc000328500)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fe8, 0xc000224a80, 0xc000328500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fe8, 0xc000224a80, 0xc000328500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x944fe8, 0xc000224a80, 0xc000328500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00030a000, 0x945b40, 0xc0003200c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:42 server.go:3139: http: panic serving 172.24.0.1:58576: interface conversion: interface {} is nil, not string
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc00009c140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0002d36b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fe8, 0xc000224b60, 0xc0000a6500)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fe8, 0xc000224b60, 0xc0000a6500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fe8, 0xc000224b60, 0xc0000a6500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x944fe8, 0xc000224b60, 0xc0000a6500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00009c140, 0x945b40, 0xc0000a02c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:43 server.go:3139: http: panic serving 172.24.0.1:58580: interface conversion: interface {} is nil, not string
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0xc000388140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0002d3770)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fe8, 0xc000224c40, 0xc000396500)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fe8, 0xc000224c40, 0xc000396500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fe8, 0xc000224c40, 0xc000396500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x944fe8, 0xc000224c40, 0xc000396500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000388140, 0x945b40, 0xc00038e280)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:48 server.go:3139: http: panic serving 172.24.0.1:58584: interface conversion: interface {} is nil, not string
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc00009c1e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0002d3830)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fe8, 0xc000224d20, 0xc0000a6600)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fe8, 0xc000224d20, 0xc0000a6600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fe8, 0xc000224d20, 0xc0000a6600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002240e0, 0x944fe8, 0xc000224d20, 0xc0000a6600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00009c1e0, 0x945b40, 0xc0000a0340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:51:54 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:51:54 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:52:04 server.go:3139: http: panic serving 172.24.0.1:58588: interface conversion: interface {} is nil, not string
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc00029ef00)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0001d00f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc0001ac1c0, 0xc0002f0a00)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc0001ac1c0, 0xc0002f0a00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc0001ac1c0, 0xc0002f0a00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc0001ac1c0, 0xc0002f0a00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00029ef00, 0x945b20, 0xc0002ac640)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:04 server.go:3139: http: panic serving 172.24.0.1:58604: interface conversion: interface {} is nil, not string
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc000168280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc000404390)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc00042e1c0, 0xc0002f0600)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc00042e1c0, 0xc0002f0600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc00042e1c0, 0xc0002f0600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc00042e1c0, 0xc0002f0600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000168280, 0x945b20, 0xc00018a780)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:04 server.go:3139: http: panic serving 172.24.0.1:58608: interface conversion: interface {} is nil, not string
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc000408000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc000404420)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc00042e2a0, 0xc000188f00)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc00042e2a0, 0xc000188f00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc00042e2a0, 0xc000188f00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc00042e2a0, 0xc000188f00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000408000, 0x945b20, 0xc000410000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:04 server.go:3139: http: panic serving 172.24.0.1:58600: interface conversion: interface {} is nil, not string
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc000168140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0001d0180)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc0001ac2a0, 0xc000189000)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc0001ac2a0, 0xc000189000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc0001ac2a0, 0xc000189000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc0001ac2a0, 0xc000189000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000168140, 0x945b20, 0xc00006c040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:04 server.go:3139: http: panic serving 172.24.0.1:58602: interface conversion: interface {} is nil, not string
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0001681e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0003b37a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc0002f28c0, 0xc00020c300)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc0002f28c0, 0xc00020c300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc0002f28c0, 0xc00020c300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc0002f28c0, 0xc00020c300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001681e0, 0x945b20, 0xc00018a840)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:05 server.go:3139: http: panic serving 172.24.0.1:58606: interface conversion: interface {} is nil, not string
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc000168320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc000404510)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc00042e380, 0xc0002f0800)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc00042e380, 0xc0002f0800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc00042e380, 0xc0002f0800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc00042e380, 0xc0002f0800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000168320, 0x945b20, 0xc00018a900)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:05 server.go:3139: http: panic serving 172.24.0.1:58612: interface conversion: interface {} is nil, not string
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc000408140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0001d02a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc0001ac380, 0xc00040c500)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc0001ac380, 0xc00040c500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc0001ac380, 0xc00040c500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc0001ac380, 0xc00040c500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000408140, 0x945b20, 0xc000410340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:06 server.go:3139: http: panic serving 172.24.0.1:58616: interface conversion: interface {} is nil, not string
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc00029f180)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0003b3920)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc0002f29a0, 0xc0002f0b00)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc0002f29a0, 0xc0002f0b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc0002f29a0, 0xc0002f0b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc0002f29a0, 0xc0002f0b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00029f180, 0x945b20, 0xc0002ada40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:11 server.go:3139: http: panic serving 172.24.0.1:58620: interface conversion: interface {} is nil, not string
+goroutine 57 [running]:
+net/http.(*conn).serve.func1(0xc0004081e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0003b3a10)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc0002f2a80, 0xc00040c600)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc0002f2a80, 0xc00040c600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc0002f2a80, 0xc00040c600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc0002f2a80, 0xc00040c600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0004081e0, 0x945b20, 0xc0004103c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:41 server.go:3139: http: panic serving 172.24.0.1:58624: interface conversion: interface {} is nil, not string
+goroutine 47 [running]:
+net/http.(*conn).serve.func1(0xc00029f220)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x846e00, 0xc0001d0360)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers/twitter.TwitterPostHandler(0x944fc8, 0xc0001ac460, 0xc0002f0c00)
+	/popular/app/controllers/twitter/tweet.go:16 +0x1f9
+net/http.HandlerFunc.ServeHTTP(0x8d9050, 0x944fc8, 0xc0001ac460, 0xc0002f0c00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8d5e0, 0x944fc8, 0xc0001ac460, 0xc0002f0c00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002f20e0, 0x944fc8, 0xc0001ac460, 0xc0002f0c00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00029f220, 0x945b20, 0xc0002adbc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 06:52:57 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:52:57 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:53:00 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:53:00 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:53:09 tweet.go:12: &{Y6C7vWpv-tVU-HSXa2Dd0MQyWO59NQdXQaPExR4QZRM= {13847212698484711144 9257153501 0xb8d820} map[]}
+2021/06/18 06:53:51 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:53:51 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:54:14 tweet.go:12: <nil>
+2021/06/18 06:58:49 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:58:49 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:58:52 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:58:52 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:58:53 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:58:53 webserver.go:40: リッスンしているポート 8080
+2021/06/18 06:59:39 webserver.go:38: デフォルトのポート 8080
+2021/06/18 06:59:39 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:00:41 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:00:41 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:01:16 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:01:16 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:01:29 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:01:29 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:01:31 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:01:31 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:01:40 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:01:40 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:01:42 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:01:42 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:01:43 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:01:43 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:01:46 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:01:46 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:03:55 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:03:55 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:04:29 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:04:29 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:04:32 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:04:32 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:04:33 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:04:33 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:04:44 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:04:44 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:04:47 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:04:47 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:04:49 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:04:49 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:04:53 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:04:53 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:04:55 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:04:55 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:05:50 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:05:50 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:05:53 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:05:53 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:07:16 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:07:16 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:08:00 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:08:00 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:18:00 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:18:00 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:18:05 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:18:05 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:18:06 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:18:06 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:24:06 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:24:06 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:24:17 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:24:17 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:24:22 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:24:22 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:24:23 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:24:23 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:24:26 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:24:26 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:24:27 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:24:27 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:24:29 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:24:29 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:25:38 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:25:38 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:25:54 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:25:54 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:26:49 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:26:49 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:27:22 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:27:22 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:27:25 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:27:25 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:27:26 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:27:26 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:27:29 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:27:29 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:27:31 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:27:31 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:27:34 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:27:34 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:27:39 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:27:39 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:27:55 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:27:55 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:35:57 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:35:57 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:36:11 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:36:11 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:36:20 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:36:20 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:46:11 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:46:11 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:46:13 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:46:13 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:46:16 tweet.go:12: <nil>
+2021/06/18 07:48:26 config.go:49: exit status 2
+2021/06/18 07:48:26 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:48:26 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:51:52 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:51:52 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:51:56 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:51:56 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:56:46 webserver.go:38: デフォルトのポート 8080
+2021/06/18 07:56:46 webserver.go:40: リッスンしているポート 8080
+2021/06/18 07:56:50 tweet.go:19: map[avatar_url:http://pbs.twimg.com/profile_images/1317260273955164160/NfYjshzM_normal.jpg avatar_url_origin:http://pbs.twimg.com/profile_images/1317260273955164160/NfYjshzM.jpg name:hx_kei oauth_secret:7qRUuckD1XMfKKjxcgq10YyVh74CoPyIrGAfMpyJ7I8oS oauth_token:1204610312348942336-ALcEcJdSqIuQ0EaG7YvzwuLY7xfHnI]
+2021/06/18 08:03:11 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:03:11 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:03:21 tweet.go:22: http://pbs.twimg.com/profile_images/1317260273955164160/NfYjshzM_normal.jpg
+2021/06/18 08:03:39 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:03:39 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:03:46 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:03:46 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:03:47 config.go:49: exit status 2
+2021/06/18 08:03:47 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:03:47 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:04:15 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:04:15 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:04:22 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:04:22 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:04:26 tweet.go:19: 7qRUuckD1XMfKKjxcgq10YyVh74CoPyIrGAfMpyJ7I8oS
+2021/06/18 08:04:46 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:04:46 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:04:49 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:04:49 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:04:55 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:04:55 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:05:09 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:05:09 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:05:13 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:05:13 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:05:18 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:05:18 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:06:00 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:06:00 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:06:04 tweet.go:24: &{1204610312348942336-ALcEcJdSqIuQ0EaG7YvzwuLY7xfHnI 7qRUuckD1XMfKKjxcgq10YyVh74CoPyIrGAfMpyJ7I8oS}
+2021/06/18 08:06:14 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:06:14 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:06:53 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:06:53 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:07:00 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:07:00 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:07:17 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:07:17 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:11:31 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:11:31 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:15:33 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:15:33 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:15:35 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:15:35 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:15:38 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:15:38 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:16:36 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:16:36 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:16:40 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:16:40 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:18:37 config.go:49: exit status 2
+2021/06/18 08:18:37 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:18:37 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:18:40 config.go:49: exit status 2
+2021/06/18 08:18:40 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:18:40 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:18:45 config.go:49: exit status 2
+2021/06/18 08:18:45 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:18:45 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:18:49 config.go:49: exit status 2
+2021/06/18 08:18:49 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:18:49 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:18:53 config.go:49: exit status 2
+2021/06/18 08:18:53 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:18:53 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:18:57 config.go:49: exit status 2
+2021/06/18 08:18:57 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:18:57 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:19:36 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:19:36 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:22:19 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:22:19 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:22:21 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:22:21 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:22:22 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:22:22 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:22:28 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:22:28 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:22:29 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:22:29 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:24:44 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:24:44 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:24:46 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:24:46 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:25:52 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:25:52 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:26:53 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:26:53 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:27:05 config.go:49: exit status 2
+2021/06/18 08:27:05 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:27:05 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:27:10 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:27:10 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:36:15 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:36:15 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:38:06 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:38:06 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:38:08 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:38:08 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:38:13 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:38:13 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:38:53 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:38:53 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:38:56 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:38:56 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:38:58 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:38:58 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:39:08 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:39:08 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:39:16 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:39:16 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:39:19 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:39:19 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:39:25 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:39:25 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:39:57 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:39:57 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:40:24 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:40:24 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:40:28 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:40:28 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:40:31 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:40:31 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:40:34 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:40:34 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:41:28 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:41:28 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:41:30 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:41:30 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:41:37 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:41:37 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:41:45 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:41:45 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:44:15 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:44:15 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:44:25 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:44:25 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:44:29 server.go:3139: http: panic serving 172.24.0.1:59124: template: private_navbar.html:13: unexpected "/" in command
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0001c90e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839220, 0xc0001ed1d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945148, 0xc00022a1c0, 0x8409a0, 0xc0002050e0, 0xc000123aa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:95 +0x37c
+popular/app/controllers.homeHandler(0x945148, 0xc00022a1c0, 0xc0001e6b00)
+	/popular/app/controllers/webserver.go:86 +0x28a
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x945148, 0xc00022a1c0, 0xc0001e6b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x945148, 0xc00022a1c0, 0xc0001e6b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022a0e0, 0x945148, 0xc00022a1c0, 0xc0001e6b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c90e0, 0x945ca0, 0xc0001e8e00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 08:44:31 server.go:3139: http: panic serving 172.24.0.1:59128: template: private_navbar.html:13: unexpected "/" in command
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc00009e000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839220, 0xc0000a42c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945148, 0xc0000bc000, 0x8409a0, 0xc00009a180, 0xc00011faa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:95 +0x37c
+popular/app/controllers.homeHandler(0x945148, 0xc0000bc000, 0xc0000a8000)
+	/popular/app/controllers/webserver.go:86 +0x28a
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x945148, 0xc0000bc000, 0xc0000a8000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x945148, 0xc0000bc000, 0xc0000a8000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022a0e0, 0x945148, 0xc0000bc000, 0xc0000a8000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00009e000, 0x945ca0, 0xc0000a2000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 08:44:36 server.go:3139: http: panic serving 172.24.0.1:59132: template: private_navbar.html:13: unexpected "/" in command
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc00028c000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839220, 0xc0000a4590)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945148, 0xc0000bc0e0, 0x8409a0, 0xc00009a900, 0xc00011faa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:95 +0x37c
+popular/app/controllers.homeHandler(0x945148, 0xc0000bc0e0, 0xc00029e000)
+	/popular/app/controllers/webserver.go:86 +0x28a
+net/http.HandlerFunc.ServeHTTP(0x8d90e0, 0x945148, 0xc0000bc0e0, 0xc00029e000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x945148, 0xc0000bc0e0, 0xc00029e000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00022a0e0, 0x945148, 0xc0000bc0e0, 0xc00029e000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00028c000, 0x945ca0, 0xc000298000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 08:44:46 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:44:46 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:45:11 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:45:11 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:45:11 server.go:3139: http: panic serving 172.24.0.1:59144: template: private_navbar.html:11: unexpected "!" in if
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0001710e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839220, 0xc000197180)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945148, 0xc0001d61c0, 0x8409a0, 0xc0001b10e0, 0xc0000cbaa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:95 +0x37c
+popular/app/controllers.indexHandler(0x945148, 0xc0001d61c0, 0xc000190b00)
+	/popular/app/controllers/webserver.go:61 +0x18a
+net/http.HandlerFunc.ServeHTTP(0x8d90e8, 0x945148, 0xc0001d61c0, 0xc000190b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x945148, 0xc0001d61c0, 0xc000190b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x945148, 0xc0001d61c0, 0xc000190b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001710e0, 0x945ca0, 0xc000192dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 08:45:13 server.go:3139: http: panic serving 172.24.0.1:59148: template: private_navbar.html:11: unexpected "!" in if
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc00007a000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839220, 0xc0000202b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945148, 0xc00030a000, 0x8409a0, 0xc000078180, 0xc0000c7aa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:95 +0x37c
+popular/app/controllers.indexHandler(0x945148, 0xc00030a000, 0xc00007e000)
+	/popular/app/controllers/webserver.go:61 +0x18a
+net/http.HandlerFunc.ServeHTTP(0x8d90e8, 0x945148, 0xc00030a000, 0xc00007e000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x945148, 0xc00030a000, 0xc00007e000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x945148, 0xc00030a000, 0xc00007e000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00007a000, 0x945ca0, 0xc000064040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 08:45:16 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:45:16 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:45:19 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:45:19 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:45:20 server.go:3139: http: panic serving 172.24.0.1:59156: template: private_navbar.html:11: bad character U+0021 '!'
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc000171180)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839220, 0xc000197160)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945148, 0xc0001d61c0, 0x8409a0, 0xc0001b10e0, 0xc0000cbaa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:95 +0x37c
+popular/app/controllers.indexHandler(0x945148, 0xc0001d61c0, 0xc000190b00)
+	/popular/app/controllers/webserver.go:61 +0x18a
+net/http.HandlerFunc.ServeHTTP(0x8d90e8, 0x945148, 0xc0001d61c0, 0xc000190b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x945148, 0xc0001d61c0, 0xc000190b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x945148, 0xc0001d61c0, 0xc000190b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000171180, 0x945ca0, 0xc000192dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 08:45:21 server.go:3139: http: panic serving 172.24.0.1:59160: template: private_navbar.html:11: bad character U+0021 '!'
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc00020c000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x839220, 0xc000020100)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+popular/app/controllers.generateHTML(0x945148, 0xc000234000, 0x8409a0, 0xc00020a180, 0xc0000c7aa8, 0x3, 0x3)
+	/popular/app/controllers/webserver.go:95 +0x37c
+popular/app/controllers.indexHandler(0x945148, 0xc000234000, 0xc00021e000)
+	/popular/app/controllers/webserver.go:61 +0x18a
+net/http.HandlerFunc.ServeHTTP(0x8d90e8, 0x945148, 0xc000234000, 0xc00021e000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0xb8e5e0, 0x945148, 0xc000234000, 0xc00021e000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001d60e0, 0x945148, 0xc000234000, 0xc00021e000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00020c000, 0x945ca0, 0xc000218000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/18 08:45:24 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:45:24 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:45:47 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:45:47 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:48:09 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:48:09 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:48:16 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:48:16 webserver.go:40: リッスンしているポート 8080
+2021/06/18 08:48:29 webserver.go:38: デフォルトのポート 8080
+2021/06/18 08:48:29 webserver.go:40: リッスンしているポート 8080

@@ -6,6 +6,8 @@ import (
 	"net/url"
 	"popular/config"
 
+	"github.com/astaxie/session"
+	_ "github.com/astaxie/session/providers/memory"
 	"github.com/garyburd/go-oauth/oauth"
 )
 
@@ -15,6 +17,14 @@ type Account struct {
 	ScreenName      string `json:"screen_name"`
 	ProfileImageURL string `json:"profile_image_url"`
 	Email           string `json:"email"`
+}
+
+var GlobalSessions *session.Manager
+
+func init() {
+	// セッションの設定
+	GlobalSessions, _ = session.NewManager("memory", "gosessionid", 3600)
+	go GlobalSessions.GC()
 }
 
 // GetConnect 接続を取得する
@@ -31,12 +41,12 @@ func GetConnect() *oauth.Client {
 }
 
 // GetAccessToken アクセストークンを取得する
-// func GetAccessToken(rt *oauth.Credentials, oauthVerifier string) (*oauth.Credentials, error) {
-// 	oc := GetConnect()
-// 	at, _, err := oc.RequestToken(nil, rt, oauthVerifier)
+func GetAccessToken(rt *oauth.Credentials, oauthVerifier string) (*oauth.Credentials, error) {
+	oc := GetConnect()
+	at, _, err := oc.RequestToken(nil, rt, oauthVerifier)
 
-// 	return at, err
-// }
+	return at, err
+}
 
 // GetMe 自身を取得する
 func GetMe(at *oauth.Credentials, user *Account) error {
@@ -52,11 +62,11 @@ func GetMe(at *oauth.Credentials, user *Account) error {
 	defer resp.Body.Close()
 
 	if resp.StatusCode >= 500 {
-		return errors.New("Twitter is unavailable")
+		return errors.New("Twitterは利用できません")
 	}
 
 	if resp.StatusCode >= 400 {
-		return errors.New("Twitter request is invalid")
+		return errors.New("Twitterのリクエストが無効です")
 	}
 
 	err = json.NewDecoder(resp.Body).Decode(user)
@@ -68,19 +78,19 @@ func GetMe(at *oauth.Credentials, user *Account) error {
 
 }
 
-// // PostTweet Tweetを投稿する
-// func PostTweet(at *oauth.Credentials) error {
-// 	oc := GetConnect()
+// PostTweet Tweetを投稿する
+func PostTweet(at *oauth.Credentials, text string) error {
+	oc := GetConnect()
 
-// 	v := url.Values{}
-// 	v.Set("status", "テスト投稿。APIから投稿しました。\n投稿元：https://github.com/wheatandcat/popular")
+	v := url.Values{}
+	v.Set("status", text+"\n投稿元：https://popular-32pe64nwja-an.a.run.app")
 
-// 	resp, err := oc.Post(nil, at, "https://api.twitter.com/1.1/statuses/update.json", v)
-// 	if err != nil {
-// 		return err
-// 	}
-// 	defer resp.Body.Close()
+	resp, err := oc.Post(nil, at, "https://api.twitter.com/1.1/statuses/update.json", v)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
 
-// 	return nil
+	return nil
 
-// }
+}

@@ -128,7 +128,7 @@ footer {
 }
 .picture-img img{
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 .search-img {
   height: 3.5rem;
@@ -168,7 +168,7 @@ footer {
 }
 .auth-img {
   border-radius: 2rem;
-  width: 43%;
+  width: 65%;
   border-color: white;
   border-width: 1px;
   border-style: solid;
@@ -239,5 +239,25 @@ footer {
 }
 .contact-subtitle {
   font-size: 1rem;
+}
+.nav-item {
+  position: absolute;
+  right: 12px;
+  top: 4px;
+}
+.picture-img {
+  display: none;
+}
+.auth-img {
+  margin-top: 5px;
+  margin-right: 3px;
+}
+.search-img {
+  width: 100%;
+  right: 0;
+  font-size: 1.2rem;
+}
+.search-icon {
+  right: 115px;
 }
 }

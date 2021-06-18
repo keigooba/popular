@@ -23,9 +23,10 @@ func StartWebServer() error {
 	})
 	http.HandleFunc("/contact", contactHandler)
 	http.HandleFunc("/twitter/oauth", controllersTwitter.TwitterAuthHandler)
-	http.HandleFunc("/twitter/callback", controllersTwitter.TwitterAuthHandler)
-	http.HandleFunc("/agreement", homeHandler)
-	http.HandleFunc("/privacy_policy", homeHandler)
+	http.HandleFunc("/twitter/callback", controllersTwitter.TwitterCallbackHandler)
+	http.HandleFunc("/twitter/post", controllersTwitter.TwitterPostHandler)
+	http.HandleFunc("/agreement", commonHandler)
+	http.HandleFunc("/privacy_policy", commonHandler)
 	http.HandleFunc("/home", homeHandler)
 	http.HandleFunc("/version", versionHandler)
 	http.HandleFunc("/logout", logoutHandler)
@@ -75,12 +76,23 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func commonHandler(w http.ResponseWriter, r *http.Request) {
+	url := r.URL.Path
+	data, err := session(w, r)
+	if err != nil {
+		generateHTML(w, nil, "layout", "public_navbar", "main"+url)
+	} else {
+		generateHTML(w, data, "layout", "private_navbar", "main"+url)
+	}
+}
+
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	url := r.URL.Path
 	data, err := session(w, r)
 	if err != nil {
 		generateHTML(w, nil, "layout", "public_navbar", "main"+url)
 	} else {
+		data["HomeUser"] = "ログインユーザー" //ナビゲーションメニュー「ホームへ」非表示用
 		generateHTML(w, data, "layout", "private_navbar", "main"+url)
 	}
 }

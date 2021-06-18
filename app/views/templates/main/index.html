@@ -14,7 +14,7 @@
     {{if .UserData}}
     <button class="btn btn-lg font-weight-bold btn-home px-4 py-1" onclick="location.href='/home'"><i class="fas fa-home mr-1"></i>ホームへ</button>
     {{else}}
-    <button class="btn btn-lg font-weight-bold btn-login px-4 py-1" onclick="location.href='/login'"><i class="fab fa-twitter mr-1"></i>ツイッターでログイン</button>
+    <button class="btn btn-lg font-weight-bold btn-login px-4 py-1" onclick="location.href='/twitter/oauth'"><i class="fab fa-twitter mr-1"></i>ツイッターでログイン</button>
     <div class="text-gray-500 mt-1">
       <a href="/agreement" class="underline">利用規約</a>
       <a href="/privacy_policy" class="underline">プライバシーポリシー</a>
@@ -31,11 +31,11 @@
     {{if .UserData}}
     <button class="btn btn-lg font-weight-bold btn-home px-4 py-1 display" onclick="location.href='/home'"><i class="fas fa-home mr-1"></i>ホームへ</button>
     {{else}}
-    <button class="btn btn-lg font-weight-bold btn-login px-4 py-1 display" onclick="location.href='/login'"><i class="fab fa-twitter mr-1"></i>ツイッターでログイン</button>
+    <button class="btn btn-lg font-weight-bold btn-login px-4 py-1 display" onclick="location.href='/twitter/oauth'"><i class="fab fa-twitter mr-1"></i>ツイッターでログイン</button>
     {{end}}
     <p class="mt-4 font-weight-bold">いいねやフォロワーを増やして人気者を目指そう！！</p>
-    <button class="btn btn-lightblue"><i class="fab fa-twitter mr-1"></i>ツイート</button>
-    <button class="btn btn-navyblue"><i class="fab fa-facebook-f mr-1"></i>Facebook</button>
+    <button class="btn btn-lightblue" onclick="location.href='https://twitter.com/intent/tweet?url=https%3A%2F%2Fpopular-32pe64nwja-an.a.run.app&text=popular｜人気者を目指そう%0D%0Aフリー画像を投稿できるサービス%0D%0A%20%23popular%0D%0A'"><i class="fab fa-twitter mr-1"></i>ツイート</button>
+    <button class="btn btn-navyblue" onclick="location.href='https://www.facebook.com/share.php?u=https%3A%2F%2Fpopular-32pe64nwja-an.a.run.app'"><i class="fab fa-facebook-f mr-1"></i>Facebook</button>
   </div>
 </div>
 </div>
