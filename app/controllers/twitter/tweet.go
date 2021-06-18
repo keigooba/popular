@@ -1,26 +1,31 @@
 package controllersTwitter
 
 import (
-	"github.com/astaxie/beego"
+	"log"
+	"net/http"
+	"popular/lib/twitter"
+
+	"github.com/garyburd/go-oauth/oauth"
+	"github.com/stretchr/objx"
 )
 
-// TweetController Tweetコントローラ
-type TweetController struct {
-	beego.Controller
-}
-
 // Get ツイートする
-// func (c *TweetController) Get() {
-// 	c.StartSession()
+func TwitterPostHandler(w http.ResponseWriter, r *http.Request) {
+	authCookie, err := r.Cookie("auth")
+	if err != nil {
+		log.Println("cokkieにデータがありません。")
+		http.Redirect(w, r, "/home", 302)
+	}
+	auth_data := objx.MustFromBase64(authCookie.Value)
 
-// 	at := oauth.Credentials{
-// 		Secret: c.CruSession.Get("oauth_secret").(string),
-// 		Token:  c.CruSession.Get("oauth_token").(string),
-// 	}
+	text := r.FormValue("text")
+	at := &oauth.Credentials{
+		Secret: auth_data["oauth_secret"].(string),
+		Token:  auth_data["oauth_token"].(string),
+	}
+	if err := twitter.PostTweet(at, text); err != nil {
+		log.Println(err)
+	}
 
-// 	if err := twitter.PostTweet(&at); err != nil {
-// 		panic(err)
-// 	}
-
-// 	c.Redirect("http://localhost:8080/?message=投稿しました", 302)
-// }
+	http.Redirect(w, r, "/home", 302)
+}

@@ -3,52 +3,49 @@ package controllersTwitter
 import (
 	"log"
 	"net/http"
+	"popular/lib/twitter"
+	"strings"
 
-	"github.com/astaxie/beego"
+	"github.com/garyburd/go-oauth/oauth"
+	"github.com/stretchr/objx"
 )
-
-// CallbackController コールバックコントローラ
-type CallbackController struct {
-	beego.Controller
-}
-
-// CallbackRequest コールバックリクエスト
-type CallbackRequest struct {
-	Token    string `form:"oauth_token"`
-	Verifier string `form:"oauth_verifier"`
-}
 
 // Get コールバックする
 func TwitterCallbackHandler(w http.ResponseWriter, r *http.Request) {
 
-	log.Panicln("koko")
-	// request := CallbackRequest{}
-	// if err := c.ParseForm(&request); err != nil {
-	// 	panic(err)
-	// }
+	sess := twitter.GlobalSessions.SessionStart(w, r)
 
-	// at, err := twitter.GetAccessToken(
-	// 	&oauth.Credentials{
-	// 		Token:  c.CruSession.Get("request_token").(string),
-	// 		Secret: c.CruSession.Get("request_token_secret").(string),
-	// 	},
-	// 	request.Verifier,
-	// )
-	// if err != nil {
-	// 	panic(err)
-	// }
+	at, err := twitter.GetAccessToken(
+		&oauth.Credentials{
+			Token:  sess.Get("request_token").(string),
+			Secret: sess.Get("request_token_secret").(string),
+		},
+		r.FormValue("oauth_verifier"),
+	)
+	if err != nil {
+		log.Println(err)
+	}
 
-	// c.CruSession.Set("oauth_secret", at.Secret)
-	// c.CruSession.Set("oauth_token", at.Token)
+	account := twitter.Account{}
+	if err = twitter.GetMe(at, &account); err != nil {
+		log.Println(err)
+	}
+	// 写真が小さいため登録された写真を取得
+	imgURL := strings.Replace(account.ProfileImageURL, "_normal", "", -1)
 
-	// account := twitter.Account{}
-	// if err = twitter.GetMe(at, &account); err != nil {
-	// 	panic(err)
-	// }
+	authCookieValue := objx.New(map[string]interface{}{
+		"oauth_secret":      at.Secret,
+		"oauth_token":       at.Token,
+		"name":              account.ScreenName,
+		"avatar_url_origin": imgURL,
+		"avatar_url":        account.ProfileImageURL,
+	}).MustBase64()
 
-	// c.Data["ID"] = account.ID
-	// c.Data["ProfileImageURL"] = account.ProfileImageURL
-	// c.Data["ScreenName"] = account.ScreenName
-	// c.Data["Email"] = account.Email
-	// c.TplName = "twitter/callback.tpl"
+	http.SetCookie(w, &http.Cookie{
+		Name:  "auth",
+		Value: authCookieValue,
+		Path:  "/",
+	})
+
+	http.Redirect(w, r, "/home", 302)
 }
