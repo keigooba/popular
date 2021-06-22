@@ -5,6 +5,10 @@ services:
       context: ./golang/
       dockerfile: Dockerfile.dev
     container_name: "popular"
+    environment:
+      TwitterConsumerKey: ${TWITTER_KEY}
+      TwitterConsumerSecret: ${TWITTER_SECRET}
+      PixabayKey: ${PIXABAY_KEY}
     volumes:
       - ../:/popular
     ports:

@@ -115,6 +115,7 @@ func session(_ http.ResponseWriter, r *http.Request) (data map[string]interface{
 	}
 	if authCookie, err := r.Cookie("auth"); err == nil {
 		data["UserData"] = objx.MustFromBase64(authCookie.Value)
+		data["PixabayKey"] = config.Config.PixabayKey
 	} else {
 		return nil, err
 	}

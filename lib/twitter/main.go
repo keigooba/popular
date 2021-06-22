@@ -1,11 +1,13 @@
 package twitter
 
 import (
+	"encoding/base64"
 	"encoding/json"
 	"errors"
 	"net/url"
 	"popular/config"
 
+	"github.com/ChimeraCoder/anaconda"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"
 	"github.com/garyburd/go-oauth/oauth"
@@ -80,16 +82,25 @@ func GetMe(at *oauth.Credentials, user *Account) error {
 
 // PostTweet Tweetを投稿する
 func PostTweet(at *oauth.Credentials, text string) error {
-	oc := GetConnect()
+	// oc := GetConnect()
+
+	api := anaconda.NewTwitterApiWithCredentials(at.Token, at.Secret, config.Config.TwitterConsumerKey, config.Config.TwitterConsumerSecret)
+
+	src := []byte("https://pbs.twimg.com/profile_images/1317260273955164160/NfYjshzM.jpg")
+	base64String := base64.StdEncoding.EncodeToString(src)
+
+	media, _ := api.UploadMedia(base64String)
 
 	v := url.Values{}
-	v.Set("status", text+"\n投稿元：https://popular-32pe64nwja-an.a.run.app")
+	v.Add("media_ids", media.MediaIDString)
+	// v.Add("status", text+"\n投稿元：https://popular-32pe64nwja-an.a.run.app")
+	// v.Add("media_ids", media.MediaIDString)
 
-	resp, err := oc.Post(nil, at, "https://api.twitter.com/1.1/statuses/update.json", v)
-	if err != nil {
-		return err
-	}
-	defer resp.Body.Close()
+	// resp, err := oc.Post(nil, at, "https://api.twitter.com/1.1/statuses/update.json", v)
+	// if err != nil {
+	// 	return err
+	// }
+	// defer resp.Body.Close()
 
 	return nil
 

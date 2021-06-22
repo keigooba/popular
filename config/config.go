@@ -20,8 +20,9 @@ type ConfigList struct {
 	View                  string `json:"view"`
 	URL                   string `json:"url"`
 	Version               string `json:"version"`
-	TwitterConsumerKey    string `json:"twitterConsumerKey"`
-	TwitterConsumerSecret string `json:"twitterConsumerSecret"`
+	TwitterConsumerKey    string
+	TwitterConsumerSecret string
+	PixabayKey            string
 }
 
 // Config Configの定義
@@ -62,6 +63,10 @@ func LoadConfig() error {
 	if err != nil {
 		return err
 	}
+	// 環境変数で設定
+	Config.TwitterConsumerKey = os.Getenv("TwitterConsumerKey")
+	Config.TwitterConsumerSecret = os.Getenv("TwitterConsumerSecret")
+	Config.PixabayKey = os.Getenv("PixabayKey")
 
 	format := "Port: %s\nLogFile: %s\nView: %s\nURL: %s\nVersion: %s\n TwitterConsumerKey:%s\n TwitterConsumerSecret:%s\n"
 	_, err = fmt.Printf(format, Config.Port, Config.LogFile, Config.View, Config.URL, Config.Version, Config.TwitterConsumerKey, Config.TwitterConsumerSecret)

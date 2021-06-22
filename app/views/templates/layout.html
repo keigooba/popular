@@ -32,6 +32,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script>
+// contactフォーム
 $('#os-select').change(function () {
   var r = $(this).find('option:selected').val();
   if(r == 4) {
@@ -45,8 +46,108 @@ $('#browser-select').change(function () {
   if (r == 4) {
     $('.other2').html('<input type="text" name="other" placeholder="その他のブラウザ" class="other-text w-100">');
   } else {
-    console.log("koi");
     $('.other2').empty();
+  }
+})
+// homeフォーム
+$("#keyword").on('input', function () {
+  var url = "https://pixabay.com/api/?key={{.PixabayKey}}";
+  var keyword = $("#keyword").val();
+  $('.data_set').css('height', '480px');
+  $('.data_set').empty();
+  $('.text_set').empty();
+  if (keyword != "") {
+    url += "&q=" + encodeURIComponent(keyword);
+  } else {
+    $("body").removeClass("background-block");
+    $("#opacity_none").css('opacity', '');
+    $('.data_set').css('height', '');
+    return;
+  }
+  url += "&per_page=" + 200;
+  $.ajax({
+    url: url,
+    type: 'GET',
+    dataType: 'json',
+  })
+  .done(function (data) {
+    $("body").addClass("background-block");
+    $("#opacity_none").css('opacity', 0);
+    for (var i in data.hits) {
+      createCard($(".data_set")[0], data.hits[i]);
+    }
+  });
+
+  var createCard = function (parent, value) {
+    var frame = document.createElement('div');
+    var img = document.createElement('img');
+
+    frame.classList.add("col-md-2", "frame");
+
+    img.src = value.previewURL;
+    img.width = 135;
+    img.height = 120;
+
+    frame.appendChild(img);
+    parent.appendChild(frame);
+  }
+});
+$('.data_set').on('click', 'img', function () {
+  var img_data = $(this).attr("src");
+  $('.data_set').empty();
+
+  var frame = document.createElement('div');
+  var form = document.createElement('form');
+  var input_hidden = document.createElement('input');
+  var textarea = document.createElement('textarea');
+  var p = document.createElement('p');
+  var input = document.createElement('input');
+
+  form.action = "/twitter/post";
+  form.method = "post";
+
+  input_hidden.type = "hidden";
+  input_hidden.value = img_data;
+  input_hidden.name = "img";
+
+  textarea.rows = 15;
+  textarea.cols = 90;
+  textarea.name = "tweet";
+  textarea.placeholder = "テキストを140文字以内で入力して下さい。\n写真は最下部に表示されます。";
+
+  input.type = "submit";
+  input.value = "ツイートする";
+
+  frame.classList.add("col-md-12");
+  p.classList.add("tweet_circle");
+  textarea.classList.add("tweet_text");
+  input.classList.add("tweet_button");
+
+  form.appendChild(input_hidden);
+  form.appendChild(textarea);
+  form.appendChild(p);
+  form.appendChild(input);
+  frame.appendChild(form);
+  $('.text_set')[0].appendChild(frame);
+})
+$('.text_set').on('input', 'textarea', function () {
+  var count = $(this).val().length;
+  $(".tweet_circle").text(count);
+  if (count > 140) {
+    $(this).addClass("border-red");
+    $(".tweet_button").prop('disabled', true);
+    $(".tweet_button").css('background-color', 'rgb(169, 169, 169)');
+    $(".tweet_circle").css('border-color', "red");
+  } else if (count > 110){
+    $(this).removeClass("border-red");
+    $(".tweet_circle").css('border-color', "rgb(247,173,33)");
+    $(".tweet_button").css('background-color', '');
+    $(".tweet_button").prop('disabled', false);
+  } else {
+    $(this).removeClass("border-red");
+    $(".tweet_circle").css('border-color', "");
+    $(".tweet_button").prop('disabled', false);
+    $(".tweet_button").css('background-color', '');
   }
 })
 </script>

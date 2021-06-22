@@ -14,9 +14,13 @@ button {
 }
 .p-10 {
   padding: 2.5rem;
+  padding-bottom: 0;
 }
 .display {
   display: none;
+}
+.mt-5 {
+  margin-top: 2rem !important;
 }
 .underline {
   text-decoration:underline !important;
@@ -131,23 +135,22 @@ footer {
   margin-top: 1.2rem;
 }
 .search-img {
+  width: 50%;
   height: 3.5rem;
-  width: 150%;
-  position: relative;
-  right: 85px;
   outline: 0;
   padding: 0 50px;
   font-size: 1.5rem;
   margin-top: 40px;
+  background-color: rgba(242,242,242,.5);
 }
 .search-img:focus {
-  background-color: rgba(0,123,255,.1);
+  background-color: white;
   box-shadow: 0 0 0 0.1rem rgba(52,58,64);
 }
 .search-icon {
-  position: relative;
-  top: -41px;
-  right: 225px;
+  position: absolute;
+  top: 56px;
+  left: 300px;
   font-size: 1.5rem;
   color: rgba(33,38,41,0.5);
 }
@@ -181,6 +184,69 @@ footer {
 }
 .dropdown-menu-right {
   margin-right: 390px;
+}
+.data_set {
+  position: absolute;
+  top: 95px;
+  width: 1200px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+}
+.data_set::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+.text_set {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.frame {
+  padding: 0;
+  flex: 0;
+}
+.frame img {
+  cursor: pointer;
+}
+.background-block {
+  background-color: rgba(0,0,0,.6);
+}
+.tweet_text {
+  padding: 15px;
+  border-radius: 35px;
+}
+.tweet_text:focus {
+  outline: none;
+}
+.tweet_button {
+  padding: 8px 15px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 25px;
+  right: 600px;
+  color: white;
+  background-color: rgb(59,161,242);
+  border: 0;
+  font-weight: bold;
+}
+.ios {
+  display: none;
+}
+.border-red {
+  border: 3px solid red;
+}
+.tweet_circle {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border: 2px solid rgb(169, 169, 169);
+  right: 735px;
+  bottom: 10px;
+  border-radius: 50px;
+  font-size: 0.9em;
+  padding-top: 4px;
 }
 @media only screen and (max-width:640px) {
 .display {
@@ -254,10 +320,38 @@ footer {
 }
 .search-img {
   width: 100%;
-  right: 0;
   font-size: 1.2rem;
 }
 .search-icon {
-  right: 115px;
+  left: 33px;
+}
+.data_set {
+  width: 270px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+#search-container {
+  position: absolute;
+  top: 555px;
+  left: 30px;
+}
+#home-use {
+  margin-top: 6rem;
+}
+.tweet_text {
+  width: 345px;
+}
+.tweet_button {
+  right: 30px;
+}
+.tweet_circle {
+  right: 165px;
+}
+.pc {
+  display: none;
+}
+.ios {
+  display: block;
 }
 }

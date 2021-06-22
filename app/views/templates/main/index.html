@@ -12,9 +12,9 @@
       <img src="/views/img/happy.png" alt="喜ぶ家族のイラスト">
     </figure>
     {{if .UserData}}
-    <button class="btn btn-lg font-weight-bold btn-home px-4 py-1" onclick="location.href='/home'"><i class="fas fa-home mr-1"></i>ホームへ</button>
+    <button class="btn btn-lg font-weight-bold btn-home px-4 py-1 mt-4" onclick="location.href='/home'"><i class="fas fa-home mr-1"></i>ホームへ</button>
     {{else}}
-    <button class="btn btn-lg font-weight-bold btn-login px-4 py-1" onclick="location.href='/twitter/oauth'"><i class="fab fa-twitter mr-1"></i>ツイッターでログイン</button>
+    <button class="btn btn-lg font-weight-bold btn-login px-4 py-1 mt-4" onclick="location.href='/twitter/oauth'"><i class="fab fa-twitter mr-1"></i>ツイッターでログイン</button>
     <div class="text-gray-500 mt-1">
       <a href="/agreement" class="underline">利用規約</a>
       <a href="/privacy_policy" class="underline">プライバシーポリシー</a>
@@ -24,14 +24,24 @@
   </div>
   <div class="col-md-4 order-md-1">
     <h4 class="text-secondary">つかいかた</h4>
-    <p>①    好みの画像を検索しよう</p>
-    <img src="" alt="①好みの画像を検索しよう">
-    <p>②      画像を押して投稿</p>
-    <img src="" alt="②画像を押して投稿" class="mb-4">
+    <p class="my-2">①    好みの画像を検索して画像をタップ</p>
+    <a href="/views/img/use_img1.png" class="pc">
+      <img src="/views/img/use_img1.png" alt="①好みの画像を検索しよう" class="w-50">
+    </a>
+    <a href="/views/img/ios_use_img1.png" class="ios">
+      <img src="/views/img/ios_use_img1.png" alt="①好みの画像を検索しよう" class="w-75">
+    </a>
+    <p class="my-2">②      テキストを入力して投稿</p>
+    <a href="/views/img/use_img2.png" class="pc">
+      <img src="/views/img/use_img2.png" alt="②画像を押して投稿" class="w-50">
+    </a>
+    <a href="/views/img/ios_use_img2.png" class="ios">
+      <img src="/views/img/ios_use_img2.png" alt="②画像を押して投稿" class="w-75">
+    </a>
     {{if .UserData}}
-    <button class="btn btn-lg font-weight-bold btn-home px-4 py-1 display" onclick="location.href='/home'"><i class="fas fa-home mr-1"></i>ホームへ</button>
+    <button class="btn btn-lg font-weight-bold btn-home px-4 py-1 display mt-5" onclick="location.href='/home'"><i class="fas fa-home mr-1"></i>ホームへ</button>
     {{else}}
-    <button class="btn btn-lg font-weight-bold btn-login px-4 py-1 display" onclick="location.href='/twitter/oauth'"><i class="fab fa-twitter mr-1"></i>ツイッターでログイン</button>
+    <button class="btn btn-lg font-weight-bold btn-login px-4 py-1 display mt-5" onclick="location.href='/twitter/oauth'"><i class="fab fa-twitter mr-1"></i>ツイッターでログイン</button>
     {{end}}
     <p class="mt-4 font-weight-bold">いいねやフォロワーを増やして人気者を目指そう！！</p>
     <button class="btn btn-lightblue" onclick="location.href='https://twitter.com/intent/tweet?url=https%3A%2F%2Fpopular-32pe64nwja-an.a.run.app&text=popular｜人気者を目指そう%0D%0Aフリー画像を投稿できるサービス%0D%0A%20%23popular%0D%0A'"><i class="fab fa-twitter mr-1"></i>ツイート</button>

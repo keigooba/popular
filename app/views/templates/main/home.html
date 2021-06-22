@@ -1,6 +1,6 @@
 {{define "content"}}
-<div class="container p-10 text-center text-purple" style="padding-bottom: 0rem;">
-  <div class="row">
+<div class="container p-10 text-center text-purple">
+  <div class="row" id="opacity_none">
     <div class="col-md-4 picture-img order-md-3">
       <h4 class="text-secondary">検索画像</h4>
       <div class="row">
@@ -30,21 +30,35 @@
           タップすると投稿できます</p>
         <p class="pt-4">さっそく投稿してみましょう</p>
       </div>
-      <form action="/twitter/post" method="post" class="d-inline">
-        <input type="text" class="rounded-pill search-img text-center" name="text" placeholder="画像を検索">
-        <i class="fas fa-search search-icon"></i>
-      </form>
     </div>
-    <div class="col-md-4 order-md-1">
+    <div class="col-md-4 order-md-1" id="home-use">
       <h4 class="text-secondary">つかいかた</h4>
-      <p>①    好みの画像を検索しよう</p>
-      <img src="" alt="①好みの画像を検索しよう">
-      <p>②      画像を押して投稿</p>
-      <img src="" alt="②画像を押して投稿">
+      <p class="my-2">①    好みの画像を検索しよう</p>
+      <a href="/views/img/use_img1.png" class="pc">
+        <img src="/views/img/use_img1.png" alt="①好みの画像を検索しよう" class="w-50">
+      </a>
+      <a href="/views/img/ios_use_img1.png" class="ios">
+        <img src="/views/img/ios_use_img1.png" alt="①好みの画像を検索しよう" class="w-75">
+      </a>
+      <p class="my-2">②      画像をタップしテキストを投稿</p>
+      <a href="/views/img/use_img2.png" class="pc">
+        <img src="/views/img/use_img2.png" alt="②画像を押して投稿" class="w-50">
+      </a>
+      <a href="/views/img/ios_use_img2.png" class="ios">
+        <img src="/views/img/ios_use_img2.png" alt="②画像を押して投稿" class="w-75">
+      </a>
       <p class="mt-4 font-weight-bold">いいねやフォロワーを増やして人気者を目指そう！！</p>
       <button class="btn btn-lightblue" onclick="location.href='https://twitter.com/intent/tweet?url=https%3A%2F%2Fpopular-32pe64nwja-an.a.run.app&text=popular｜人気者を目指そう%0D%0Aフリー画像を投稿できるサービス%0D%0A%20%23popular%0D%0A'"><i class="fab fa-twitter mr-1"></i>ツイート</button>
       <button class="btn btn-navyblue" onclick="location.href='https://www.facebook.com/share.php?u=https%3A%2F%2Fpopular-32pe64nwja-an.a.run.app'"><i class="fab fa-facebook-f mr-1"></i>Facebook</button>
     </div>
   </div>
+  <div class="row" id="search-container">
+    <div class="col-md-12">
+      <input type="text" class="rounded-pill search-img text-center" name="text" placeholder="画像を検索" id="keyword">
+      <i class="fas fa-search search-icon"></i>
+    </div>
+  </div>
+  <div class="row data_set"></div>
+  <div class="row text_set"></div>
 </div>
 {{end}}
