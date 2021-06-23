@@ -9,6 +9,8 @@ services:
       TwitterConsumerKey: ${TWITTER_KEY}
       TwitterConsumerSecret: ${TWITTER_SECRET}
       PixabayKey: ${PIXABAY_KEY}
+      PrivateKeyId: ${PRIVATE_KEY_ID}
+      PrivateKey: ${PRIVATE_KEY}
     volumes:
       - ../:/popular
     ports:
