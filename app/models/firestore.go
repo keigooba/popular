@@ -19,9 +19,9 @@ func init() {
 	s, _ := ioutil.ReadFile("FirestoreAllKey.json")
 	var jsondata map[string]interface{}
 	json.Unmarshal([]byte(s), &jsondata)
-	jsondata["private_key_id"] = os.Getenv("PrivateKeyId")
+	jsondata["private_key_id"] = os.Getenv("PRIVATE_KEY_ID")
 	//秘密鍵改行コード置き換え
-	private_key := strings.Replace(os.Getenv("PrivateKey"), "\\n", "\n", -1)
+	private_key := strings.Replace(os.Getenv("PRIVATE_KEY"), "\\n", "\n", -1)
 	jsondata["private_key"] = private_key
 	s, _ = json.Marshal(jsondata)
 	file, err := os.Create("key.json")

@@ -6,11 +6,11 @@ services:
       dockerfile: Dockerfile.dev
     container_name: "popular"
     environment:
-      TwitterConsumerKey: ${TWITTER_KEY}
-      TwitterConsumerSecret: ${TWITTER_SECRET}
-      PixabayKey: ${PIXABAY_KEY}
-      PrivateKeyId: ${PRIVATE_KEY_ID}
-      PrivateKey: ${PRIVATE_KEY}
+      TWITTER_KEY: ${TWITTER_KEY}
+      TWITTER_SECRET: ${TWITTER_SECRET}
+      PIXABAY_KEY: ${PIXABAY_KEY}
+      PRIVATE_KEY_ID: ${PRIVATE_KEY_ID}
+      PRIVATE_KEY: ${PRIVATE_KEY}
     volumes:
       - ../:/popular
     ports:
