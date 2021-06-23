@@ -4,7 +4,7 @@
 
 ## 概要
 
-ツイートができて、そこにフリー画像の写真を検索して投稿できるアプリ
+twitter認証からフリー画像を検索して画像とテキストを投稿できるアプリ
 
 ## 初期設定
 
@@ -14,20 +14,30 @@
 docker version 20.10.6が必要。なければ下記URLからダウンロード。  
 https://hub.docker.com/
 
-認証機能を利用するためにはTwitterDeveloperでプロジェクトを作成し、ルートディレクトリのdocker/以下に.envを作成、環境変数を設定する。  
-プロジェクト作成の参考記事  
+認証機能を利用するためにはTwitterDeveloperでプロジェクトを作成し、  
+ルートディレクトリのdocker/以下に.envを作成、環境変数を設定する。  
+下記記事参照  
 https://qiita.com/wheatandcat/items/fe66c7ee2521a6966505  
 
-```.env  
+```
 TWITTER_KEY=xxxxxxxx
 TWITTER_SECRET=xxxxxxxx
 ```
 
-写真検索にはPixabay APIを利用するため下記記事参照。.envに環境変数追加   
-https://www.whizz-tech.co.jp/5449/
+写真検索にはPixabay APIを利用するため下記記事参照。.envに環境変数追加  
+https://www.whizz-tech.co.jp/5449/  
 
-```.env
+```
 PIXABAY_KEY=xxxxxxxx
+```
+
+お問い合わせ機能の利用にはfirestoreデータベースの作成、サービスアカウントにてjsonファイルを作成し、
+秘密鍵IDと秘密鍵を環境変数として.envに追加。下記記事参照。  
+https://firebase.google.com/docs/firestore/quickstart?hl=ja  
+
+```
+PRIVATE_KEY_ID=xxxxxxxx
+PRIVATE_KEY=xxxxxxxx
 ```
 
 1. gitリポジトリをクローンする
@@ -53,5 +63,5 @@ docker-compose exec popular bash
 3. jQuery3.5.1
 
 インフラ
-1. cloud Build + cloud Run
-2. Datastore(NoSQL)予定
+1. Cloud Build + Cloud Run
+2. Cloud Firestore(NoSQL)
