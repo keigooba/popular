@@ -107,7 +107,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	url := r.URL.Path
 	data, err := session(w, r)
 	if err != nil {
-		generateHTML(w, nil, "layout", "public_navbar", "main"+url)
+		http.Redirect(w, r, "/", 302) //認証前ユーザーリダレクト処理
 	} else {
 		data["HomeUser"] = "ログインユーザー" //ナビゲーションメニュー「ホームへ」非表示用
 		generateHTML(w, data, "layout", "private_navbar", "main"+url)

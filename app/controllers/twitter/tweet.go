@@ -19,7 +19,7 @@ func TwitterPostHandler(w http.ResponseWriter, r *http.Request) {
 	authCookie, err := r.Cookie("auth")
 	if err != nil {
 		log.Println("cokkieにデータがありません。")
-		http.Redirect(w, r, "/home", 302)
+		http.Redirect(w, r, "/", 302)
 	}
 	data := objx.MustFromBase64(authCookie.Value)
 
