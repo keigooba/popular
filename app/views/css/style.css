@@ -354,4 +354,7 @@ footer {
 .ios {
   display: block;
 }
+.button_back {
+  width: 100% !important;
+}
 }

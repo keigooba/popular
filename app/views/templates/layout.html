@@ -36,7 +36,7 @@
 $('#os-select').change(function () {
   var r = $(this).find('option:selected').val();
   if(r == 4) {
-    $('.other').html('<input type="text" name="other" placeholder="その他のOS" class="other-text w-100">');
+    $('.other').html('<input type="text" name="other_os" placeholder="その他のOS" class="other-text w-100">');
   } else {
     $('.other').empty();
   }
@@ -44,7 +44,7 @@ $('#os-select').change(function () {
 $('#browser-select').change(function () {
   var r = $(this).find('option:selected').val();
   if (r == 4) {
-    $('.other2').html('<input type="text" name="other" placeholder="その他のブラウザ" class="other-text w-100">');
+    $('.other2').html('<input type="text" name="other_browser" placeholder="その他のブラウザ" class="other-text w-100">');
   } else {
     $('.other2').empty();
   }

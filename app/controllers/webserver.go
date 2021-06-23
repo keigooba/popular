@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os"
 	controllersTwitter "popular/app/controllers/twitter"
+	"popular/app/models"
 	"popular/config"
 	"text/template"
 
@@ -22,6 +23,7 @@ func StartWebServer() error {
 		http.ServeFile(w, r, "config/config.json") //ファイルにアクセス
 	})
 	http.HandleFunc("/contact", contactHandler)
+	http.HandleFunc("/contact/list", contactListHandler)
 	http.HandleFunc("/twitter/oauth", controllersTwitter.TwitterAuthHandler)
 	http.HandleFunc("/twitter/callback", controllersTwitter.TwitterCallbackHandler)
 	http.HandleFunc("/twitter/post", controllersTwitter.TwitterPostHandler)
@@ -72,7 +74,22 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 			generateHTML(w, data, "layout", "private_navbar", "main"+url)
 		}
 	} else if r.Method == "POST" {
+		if err := models.ContactInsert(r); err != nil {
+			log.Println(err)
+		}
 		http.Redirect(w, r, url, http.StatusSeeOther) //キャッシュクリア303指定
+	}
+}
+
+func contactListHandler(w http.ResponseWriter, r *http.Request) {
+	url := r.URL.Path
+	data, err := session(w, r)
+	data["ContactList"] = models.ContactListGet()
+	log.Println(data)
+	if err != nil {
+		generateHTML(w, nil, "layout", "public_navbar", "main"+url)
+	} else {
+		generateHTML(w, data, "layout", "private_navbar", "main"+url)
 	}
 }
 

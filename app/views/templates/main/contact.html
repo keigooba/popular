@@ -5,6 +5,10 @@
     <p class="contact-subtitle">感想・不具合・改善点などお聞かせください<br>
       popular<a href="https://popular-32pe64nwja-an.a.run.app">(https://popular-32pe64nwja-an.a.run.app)</a>
     </p>
+    <button type="button" class="btn btn-lg btn-secondary font-weight-bold px-4 py-1 w-50" onclick="location.href='/contact/list'">お問い合わせ一覧</button>
+    <div class="text-gray-500 mx-1">
+      公開(2021/06/22)から3ヶ月間のみ表示
+    </div>
   </div>
   <form action="/contact" class="w-50 mx-auto contact-form" method="post">
     <div class="form-group">
@@ -35,7 +39,7 @@
     </div>
     <div class="form-group">
       <label for="FormControlAccount" class="form-label">返信が必要な場合のツイッターアカウント名<span class="any">任意</span></label>
-      <input type="text" name="other" placeholder="@hx_kei" class="other-text w-100" id="FormControlAccount">
+      <input type="text" name="twitter_name" placeholder="@hx_kei" class="other-text w-100" id="FormControlAccount">
     </div>
     <div class="form-group mt-4">
       <button type="submit" class="btn btn-purple btn-lg w-100">送信</button>

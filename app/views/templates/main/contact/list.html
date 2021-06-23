@@ -1,0 +1,44 @@
+{{define "content"}}
+<div class="container p-10 text-contact">
+  <div class="row text-center">
+    <div class="col-md-12 m-auto">
+      <p class="lead mb-5">お問い合わせ一覧</p>
+      <table class="table table-hover table-responsive" style="white-space: nowrap">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th width="500">内容</th>
+            <th>お使いのOS</th>
+            <th>お使いのブラウザ</th>
+            <th>ツイッターアカウント名</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{range $key, $value := .ContactList}}
+          <tr>
+            <td>{{$key}}</td>
+            <td style="font-size: 12px;">{{.content}}</td>
+            <td>
+              {{if eq .os_id "0"}}iPhone{{end}}
+              {{if eq .os_id "1"}}Android{{end}}
+              {{if eq .os_id "2"}}Mac{{end}}
+              {{if eq .os_id "3"}}Windows{{end}}
+              {{if eq .os_id "4"}}{{.other_os}}{{end}}
+            </td>
+            <td>
+              {{if eq .browser_id "0"}}iPhone{{end}}
+              {{if eq .browser_id "1"}}Android{{end}}
+              {{if eq .browser_id "2"}}Mac{{end}}
+              {{if eq .browser_id "3"}}Windows{{end}}
+              {{if eq .browser_id "4"}}{{.other_browser}}{{end}}
+            </td>
+            <td>{{.twitter_name}}</td>
+          </tr>
+          {{end}}
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-lg btn-secondary font-weight-bold px-4 py-1 w-50 mt-5 button_back" onclick="location.href='/contact'">お問い合わせに戻る</button>
+    </div>
+  </div>
+</div>
+{{end}}
