@@ -64,8 +64,8 @@ func LoadConfig() error {
 		return err
 	}
 	// 環境変数で設定
-	Config.TwitterConsumerKey = os.Getenv("TwitterConsumerKey")
-	Config.TwitterConsumerSecret = os.Getenv("TwitterConsumerSecret")
+	Config.TwitterConsumerKey = os.Getenv("_TwitterConsumerKey")
+	Config.TwitterConsumerSecret = os.Getenv("_TwitterConsumerSecret")
 	Config.PixabayKey = os.Getenv("PixabayKey")
 
 	format := "Port: %s\nLogFile: %s\nView: %s\nURL: %s\nVersion: %s\n TwitterConsumerKey:%s\n TwitterConsumerSecret:%s\n"
