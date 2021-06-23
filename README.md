@@ -16,7 +16,7 @@ https://hub.docker.com/
 
 認証機能を利用するためにはTwitterDeveloperでプロジェクトを作成し、  
 ルートディレクトリのdocker/以下に.envを作成、環境変数を設定する。  
-下記記事参照  
+下記記事参照。  
 https://qiita.com/wheatandcat/items/fe66c7ee2521a6966505  
 
 ```
@@ -24,15 +24,15 @@ TWITTER_KEY=xxxxxxxx
 TWITTER_SECRET=xxxxxxxx
 ```
 
-写真検索にはPixabay APIを利用するため下記記事参照。.envに環境変数追加  
+写真検索にはPixabay APIを利用するため下記記事参照。.envに環境変数追加。  
 https://www.whizz-tech.co.jp/5449/  
 
 ```
 PIXABAY_KEY=xxxxxxxx
 ```
 
-お問い合わせ機能の利用にはfirestoreデータベースの作成、サービスアカウントにてjsonファイルを作成し、
-秘密鍵IDと秘密鍵を環境変数として.envに追加。下記記事参照。  
+お問い合わせ機能の利用にはfirestoreデータベースの作成、  
+サービスアカウントにてjsonファイルを作成し、秘密鍵IDと秘密鍵を環境変数として.envに追加。下記記事参照。  
 https://firebase.google.com/docs/firestore/quickstart?hl=ja  
 
 ```
