@@ -2,19 +2,39 @@ package models
 
 import (
 	"context"
+	"encoding/json"
+	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
+	"strings"
 
 	firebase "firebase.google.com/go"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"
 )
 
+func init() {
+	s, _ := ioutil.ReadFile("FirestoreAllKey.json")
+	var jsondata map[string]interface{}
+	json.Unmarshal([]byte(s), &jsondata)
+	jsondata["private_key_id"] = os.Getenv("PrivateKeyId")
+	//秘密鍵改行コード置き換え
+	private_key := strings.Replace(os.Getenv("PrivateKey"), "\\n", "\n", -1)
+	jsondata["private_key"] = private_key
+	s, _ = json.Marshal(jsondata)
+	file, err := os.Create("key.json")
+	if err != nil {
+		log.Println(err)
+	}
+	file.WriteString(string(s))
+}
+
 func ContactInsert(r *http.Request) error {
 	// Use a service account
 	ctx := context.Background()
-	sa := option.WithCredentialsFile("FirestoreAllKey.json")
+	sa := option.WithCredentialsFile("key.json")
 	app, err := firebase.NewApp(ctx, nil, sa)
 	if err != nil {
 		log.Println(err)
@@ -73,7 +93,7 @@ func ContactInsert(r *http.Request) error {
 func ContactListGet() (contact_list []map[string]interface{}) {
 	// Use a service account
 	ctx := context.Background()
-	sa := option.WithCredentialsFile("FirestoreAllKey.json")
+	sa := option.WithCredentialsFile("key.json")
 	app, err := firebase.NewApp(ctx, nil, sa)
 	if err != nil {
 		log.Println(err)
