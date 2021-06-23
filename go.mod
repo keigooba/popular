@@ -3,6 +3,8 @@ module popular
 go 1.16
 
 require (
+	cloud.google.com/go/firestore v1.5.0 // indirect
+	firebase.google.com/go v3.13.0+incompatible
 	github.com/ChimeraCoder/anaconda v2.0.0+incompatible
 	github.com/ChimeraCoder/tokenbucket v0.0.0-20131201223612-c5a927568de7 // indirect
 	github.com/astaxie/session v0.0.0-20130408050157-95d7fe18579c
@@ -16,7 +18,6 @@ require (
 	github.com/jinzhu/gorm v1.9.16
 	github.com/mattn/go-sqlite3 v2.0.3+incompatible // indirect
 	github.com/stretchr/objx v0.3.0
-	github.com/stretchr/testify v1.4.0 // indirect
 	github.com/tcnksm/go-latest v0.0.0-20170313132115-e3007ae9052e
-	gopkg.in/yaml.v2 v2.2.8 // indirect
+	google.golang.org/api v0.48.0
 )
