@@ -24,7 +24,7 @@ TWITTER_KEY=xxxxxxxx
 TWITTER_SECRET=xxxxxxxx
 ```
 
-写真検索にはPixabay APIを利用するため下記記事参照。.envに環境変数追加。  
+写真検索にはPixabay APIのキーを作成。下記記事参照。.envに環境変数追加。  
 https://www.whizz-tech.co.jp/5449/  
 
 ```
