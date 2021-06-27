@@ -57,10 +57,12 @@ docker-compose exec popular bash
 
 ## 技術
 
-フロントエンド・バックエンド
+バックエンド
 1. Go1.16.2
-2. Bootstrap4.5.0
-3. jQuery3.5.1
+
+フロントエンド
+1. Bootstrap4.5.0
+2. jQuery3.5.1
 
 インフラ
 1. Cloud Build + Cloud Run
