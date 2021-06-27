@@ -22,6 +22,16 @@ button {
 .mt-5 {
   margin-top: 2rem !important;
 }
+.dropdown {
+  padding: 0 !important;
+}
+#dropdownMenuButton {
+  width: 85%;
+  padding: 0;
+}
+#dropdownMenuButton:focus {
+  box-shadow: inherit;
+}
 .underline {
   text-decoration:underline !important;
 }
@@ -168,10 +178,12 @@ footer {
 }
 .dropdown-menu {
   padding: 0;
+  left: -130px;
+  margin: 0;
 }
 .auth-img {
   border-radius: 2rem;
-  width: 65%;
+  width: 100%;
   border-color: white;
   border-width: 1px;
   border-style: solid;
@@ -249,6 +261,9 @@ footer {
   padding-top: 4px;
 }
 @media only screen and (max-width:640px) {
+.dropdown {
+  margin-right: -10px;
+}
 .display {
   display: block;
 }
@@ -313,10 +328,6 @@ footer {
 }
 .picture-img {
   display: none;
-}
-.auth-img {
-  margin-top: 5px;
-  margin-right: 3px;
 }
 .search-img {
   width: 100%;
