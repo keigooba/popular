@@ -30,7 +30,6 @@ func TwitterPostHandler(w http.ResponseWriter, r *http.Request) {
 	url_img := r.FormValue("img")
 	// 拡張子取得
 	e := filepath.Ext(url_img)
-	log.Println(e)
 
 	response, err := http.Get(url_img)
 	if err != nil {
