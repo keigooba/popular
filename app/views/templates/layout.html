@@ -85,6 +85,7 @@ $("#keyword").on('input', function () {
     frame.classList.add("col-md-2", "frame");
 
     img.src = value.previewURL;
+    img.alt = value.webformatURL;
     img.width = 135;
     img.height = 120;
 
@@ -93,7 +94,7 @@ $("#keyword").on('input', function () {
   }
 });
 $('.data_set').on('click', 'img', function () {
-  var img_data = $(this).attr("src");
+  var img_data = $(this).attr("alt");
   $('.data_set').empty();
 
   var frame = document.createElement('div');
