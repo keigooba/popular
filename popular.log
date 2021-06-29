@@ -230,3 +230,1145 @@
 2021/06/28 02:06:40 webserver.go:42: リッスンしているポート 8080
 2021/06/28 02:07:13 webserver.go:40: デフォルトのポート 8080
 2021/06/28 02:07:13 webserver.go:42: リッスンしているポート 8080
+2021/06/29 14:37:41 webserver.go:40: デフォルトのポート 8080
+2021/06/29 14:37:41 webserver.go:42: リッスンしているポート 8080
+2021/06/29 14:37:55 firestore.go:115: 繰り返しに失敗: rpc error: code = Unauthenticated desc = transport: private key should be a PEM or plain PKCS1 or PKCS8; parse error: asn1: syntax error: sequence truncated
+2021/06/29 14:37:55 server.go:3139: http: panic serving [::1]:52164: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc000274280)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x1732940, 0x1d10340)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+cloud.google.com/go/firestore.(*DocumentSnapshot).Exists(...)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:58
+cloud.google.com/go/firestore.(*DocumentSnapshot).Data(0x0, 0x19)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:67 +0x26
+popular/app/models.ContactListGet(0x0, 0x0, 0x0)
+	/Users/keigo/Desktop/popular/app/models/firestore.go:117 +0x3a5
+popular/app/controllers.contactListHandler(0x1905160, 0xc0002e21c0, 0xc0002e4200)
+	/Users/keigo/Desktop/popular/app/controllers/webserver.go:88 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x1856348, 0x1905160, 0xc0002e21c0, 0xc0002e4200)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1d2abe0, 0x1905160, 0xc0002e21c0, 0xc0002e4200)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004dc0e0, 0x1905160, 0xc0002e21c0, 0xc0002e4200)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000274280, 0x1906560, 0xc0000bce40)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/29 14:37:55 firestore.go:115: 繰り返しに失敗: rpc error: code = Unauthenticated desc = transport: private key should be a PEM or plain PKCS1 or PKCS8; parse error: asn1: syntax error: sequence truncated
+2021/06/29 14:37:55 server.go:3139: http: panic serving [::1]:52162: runtime error: invalid memory address or nil pointer dereference
+goroutine 16 [running]:
+net/http.(*conn).serve.func1(0xc00014c000)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x1732940, 0x1d10340)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+cloud.google.com/go/firestore.(*DocumentSnapshot).Exists(...)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:58
+cloud.google.com/go/firestore.(*DocumentSnapshot).Data(0x0, 0x19)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:67 +0x26
+popular/app/models.ContactListGet(0x0, 0x0, 0x0)
+	/Users/keigo/Desktop/popular/app/models/firestore.go:117 +0x3a5
+popular/app/controllers.contactListHandler(0x1905160, 0xc0005382a0, 0xc000674100)
+	/Users/keigo/Desktop/popular/app/controllers/webserver.go:88 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x1856348, 0x1905160, 0xc0005382a0, 0xc000674100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1d2abe0, 0x1905160, 0xc0005382a0, 0xc000674100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004dc0e0, 0x1905160, 0xc0005382a0, 0xc000674100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00014c000, 0x1906560, 0xc00004a040)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/29 14:37:55 firestore.go:115: 繰り返しに失敗: rpc error: code = Unauthenticated desc = transport: private key should be a PEM or plain PKCS1 or PKCS8; parse error: asn1: syntax error: sequence truncated
+2021/06/29 14:37:55 server.go:3139: http: panic serving [::1]:52166: runtime error: invalid memory address or nil pointer dereference
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc00014c140)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x1732940, 0x1d10340)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+cloud.google.com/go/firestore.(*DocumentSnapshot).Exists(...)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:58
+cloud.google.com/go/firestore.(*DocumentSnapshot).Data(0x0, 0x19)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:67 +0x26
+popular/app/models.ContactListGet(0x0, 0x0, 0x0)
+	/Users/keigo/Desktop/popular/app/models/firestore.go:117 +0x3a5
+popular/app/controllers.contactListHandler(0x1905160, 0xc0000ee620, 0xc0002e4100)
+	/Users/keigo/Desktop/popular/app/controllers/webserver.go:88 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x1856348, 0x1905160, 0xc0000ee620, 0xc0002e4100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1d2abe0, 0x1905160, 0xc0000ee620, 0xc0002e4100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004dc0e0, 0x1905160, 0xc0000ee620, 0xc0002e4100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00014c140, 0x1906560, 0xc00004a100)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/29 14:37:55 firestore.go:115: 繰り返しに失敗: rpc error: code = Unauthenticated desc = transport: private key should be a PEM or plain PKCS1 or PKCS8; parse error: asn1: syntax error: sequence truncated
+2021/06/29 14:37:55 server.go:3139: http: panic serving [::1]:52160: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc000275d60)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x1732940, 0x1d10340)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+cloud.google.com/go/firestore.(*DocumentSnapshot).Exists(...)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:58
+cloud.google.com/go/firestore.(*DocumentSnapshot).Data(0x0, 0x19)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:67 +0x26
+popular/app/models.ContactListGet(0x0, 0x0, 0x0)
+	/Users/keigo/Desktop/popular/app/models/firestore.go:117 +0x3a5
+popular/app/controllers.contactListHandler(0x1905160, 0xc0000eeee0, 0xc0001e2300)
+	/Users/keigo/Desktop/popular/app/controllers/webserver.go:88 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x1856348, 0x1905160, 0xc0000eeee0, 0xc0001e2300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1d2abe0, 0x1905160, 0xc0000eeee0, 0xc0001e2300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004dc0e0, 0x1905160, 0xc0000eeee0, 0xc0001e2300)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000275d60, 0x1906560, 0xc0004b6d40)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/29 14:37:55 firestore.go:115: 繰り返しに失敗: rpc error: code = Unauthenticated desc = transport: private key should be a PEM or plain PKCS1 or PKCS8; parse error: asn1: syntax error: sequence truncated
+2021/06/29 14:37:55 server.go:3139: http: panic serving [::1]:52167: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc0001281e0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x1732940, 0x1d10340)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+cloud.google.com/go/firestore.(*DocumentSnapshot).Exists(...)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:58
+cloud.google.com/go/firestore.(*DocumentSnapshot).Data(0x0, 0x19)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:67 +0x26
+popular/app/models.ContactListGet(0x0, 0x0, 0x0)
+	/Users/keigo/Desktop/popular/app/models/firestore.go:117 +0x3a5
+popular/app/controllers.contactListHandler(0x1905160, 0xc0005382a0, 0xc0000c4800)
+	/Users/keigo/Desktop/popular/app/controllers/webserver.go:88 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x1856348, 0x1905160, 0xc0005382a0, 0xc0000c4800)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1d2abe0, 0x1905160, 0xc0005382a0, 0xc0000c4800)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004dc0e0, 0x1905160, 0xc0005382a0, 0xc0000c4800)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001281e0, 0x1906560, 0xc0004b6640)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/29 14:37:55 firestore.go:115: 繰り返しに失敗: rpc error: code = Unauthenticated desc = transport: private key should be a PEM or plain PKCS1 or PKCS8; parse error: asn1: syntax error: sequence truncated
+2021/06/29 14:37:55 server.go:3139: http: panic serving [::1]:52161: runtime error: invalid memory address or nil pointer dereference
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc0001280a0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x1732940, 0x1d10340)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+cloud.google.com/go/firestore.(*DocumentSnapshot).Exists(...)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:58
+cloud.google.com/go/firestore.(*DocumentSnapshot).Data(0x0, 0x19)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:67 +0x26
+popular/app/models.ContactListGet(0x0, 0x0, 0x0)
+	/Users/keigo/Desktop/popular/app/models/firestore.go:117 +0x3a5
+popular/app/controllers.contactListHandler(0x1905160, 0xc0005387e0, 0xc0000c4600)
+	/Users/keigo/Desktop/popular/app/controllers/webserver.go:88 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x1856348, 0x1905160, 0xc0005387e0, 0xc0000c4600)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1d2abe0, 0x1905160, 0xc0005387e0, 0xc0000c4600)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004dc0e0, 0x1905160, 0xc0005387e0, 0xc0000c4600)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001280a0, 0x1906560, 0xc0004b6180)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/29 14:37:55 firestore.go:115: 繰り返しに失敗: rpc error: code = Unauthenticated desc = transport: private key should be a PEM or plain PKCS1 or PKCS8; parse error: asn1: syntax error: sequence truncated
+2021/06/29 14:37:55 server.go:3139: http: panic serving [::1]:52176: runtime error: invalid memory address or nil pointer dereference
+goroutine 152 [running]:
+net/http.(*conn).serve.func1(0xc0001820a0)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x1732940, 0x1d10340)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+cloud.google.com/go/firestore.(*DocumentSnapshot).Exists(...)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:58
+cloud.google.com/go/firestore.(*DocumentSnapshot).Data(0x0, 0x19)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:67 +0x26
+popular/app/models.ContactListGet(0x0, 0x0, 0x0)
+	/Users/keigo/Desktop/popular/app/models/firestore.go:117 +0x3a5
+popular/app/controllers.contactListHandler(0x1905160, 0xc0004dc380, 0xc000674200)
+	/Users/keigo/Desktop/popular/app/controllers/webserver.go:88 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x1856348, 0x1905160, 0xc0004dc380, 0xc000674200)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1d2abe0, 0x1905160, 0xc0004dc380, 0xc000674200)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004dc0e0, 0x1905160, 0xc0004dc380, 0xc000674200)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001820a0, 0x1906560, 0xc0002dc280)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/29 14:37:57 firestore.go:115: 繰り返しに失敗: rpc error: code = Unauthenticated desc = transport: private key should be a PEM or plain PKCS1 or PKCS8; parse error: asn1: syntax error: sequence truncated
+2021/06/29 14:37:57 server.go:3139: http: panic serving [::1]:52178: runtime error: invalid memory address or nil pointer dereference
+goroutine 140 [running]:
+net/http.(*conn).serve.func1(0xc000532c80)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1824 +0x153
+panic(0x1732940, 0x1d10340)
+	/usr/local/Cellar/go/1.16.5/libexec/src/runtime/panic.go:971 +0x499
+cloud.google.com/go/firestore.(*DocumentSnapshot).Exists(...)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:58
+cloud.google.com/go/firestore.(*DocumentSnapshot).Data(0x0, 0x19)
+	/Users/keigo/go/pkg/mod/cloud.google.com/go/firestore@v1.5.0/document.go:67 +0x26
+popular/app/models.ContactListGet(0x0, 0x0, 0x0)
+	/Users/keigo/Desktop/popular/app/models/firestore.go:117 +0x3a5
+popular/app/controllers.contactListHandler(0x1905160, 0xc0005389a0, 0xc0001e2500)
+	/Users/keigo/Desktop/popular/app/controllers/webserver.go:88 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x1856348, 0x1905160, 0xc0005389a0, 0xc0001e2500)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1d2abe0, 0x1905160, 0xc0005389a0, 0xc0001e2500)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004dc0e0, 0x1905160, 0xc0005389a0, 0xc0001e2500)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000532c80, 0x1906560, 0xc0001ef400)
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.16.5/libexec/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:39:31 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:39:31 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:39:47 server.go:3139: http: panic serving 172.18.0.1:56832: assignment to entry in nil map
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc00018a000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0001f20e0, 0xc0004e6300)
+	/popular/app/controllers/webserver.go:88 +0xca
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0001f20e0, 0xc0004e6300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0001f20e0, 0xc0004e6300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005120e0, 0xd06628, 0xc0001f20e0, 0xc0004e6300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00018a000, 0xd07a40, 0xc0001a0000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:39:48 server.go:3139: http: panic serving 172.18.0.1:56840: assignment to entry in nil map
+goroutine 59 [running]:
+net/http.(*conn).serve.func1(0xc000272000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000512540, 0xc00067c100)
+	/popular/app/controllers/webserver.go:88 +0xca
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000512540, 0xc00067c100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000512540, 0xc00067c100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005120e0, 0xd06628, 0xc000512540, 0xc00067c100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000272000, 0xd07a40, 0xc0001a0340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:39:49 server.go:3139: http: panic serving 172.18.0.1:56846: assignment to entry in nil map
+goroutine 71 [running]:
+net/http.(*conn).serve.func1(0xc00009e1e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000512700, 0xc0004e6200)
+	/popular/app/controllers/webserver.go:88 +0xca
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000512700, 0xc0004e6200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000512700, 0xc0004e6200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005120e0, 0xd06628, 0xc000512700, 0xc0004e6200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00009e1e0, 0xd07a40, 0xc00017c000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:40:57 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:40:57 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:41:02 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:41:02 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:41:04 server.go:3139: http: panic serving 172.18.0.1:56860: assignment to entry in nil map
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0003fdb80)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06648, 0xc0005922a0, 0xc000292c00)
+	/popular/app/controllers/webserver.go:88 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06648, 0xc0005922a0, 0xc000292c00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06648, 0xc0005922a0, 0xc000292c00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005920e0, 0xd06648, 0xc0005922a0, 0xc000292c00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003fdb80, 0xd07a60, 0xc00057e580)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:41:05 server.go:3139: http: panic serving 172.18.0.1:56868: assignment to entry in nil map
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc00009e1e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06648, 0xc00012e0e0, 0xc000288000)
+	/popular/app/controllers/webserver.go:88 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06648, 0xc00012e0e0, 0xc000288000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06648, 0xc00012e0e0, 0xc000288000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005920e0, 0xd06648, 0xc00012e0e0, 0xc000288000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00009e1e0, 0xd07a60, 0xc000294000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:41:06 server.go:3139: http: panic serving 172.18.0.1:56874: assignment to entry in nil map
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc000248e60)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06648, 0xc0005922a0, 0xc000566200)
+	/popular/app/controllers/webserver.go:88 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06648, 0xc0005922a0, 0xc000566200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06648, 0xc0005922a0, 0xc000566200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005920e0, 0xd06648, 0xc0005922a0, 0xc000566200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000248e60, 0xd07a60, 0xc000176000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:41:11 server.go:3139: http: panic serving 172.18.0.1:56880: assignment to entry in nil map
+goroutine 98 [running]:
+net/http.(*conn).serve.func1(0xc00025e0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06648, 0xc00012e2a0, 0xc00043e000)
+	/popular/app/controllers/webserver.go:88 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06648, 0xc00012e2a0, 0xc00043e000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06648, 0xc00012e2a0, 0xc00043e000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005920e0, 0xd06648, 0xc00012e2a0, 0xc00043e000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00025e0a0, 0xd07a60, 0xc000584000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:41:19 server.go:3139: http: panic serving 172.18.0.1:56886: assignment to entry in nil map
+goroutine 106 [running]:
+net/http.(*conn).serve.func1(0xc000272320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06648, 0xc0004d22a0, 0xc00043e300)
+	/popular/app/controllers/webserver.go:88 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06648, 0xc0004d22a0, 0xc00043e300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06648, 0xc0004d22a0, 0xc00043e300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005920e0, 0xd06648, 0xc0004d22a0, 0xc00043e300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000272320, 0xd07a60, 0xc000584c00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:41:50 server.go:3139: http: panic serving 172.18.0.1:56892: assignment to entry in nil map
+goroutine 120 [running]:
+net/http.(*conn).serve.func1(0xc0001ee3c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06648, 0xc0004d2000, 0xc000566100)
+	/popular/app/controllers/webserver.go:88 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06648, 0xc0004d2000, 0xc000566100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06648, 0xc0004d2000, 0xc000566100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005920e0, 0xd06648, 0xc0004d2000, 0xc000566100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001ee3c0, 0xd07a60, 0xc0002941c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:41:50 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:41:50 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:41:56 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:41:56 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:41:58 webserver.go:88: map[]
+2021/06/29 05:42:08 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:42:08 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:43:17 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:43:17 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:43:34 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:43:34 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:43:36 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:43:36 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:43:54 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:43:54 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:43:58 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:43:58 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:44:04 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:44:04 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:44:14 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:44:14 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:44:16 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:44:16 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:45:17 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:45:17 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:45:18 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:45:18 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:45:44 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:45:44 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:45:55 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:45:55 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:45:56 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:45:56 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:46:06 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:46:06 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:46:07 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:46:07 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:46:12 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:46:12 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:46:13 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:46:13 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:46:26 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:46:26 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:46:28 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:46:28 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:49:31 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:49:31 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:50:48 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:50:48 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:51:15 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:51:15 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:57:17 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:57:17 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:57:24 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:57:24 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:57:24 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:57:24 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:57:50 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:57:50 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:58:01 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:58:01 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:58:04 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:58:04 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:58:11 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:58:11 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:58:16 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:58:16 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:58:20 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:58:20 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:58:24 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:58:24 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:58:27 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:58:27 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:58:28 server.go:3139: http: panic serving 172.18.0.1:56902: assignment to entry in nil map
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc000315c20)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0005001c0, 0xc00028ac00)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0005001c0, 0xc00028ac00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0005001c0, 0xc00028ac00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005000e0, 0xd06628, 0xc0005001c0, 0xc00028ac00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000315c20, 0xd07a40, 0xc0004d0cc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:58:28 server.go:3139: http: panic serving 172.18.0.1:56910: assignment to entry in nil map
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc0000c6000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0005002a0, 0xc00028a000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0005002a0, 0xc00028a000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0005002a0, 0xc00028a000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005000e0, 0xd06628, 0xc0005002a0, 0xc00028a000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000c6000, 0xd07a40, 0xc0004d0100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:58:29 server.go:3139: http: panic serving 172.18.0.1:56916: assignment to entry in nil map
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0003146e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000554000, 0xc000120100)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000554000, 0xc000120100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000554000, 0xc000120100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005000e0, 0xd06628, 0xc000554000, 0xc000120100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003146e0, 0xd07a40, 0xc0005e6200)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:58:30 server.go:3139: http: panic serving 172.18.0.1:56922: assignment to entry in nil map
+goroutine 88 [running]:
+net/http.(*conn).serve.func1(0xc000315680)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc00067c2a0, 0xc000120500)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc00067c2a0, 0xc000120500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc00067c2a0, 0xc000120500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005000e0, 0xd06628, 0xc00067c2a0, 0xc000120500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000315680, 0xd07a40, 0xc0005e70c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:58:32 server.go:3139: http: panic serving 172.18.0.1:56928: assignment to entry in nil map
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc0001e6000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000554000, 0xc00028a000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000554000, 0xc00028a000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000554000, 0xc00028a000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005000e0, 0xd06628, 0xc000554000, 0xc00028a000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001e6000, 0xd07a40, 0xc0004d0100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:58:33 server.go:3139: http: panic serving 172.18.0.1:56934: assignment to entry in nil map
+goroutine 105 [running]:
+net/http.(*conn).serve.func1(0xc0001c2fa0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0005001c0, 0xc000120100)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0005001c0, 0xc000120100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0005001c0, 0xc000120100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005000e0, 0xd06628, 0xc0005001c0, 0xc000120100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c2fa0, 0xd07a40, 0xc00007e500)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:58:35 server.go:3139: http: panic serving 172.18.0.1:56940: assignment to entry in nil map
+goroutine 131 [running]:
+net/http.(*conn).serve.func1(0xc0001ef5e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0002080e0, 0xc0005e4400)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0002080e0, 0xc0005e4400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0002080e0, 0xc0005e4400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005000e0, 0xd06628, 0xc0002080e0, 0xc0005e4400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001ef5e0, 0xd07a40, 0xc000355800)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:58:42 server.go:3139: http: panic serving 172.18.0.1:56946: assignment to entry in nil map
+goroutine 113 [running]:
+net/http.(*conn).serve.func1(0xc0001e68c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc00067c1c0, 0xc0005e4000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc00067c1c0, 0xc0005e4000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc00067c1c0, 0xc0005e4000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005000e0, 0xd06628, 0xc00067c1c0, 0xc0005e4000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001e68c0, 0xd07a40, 0xc0004d12c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:58:42 server.go:3139: http: panic serving 172.18.0.1:56952: assignment to entry in nil map
+goroutine 169 [running]:
+net/http.(*conn).serve.func1(0xc0001e6280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0005002a0, 0xc0005e4400)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0005002a0, 0xc0005e4400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0005002a0, 0xc0005e4400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0005000e0, 0xd06628, 0xc0005002a0, 0xc0005e4400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001e6280, 0xd07a40, 0xc000354a00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:59:19 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:59:19 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:59:22 server.go:3139: http: panic serving 172.18.0.1:56970: assignment to entry in nil map
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc0003fc0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc00061c8c0, 0xc00028a400)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc00061c8c0, 0xc00028a400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc00061c8c0, 0xc00028a400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00061c0e0, 0xd06628, 0xc00061c8c0, 0xc00028a400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003fc0a0, 0xd07a40, 0xc0003361c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:59:22 server.go:3139: http: panic serving 172.18.0.1:56978: assignment to entry in nil map
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc0002565a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0003d0380, 0xc000280300)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0003d0380, 0xc000280300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0003d0380, 0xc000280300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00061c0e0, 0xd06628, 0xc0003d0380, 0xc000280300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002565a0, 0xd07a40, 0xc0003370c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:59:23 server.go:3139: http: panic serving 172.18.0.1:56984: assignment to entry in nil map
+goroutine 64 [running]:
+net/http.(*conn).serve.func1(0xc0003fc960)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc00011e1c0, 0xc00067c200)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc00011e1c0, 0xc00067c200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc00011e1c0, 0xc00067c200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00061c0e0, 0xd06628, 0xc00011e1c0, 0xc00067c200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003fc960, 0xd07a40, 0xc000336280)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 05:59:34 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:59:34 webserver.go:42: リッスンしているポート 8080
+2021/06/29 05:59:37 webserver.go:40: デフォルトのポート 8080
+2021/06/29 05:59:37 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:00:31 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:00:31 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:01:01 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:01:01 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:01:06 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:01:06 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:01:12 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:01:12 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:01:23 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:01:23 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:01:24 server.go:3139: http: panic serving 172.18.0.1:57072: assignment to entry in nil map
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc0001fdd60)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc00048e1c0, 0xc00017cc00)
+	/popular/app/controllers/webserver.go:88 +0xc9
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc00048e1c0, 0xc00017cc00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc00048e1c0, 0xc00017cc00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00048e0e0, 0xd06628, 0xc00048e1c0, 0xc00017cc00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001fdd60, 0xd07a40, 0xc000462d00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:01:25 server.go:3139: http: panic serving 172.18.0.1:57080: assignment to entry in nil map
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc0001fdb80)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0005aa620, 0xc000524600)
+	/popular/app/controllers/webserver.go:88 +0xc9
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0005aa620, 0xc000524600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0005aa620, 0xc000524600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00048e0e0, 0xd06628, 0xc0005aa620, 0xc000524600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001fdb80, 0xd07a40, 0xc000221680)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:01:26 server.go:3139: http: panic serving 172.18.0.1:57086: assignment to entry in nil map
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc00015eaa0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc00048e1c0, 0xc00017c000)
+	/popular/app/controllers/webserver.go:88 +0xc9
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc00048e1c0, 0xc00017c000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc00048e1c0, 0xc00017c000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00048e0e0, 0xd06628, 0xc00048e1c0, 0xc00017c000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00015eaa0, 0xd07a40, 0xc0003227c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:01:32 server.go:3139: http: panic serving 172.18.0.1:57092: assignment to entry in nil map
+goroutine 100 [running]:
+net/http.(*conn).serve.func1(0xc00015f0e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0003cc000, 0xc0003c8000)
+	/popular/app/controllers/webserver.go:88 +0xc9
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0003cc000, 0xc0003c8000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0003cc000, 0xc0003c8000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00048e0e0, 0xd06628, 0xc0003cc000, 0xc0003c8000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00015f0e0, 0xd07a40, 0xc0005aeb00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:01:40 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:01:40 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:01:45 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:01:45 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:01:45 server.go:3139: http: panic serving 172.18.0.1:57114: assignment to entry in nil map
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc00029de00)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0004881c0, 0xc000212c00)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0004881c0, 0xc000212c00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0004881c0, 0xc000212c00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004880e0, 0xd06628, 0xc0004881c0, 0xc000212c00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00029de00, 0xd07a40, 0xc00045acc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:01:47 server.go:3139: http: panic serving 172.18.0.1:57122: assignment to entry in nil map
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0xc0004d0000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0004882a0, 0xc000208000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0004882a0, 0xc000208000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0004882a0, 0xc000208000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004880e0, 0xd06628, 0xc0004882a0, 0xc000208000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0004d0000, 0xd07a40, 0xc00017c1c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:01:47 server.go:3139: http: panic serving 172.18.0.1:57128: assignment to entry in nil map
+goroutine 83 [running]:
+net/http.(*conn).serve.func1(0xc0004d0140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0004881c0, 0xc000208500)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0004881c0, 0xc000208500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0004881c0, 0xc000208500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004880e0, 0xd06628, 0xc0004881c0, 0xc000208500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0004d0140, 0xd07a40, 0xc00017c040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:01:49 server.go:3139: http: panic serving 172.18.0.1:57134: assignment to entry in nil map
+goroutine 103 [running]:
+net/http.(*conn).serve.func1(0xc000483a40)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0005062a0, 0xc000212800)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0005062a0, 0xc000212800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0005062a0, 0xc000212800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004880e0, 0xd06628, 0xc0005062a0, 0xc000212800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000483a40, 0xd07a40, 0xc000535080)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:02:05 server.go:3139: http: panic serving 172.18.0.1:57140: assignment to entry in nil map
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc000594000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000596000, 0xc0000a2000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000596000, 0xc0000a2000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000596000, 0xc0000a2000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004880e0, 0xd06628, 0xc000596000, 0xc0000a2000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000594000, 0xd07a40, 0xc00065e000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:02:13 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:02:13 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:03:00 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:03:00 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:03:01 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:03:01 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:03:42 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:03:42 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:03:49 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:03:49 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:03:57 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:03:57 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:04:12 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:04:12 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:04:17 server.go:3139: http: panic serving 172.18.0.1:57170: assignment to entry in nil map
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0002fe0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000326000, 0xc0004f8400)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000326000, 0xc0004f8400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000326000, 0xc0004f8400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00054c0e0, 0xd06628, 0xc000326000, 0xc0004f8400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002fe0a0, 0xd07a40, 0xc0001f6000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:04:17 server.go:3139: http: panic serving 172.18.0.1:57178: assignment to entry in nil map
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc0000d0000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000336000, 0xc0001ea000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000336000, 0xc0001ea000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000336000, 0xc0001ea000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00054c0e0, 0xd06628, 0xc000336000, 0xc0001ea000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d0000, 0xd07a40, 0xc000246080)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:04:18 server.go:3139: http: panic serving 172.18.0.1:57184: assignment to entry in nil map
+goroutine 74 [running]:
+net/http.(*conn).serve.func1(0xc0001d6320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc00054c1c0, 0xc0003ee000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc00054c1c0, 0xc0003ee000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc00054c1c0, 0xc0003ee000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00054c0e0, 0xd06628, 0xc00054c1c0, 0xc0003ee000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001d6320, 0xd07a40, 0xc00013d040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:04:24 server.go:3139: http: panic serving 172.18.0.1:57190: assignment to entry in nil map
+goroutine 98 [running]:
+net/http.(*conn).serve.func1(0xc0000d95e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000336000, 0xc0001ea000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000336000, 0xc0001ea000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000336000, 0xc0001ea000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00054c0e0, 0xd06628, 0xc000336000, 0xc0001ea000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d95e0, 0xd07a40, 0xc00007e000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:04:27 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:04:27 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:04:28 server.go:3139: http: panic serving 172.18.0.1:57212: assignment to entry in nil map
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc0002a3cc0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0004881c0, 0xc0001f4c00)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0004881c0, 0xc0001f4c00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0004881c0, 0xc0001f4c00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004880e0, 0xd06628, 0xc0004881c0, 0xc0001f4c00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002a3cc0, 0xd07a40, 0xc00045ad00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:04:30 server.go:3139: http: panic serving 172.18.0.1:57220: assignment to entry in nil map
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0005c4dc0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000562700, 0xc0003fc100)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000562700, 0xc0003fc100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000562700, 0xc0003fc100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004880e0, 0xd06628, 0xc000562700, 0xc0003fc100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0005c4dc0, 0xd07a40, 0xc00061a480)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:04:31 server.go:3139: http: panic serving 172.18.0.1:57226: assignment to entry in nil map
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc0005c41e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000562000, 0xc0003fc200)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000562000, 0xc0003fc200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000562000, 0xc0003fc200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004880e0, 0xd06628, 0xc000562000, 0xc0003fc200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0005c41e0, 0xd07a40, 0xc0001f7140)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:04:40 server.go:3139: http: panic serving 172.18.0.1:57232: assignment to entry in nil map
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc0005c4320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc000312000, 0xc0003fc500)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc000312000, 0xc0003fc500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc000312000, 0xc0003fc500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0004880e0, 0xd06628, 0xc000312000, 0xc0003fc500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0005c4320, 0xd07a40, 0xc00061a540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:04:42 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:04:42 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:05:29 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:05:29 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:05:35 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:05:35 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:05:55 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:05:55 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:05:56 server.go:3139: http: panic serving 172.18.0.1:57266: assignment to entry in nil map
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc00031de00)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc00050a1c0, 0xc000292c00)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc00050a1c0, 0xc000292c00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc00050a1c0, 0xc000292c00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00050a0e0, 0xd06628, 0xc00050a1c0, 0xc000292c00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00031de00, 0xd07a40, 0xc0004d8cc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:05:56 server.go:3139: http: panic serving 172.18.0.1:57274: assignment to entry in nil map
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc0005ca280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0005cc1c0, 0xc000292000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0005cc1c0, 0xc000292000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0005cc1c0, 0xc000292000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00050a0e0, 0xd06628, 0xc0005cc1c0, 0xc000292000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0005ca280, 0xd07a40, 0xc0006a6000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:05:57 server.go:3139: http: panic serving 172.18.0.1:57280: assignment to entry in nil map
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc000552460)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0004ae000, 0xc000288200)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0004ae000, 0xc000288200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0004ae000, 0xc000288200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00050a0e0, 0xd06628, 0xc0004ae000, 0xc000288200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000552460, 0xd07a40, 0xc0001fc0c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:05:58 server.go:3139: http: panic serving 172.18.0.1:57286: assignment to entry in nil map
+goroutine 89 [running]:
+net/http.(*conn).serve.func1(0xc00067e3c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0005cc000, 0xc000292100)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0005cc000, 0xc000292100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0005cc000, 0xc000292100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00050a0e0, 0xd06628, 0xc0005cc000, 0xc000292100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00067e3c0, 0xd07a40, 0xc00043aec0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:06:00 server.go:3139: http: panic serving 172.18.0.1:57292: assignment to entry in nil map
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc000552140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc00044a1c0, 0xc00016e000)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc00044a1c0, 0xc00016e000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc00044a1c0, 0xc00016e000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00050a0e0, 0xd06628, 0xc00044a1c0, 0xc00016e000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000552140, 0xd07a40, 0xc0001fc000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:06:05 server.go:3139: http: panic serving 172.18.0.1:57298: assignment to entry in nil map
+goroutine 100 [running]:
+net/http.(*conn).serve.func1(0xc00067e0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0xb34920, 0xcec640)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+popular/app/controllers.contactListHandler(0xd06628, 0xc0005cc1c0, 0xc000292500)
+	/popular/app/controllers/webserver.go:89 +0xc8
+net/http.HandlerFunc.ServeHTTP(0xc58520, 0xd06628, 0xc0005cc1c0, 0xc000292500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1125080, 0xd06628, 0xc0005cc1c0, 0xc000292500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00050a0e0, 0xd06628, 0xc0005cc1c0, 0xc000292500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00067e0a0, 0xd07a40, 0xc00043a140)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/06/29 06:06:25 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:06:25 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:06:32 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:06:32 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:06:50 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:06:50 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:07:28 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:07:28 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:07:52 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:07:52 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:08:08 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:08:08 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:08:12 webserver.go:93: map[ContactList:[map[browser_id:1 content:テスト os_id:2 other_browser: other_os: twitter_name:@hx_kei] map[browser_id:3 content:テスト2 os_id:3 other_browser: other_os: twitter_name:@hx_kei②] map[browser_id:1 content:テスト3 os_id:2 other_browser: other_os: twitter_name:]] Host:localhost:8080]
+2021/06/29 06:08:12 webserver.go:93: map[ContactList:[map[browser_id:1 content:テスト os_id:2 other_browser: other_os: twitter_name:@hx_kei] map[browser_id:3 content:テスト2 os_id:3 other_browser: other_os: twitter_name:@hx_kei②] map[browser_id:1 content:テスト3 os_id:2 other_browser: other_os: twitter_name:]] Host:localhost:8080]
+2021/06/29 06:08:13 webserver.go:93: map[ContactList:[map[browser_id:1 content:テスト os_id:2 other_browser: other_os: twitter_name:@hx_kei] map[browser_id:3 content:テスト2 os_id:3 other_browser: other_os: twitter_name:@hx_kei②] map[browser_id:1 content:テスト3 os_id:2 other_browser: other_os: twitter_name:]] Host:localhost:8080]
+2021/06/29 06:08:13 webserver.go:93: map[ContactList:[map[browser_id:1 content:テスト os_id:2 other_browser: other_os: twitter_name:@hx_kei] map[browser_id:3 content:テスト2 os_id:3 other_browser: other_os: twitter_name:@hx_kei②] map[browser_id:1 content:テスト3 os_id:2 other_browser: other_os: twitter_name:]] Host:localhost:8080]
+2021/06/29 06:08:13 webserver.go:93: map[ContactList:[map[browser_id:1 content:テスト os_id:2 other_browser: other_os: twitter_name:@hx_kei] map[browser_id:3 content:テスト2 os_id:3 other_browser: other_os: twitter_name:@hx_kei②] map[browser_id:1 content:テスト3 os_id:2 other_browser: other_os: twitter_name:]] Host:localhost:8080]
+2021/06/29 06:09:19 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:09:19 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:09:28 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:09:29 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:09:30 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:09:30 webserver.go:42: リッスンしているポート 8080
+2021/06/29 06:09:37 webserver.go:40: デフォルトのポート 8080
+2021/06/29 06:09:37 webserver.go:42: リッスンしているポート 8080

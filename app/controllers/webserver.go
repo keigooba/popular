@@ -84,11 +84,15 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 func contactListHandler(w http.ResponseWriter, r *http.Request) {
 	url := r.URL.Path
 	data, err := session(w, r)
-	data["ContactList"] = models.ContactListGet()
-	log.Println(data)
 	if err != nil {
-		generateHTML(w, nil, "layout", "public_navbar", "main"+url)
+		var data2 map[string]interface{}
+		data2 = map[string]interface{}{
+			"Host": r.Host,
+		}
+		data2["ContactList"] = models.ContactListGet()
+		generateHTML(w, data2, "layout", "public_navbar", "main"+url)
 	} else {
+		data["ContactList"] = models.ContactListGet()
 		generateHTML(w, data, "layout", "private_navbar", "main"+url)
 	}
 }
