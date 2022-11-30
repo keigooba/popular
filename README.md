@@ -67,5 +67,3 @@ docker-compose exec popular bash
 インフラ
 1. Cloud Build + Cloud Run
 2. Cloud Firestore(NoSQL)
-
-https://tepsys.webex.com/wbxmjs/joinservice/sites/tepsys/meeting/download/1cbff4129b014ad59680cf07d97c55c5?siteurl=tepsys&MTID=m6ff5b16a44554ac58d4c4b55ac205f6b
